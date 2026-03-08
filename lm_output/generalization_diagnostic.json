@@ -1,0 +1,90 @@
+{
+  "modality_separation": 0.9262698412698412,
+  "st_consistency": 0.22799999999999998,
+  "vj_consistency": 0.212,
+  "mean_code_distance": 21.192,
+  "mean_test_codes": 8.76,
+  "hypothesis_scores": {
+    "A": 3,
+    "B": 4,
+    "C": 0
+  },
+  "primary_hypothesis": "B",
+  "per_concept": {
+    "apple": {
+      "n_tests": 20,
+      "n_agrees": 2,
+      "agreement_rate": 0.1
+    },
+    "fire": {
+      "n_tests": 20,
+      "n_agrees": 0,
+      "agreement_rate": 0.0
+    },
+    "stone": {
+      "n_tests": 20,
+      "n_agrees": 0,
+      "agreement_rate": 0.0
+    },
+    "wheel": {
+      "n_tests": 15,
+      "n_agrees": 0,
+      "agreement_rate": 0.0
+    },
+    "ladder": {
+      "n_tests": 15,
+      "n_agrees": 1,
+      "agreement_rate": 0.06666666666666667
+    },
+    "chair": {
+      "n_tests": 20,
+      "n_agrees": 0,
+      "agreement_rate": 0.0
+    },
+    "container": {
+      "n_tests": 15,
+      "n_agrees": 0,
+      "agreement_rate": 0.0
+    },
+    "knife": {
+      "n_tests": 15,
+      "n_agrees": 0,
+      "agreement_rate": 0.0
+    },
+    "water": {
+      "n_tests": 15,
+      "n_agrees": 0,
+      "agreement_rate": 0.0
+    },
+    "wall": {
+      "n_tests": 15,
+      "n_agrees": 1,
+      "agreement_rate": 0.06666666666666667
+    },
+    "hole": {
+      "n_tests": 20,
+      "n_agrees": 0,
+      "agreement_rate": 0.0
+    },
+    "door": {
+      "n_tests": 20,
+      "n_agrees": 0,
+      "agreement_rate": 0.0
+    },
+    "shadow": {
+      "n_tests": 15,
+      "n_agrees": 0,
+      "agreement_rate": 0.0
+    },
+    "mirror": {
+      "n_tests": 15,
+      "n_agrees": 0,
+      "agreement_rate": 0.0
+    },
+    "hand": {
+      "n_tests": 10,
+      "n_agrees": 1,
+      "agreement_rate": 0.1
+    }
+  }
+}

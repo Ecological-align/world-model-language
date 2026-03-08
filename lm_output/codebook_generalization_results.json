@@ -1,0 +1,2418 @@
+{
+  "summary": {
+    "lambda": 0.5,
+    "n_splits": 10,
+    "n_seeds": 5,
+    "n_total_runs": 50,
+    "train_agreement_mean": 0.9499999999999998,
+    "train_agreement_std": 0.055277079839256664,
+    "test_agreement_mean": 0.02,
+    "test_agreement_std": 0.060000000000000005,
+    "test_recon_cos_mean": 0.6693985930085182,
+    "test_recon_cos_std": 0.017995257924489052,
+    "generalization_gap": 0.9299999999999998
+  },
+  "per_run": [
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.995036393404007,
+      "test_agreement": 0.0,
+      "test_n_codes": 10,
+      "test_recon_cos": 0.6811534464359283,
+      "rsa_pre_vq_test": 0.43030303030303024,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        39,
+        59,
+        10,
+        36,
+        6
+      ],
+      "test_indices_vj": [
+        15,
+        58,
+        12,
+        20,
+        44
+      ],
+      "split": 1,
+      "seed": 42,
+      "train_concepts": [
+        "chair",
+        "water",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "knife",
+        "hand",
+        "wall",
+        "hole",
+        "bridge"
+      ],
+      "test_concepts": [
+        "apple",
+        "fire",
+        "stone",
+        "wheel",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9997929930686951,
+      "test_agreement": 0.0,
+      "test_n_codes": 10,
+      "test_recon_cos": 0.6634631156921387,
+      "rsa_pre_vq_test": 0.43030303030303024,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        48,
+        57,
+        12,
+        3,
+        49
+      ],
+      "test_indices_vj": [
+        59,
+        18,
+        62,
+        7,
+        8
+      ],
+      "split": 1,
+      "seed": 123,
+      "train_concepts": [
+        "chair",
+        "water",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "knife",
+        "hand",
+        "wall",
+        "hole",
+        "bridge"
+      ],
+      "test_concepts": [
+        "apple",
+        "fire",
+        "stone",
+        "wheel",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9995871186256409,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6472212076187134,
+      "rsa_pre_vq_test": 0.43030303030303024,
+      "rsa_post_vq_a": -0.058025885318565944,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        35,
+        32,
+        20,
+        32,
+        1
+      ],
+      "test_indices_vj": [
+        25,
+        36,
+        11,
+        31,
+        58
+      ],
+      "split": 1,
+      "seed": 7,
+      "train_concepts": [
+        "chair",
+        "water",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "knife",
+        "hand",
+        "wall",
+        "hole",
+        "bridge"
+      ],
+      "test_concepts": [
+        "apple",
+        "fire",
+        "stone",
+        "wheel",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 11,
+      "train_recon_cos": 0.9679336845874786,
+      "test_agreement": 0.0,
+      "test_n_codes": 10,
+      "test_recon_cos": 0.6517308354377747,
+      "rsa_pre_vq_test": 0.43030303030303024,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        53,
+        62,
+        2,
+        30,
+        13
+      ],
+      "test_indices_vj": [
+        6,
+        35,
+        28,
+        61,
+        54
+      ],
+      "split": 1,
+      "seed": 99,
+      "train_concepts": [
+        "chair",
+        "water",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "knife",
+        "hand",
+        "wall",
+        "hole",
+        "bridge"
+      ],
+      "test_concepts": [
+        "apple",
+        "fire",
+        "stone",
+        "wheel",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9997855722904205,
+      "test_agreement": 0.2,
+      "test_n_codes": 8,
+      "test_recon_cos": 0.6784839034080505,
+      "rsa_pre_vq_test": 0.43030303030303024,
+      "rsa_post_vq_a": -0.058025885318565944,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        36,
+        3,
+        45,
+        3,
+        5
+      ],
+      "test_indices_vj": [
+        36,
+        34,
+        24,
+        28,
+        51
+      ],
+      "split": 1,
+      "seed": 2025,
+      "train_concepts": [
+        "chair",
+        "water",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "knife",
+        "hand",
+        "wall",
+        "hole",
+        "bridge"
+      ],
+      "test_concepts": [
+        "apple",
+        "fire",
+        "stone",
+        "wheel",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9966998994350433,
+      "test_agreement": 0.0,
+      "test_n_codes": 7,
+      "test_recon_cos": 0.6653748154640198,
+      "rsa_pre_vq_test": -0.10303030303030303,
+      "rsa_post_vq_a": -0.4061811972299616,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        33,
+        35,
+        12,
+        33,
+        1
+      ],
+      "test_indices_vj": [
+        29,
+        58,
+        33,
+        0,
+        12
+      ],
+      "split": 2,
+      "seed": 42,
+      "train_concepts": [
+        "apple",
+        "water",
+        "fire",
+        "rope",
+        "door",
+        "shadow",
+        "mirror",
+        "hand",
+        "wall",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "chair",
+        "stone",
+        "container",
+        "knife",
+        "wheel"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9856996536254883,
+      "test_agreement": 0.0,
+      "test_n_codes": 7,
+      "test_recon_cos": 0.6649352610111237,
+      "rsa_pre_vq_test": -0.10303030303030303,
+      "rsa_post_vq_a": 0.5222329678670935,
+      "rsa_post_vq_b": 0.18993429409939655,
+      "test_indices_st": [
+        35,
+        0,
+        10,
+        16,
+        35
+      ],
+      "test_indices_vj": [
+        32,
+        57,
+        32,
+        32,
+        39
+      ],
+      "split": 2,
+      "seed": 123,
+      "train_concepts": [
+        "apple",
+        "water",
+        "fire",
+        "rope",
+        "door",
+        "shadow",
+        "mirror",
+        "hand",
+        "wall",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "chair",
+        "stone",
+        "container",
+        "knife",
+        "wheel"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.997480183839798,
+      "test_agreement": 0.0,
+      "test_n_codes": 7,
+      "test_recon_cos": 0.6868454813957214,
+      "rsa_pre_vq_test": -0.10303030303030303,
+      "rsa_post_vq_a": 0.058025885318565944,
+      "rsa_post_vq_b": 0.4061811972299616,
+      "test_indices_st": [
+        33,
+        41,
+        42,
+        25,
+        25
+      ],
+      "test_indices_vj": [
+        41,
+        36,
+        50,
+        50,
+        0
+      ],
+      "split": 2,
+      "seed": 7,
+      "train_concepts": [
+        "apple",
+        "water",
+        "fire",
+        "rope",
+        "door",
+        "shadow",
+        "mirror",
+        "hand",
+        "wall",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "chair",
+        "stone",
+        "container",
+        "knife",
+        "wheel"
+      ]
+    },
+    {
+      "train_agreement": 0.75,
+      "train_n_codes": 15,
+      "train_recon_cos": 0.9798681139945984,
+      "test_agreement": 0.0,
+      "test_n_codes": 10,
+      "test_recon_cos": 0.6807370483875275,
+      "rsa_pre_vq_test": -0.10303030303030303,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        60,
+        2,
+        29,
+        56,
+        23
+      ],
+      "test_indices_vj": [
+        15,
+        42,
+        53,
+        48,
+        61
+      ],
+      "split": 2,
+      "seed": 99,
+      "train_concepts": [
+        "apple",
+        "water",
+        "fire",
+        "rope",
+        "door",
+        "shadow",
+        "mirror",
+        "hand",
+        "wall",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "chair",
+        "stone",
+        "container",
+        "knife",
+        "wheel"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9970453679561615,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6727508008480072,
+      "rsa_pre_vq_test": -0.10303030303030303,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        63,
+        43,
+        56,
+        38,
+        34
+      ],
+      "test_indices_vj": [
+        56,
+        55,
+        46,
+        9,
+        28
+      ],
+      "split": 2,
+      "seed": 2025,
+      "train_concepts": [
+        "apple",
+        "water",
+        "fire",
+        "rope",
+        "door",
+        "shadow",
+        "mirror",
+        "hand",
+        "wall",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "chair",
+        "stone",
+        "container",
+        "knife",
+        "wheel"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9968392252922058,
+      "test_agreement": 0.0,
+      "test_n_codes": 6,
+      "test_recon_cos": 0.6498016268014908,
+      "rsa_pre_vq_test": 0.5272727272727272,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": 0.0,
+      "test_indices_st": [
+        24,
+        12,
+        59,
+        14,
+        38
+      ],
+      "test_indices_vj": [
+        59,
+        36,
+        36,
+        59,
+        12
+      ],
+      "split": 3,
+      "seed": 42,
+      "train_concepts": [
+        "fire",
+        "stone",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "knife",
+        "wheel",
+        "hand",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "wall",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9994385540485382,
+      "test_agreement": 0.0,
+      "test_n_codes": 7,
+      "test_recon_cos": 0.6883862614631653,
+      "rsa_pre_vq_test": 0.5272727272727272,
+      "rsa_post_vq_a": 0.5222329678670935,
+      "rsa_post_vq_b": 0.41785544701867244,
+      "test_indices_st": [
+        42,
+        24,
+        3,
+        16,
+        16
+      ],
+      "test_indices_vj": [
+        6,
+        8,
+        8,
+        8,
+        52
+      ],
+      "split": 3,
+      "seed": 123,
+      "train_concepts": [
+        "fire",
+        "stone",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "knife",
+        "wheel",
+        "hand",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "wall",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9996547996997833,
+      "test_agreement": 0.2,
+      "test_n_codes": 6,
+      "test_recon_cos": 0.706703782081604,
+      "rsa_pre_vq_test": 0.5272727272727272,
+      "rsa_post_vq_a": 0.2901294265928297,
+      "rsa_post_vq_b": 0.0,
+      "test_indices_st": [
+        39,
+        19,
+        39,
+        11,
+        53
+      ],
+      "test_indices_vj": [
+        39,
+        27,
+        27,
+        39,
+        49
+      ],
+      "split": 3,
+      "seed": 7,
+      "train_concepts": [
+        "fire",
+        "stone",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "knife",
+        "wheel",
+        "hand",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "wall",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9981008470058441,
+      "test_agreement": 0.0,
+      "test_n_codes": 8,
+      "test_recon_cos": 0.6822406053543091,
+      "rsa_pre_vq_test": 0.5272727272727272,
+      "rsa_post_vq_a": 0.6092717958449424,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        4,
+        19,
+        4,
+        47,
+        47
+      ],
+      "test_indices_vj": [
+        15,
+        37,
+        11,
+        58,
+        2
+      ],
+      "split": 3,
+      "seed": 99,
+      "train_concepts": [
+        "fire",
+        "stone",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "knife",
+        "wheel",
+        "hand",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "wall",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9986106157302856,
+      "test_agreement": 0.0,
+      "test_n_codes": 10,
+      "test_recon_cos": 0.6915832161903381,
+      "rsa_pre_vq_test": 0.5272727272727272,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        36,
+        35,
+        10,
+        1,
+        40
+      ],
+      "test_indices_vj": [
+        29,
+        57,
+        32,
+        18,
+        31
+      ],
+      "split": 3,
+      "seed": 2025,
+      "train_concepts": [
+        "fire",
+        "stone",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "knife",
+        "wheel",
+        "hand",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "wall",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 0.8333333333333334,
+      "train_n_codes": 14,
+      "train_recon_cos": 0.9920380413532257,
+      "test_agreement": 0.0,
+      "test_n_codes": 10,
+      "test_recon_cos": 0.6514986157417297,
+      "rsa_pre_vq_test": -0.19999999999999998,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        6,
+        5,
+        12,
+        13,
+        44
+      ],
+      "test_indices_vj": [
+        35,
+        53,
+        42,
+        27,
+        39
+      ],
+      "split": 4,
+      "seed": 42,
+      "train_concepts": [
+        "chair",
+        "water",
+        "fire",
+        "stone",
+        "rope",
+        "knife",
+        "wheel",
+        "hand",
+        "wall",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "door",
+        "container",
+        "shadow",
+        "mirror"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9817958176136017,
+      "test_agreement": 0.0,
+      "test_n_codes": 10,
+      "test_recon_cos": 0.6921582221984863,
+      "rsa_pre_vq_test": -0.19999999999999998,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        12,
+        29,
+        58,
+        53,
+        4
+      ],
+      "test_indices_vj": [
+        18,
+        17,
+        0,
+        40,
+        61
+      ],
+      "split": 4,
+      "seed": 123,
+      "train_concepts": [
+        "chair",
+        "water",
+        "fire",
+        "stone",
+        "rope",
+        "knife",
+        "wheel",
+        "hand",
+        "wall",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "door",
+        "container",
+        "shadow",
+        "mirror"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9993922114372253,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6362692415714264,
+      "rsa_pre_vq_test": -0.19999999999999998,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": -0.058025885318565944,
+      "test_indices_st": [
+        22,
+        50,
+        57,
+        34,
+        55
+      ],
+      "test_indices_vj": [
+        9,
+        33,
+        49,
+        41,
+        41
+      ],
+      "split": 4,
+      "seed": 7,
+      "train_concepts": [
+        "chair",
+        "water",
+        "fire",
+        "stone",
+        "rope",
+        "knife",
+        "wheel",
+        "hand",
+        "wall",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "door",
+        "container",
+        "shadow",
+        "mirror"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9991584718227386,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6782525777816772,
+      "rsa_pre_vq_test": -0.19999999999999998,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": 0.1740776559556978,
+      "test_indices_st": [
+        31,
+        42,
+        55,
+        1,
+        11
+      ],
+      "test_indices_vj": [
+        34,
+        37,
+        5,
+        62,
+        34
+      ],
+      "split": 4,
+      "seed": 99,
+      "train_concepts": [
+        "chair",
+        "water",
+        "fire",
+        "stone",
+        "rope",
+        "knife",
+        "wheel",
+        "hand",
+        "wall",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "door",
+        "container",
+        "shadow",
+        "mirror"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9995370805263519,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6907323598861694,
+      "rsa_pre_vq_test": -0.19999999999999998,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        43,
+        61,
+        0,
+        14,
+        32
+      ],
+      "test_indices_vj": [
+        37,
+        30,
+        61,
+        13,
+        52
+      ],
+      "split": 4,
+      "seed": 2025,
+      "train_concepts": [
+        "chair",
+        "water",
+        "fire",
+        "stone",
+        "rope",
+        "knife",
+        "wheel",
+        "hand",
+        "wall",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "door",
+        "container",
+        "shadow",
+        "mirror"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9988354444503784,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6972436904907227,
+      "rsa_pre_vq_test": -0.5515151515151515,
+      "rsa_post_vq_a": -0.5222329678670935,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        6,
+        59,
+        3,
+        3,
+        38
+      ],
+      "test_indices_vj": [
+        15,
+        42,
+        61,
+        8,
+        30
+      ],
+      "split": 5,
+      "seed": 42,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "stone",
+        "rope",
+        "shadow",
+        "knife",
+        "wheel",
+        "hand",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "fire",
+        "door",
+        "container",
+        "mirror",
+        "wall"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9984706938266754,
+      "test_agreement": 0.0,
+      "test_n_codes": 10,
+      "test_recon_cos": 0.6645567417144775,
+      "rsa_pre_vq_test": -0.5515151515151515,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        59,
+        24,
+        0,
+        4,
+        19
+      ],
+      "test_indices_vj": [
+        29,
+        51,
+        1,
+        58,
+        62
+      ],
+      "split": 5,
+      "seed": 123,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "stone",
+        "rope",
+        "shadow",
+        "knife",
+        "wheel",
+        "hand",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "fire",
+        "door",
+        "container",
+        "mirror",
+        "wall"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9867925047874451,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6912809312343597,
+      "rsa_pre_vq_test": -0.5515151515151515,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        49,
+        47,
+        55,
+        50,
+        42
+      ],
+      "test_indices_vj": [
+        50,
+        33,
+        35,
+        24,
+        38
+      ],
+      "split": 5,
+      "seed": 7,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "stone",
+        "rope",
+        "shadow",
+        "knife",
+        "wheel",
+        "hand",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "fire",
+        "door",
+        "container",
+        "mirror",
+        "wall"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9995080232620239,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6332802921533585,
+      "rsa_pre_vq_test": -0.5515151515151515,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        54,
+        18,
+        21,
+        19,
+        55
+      ],
+      "test_indices_vj": [
+        40,
+        30,
+        28,
+        21,
+        8
+      ],
+      "split": 5,
+      "seed": 99,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "stone",
+        "rope",
+        "shadow",
+        "knife",
+        "wheel",
+        "hand",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "fire",
+        "door",
+        "container",
+        "mirror",
+        "wall"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.991713136434555,
+      "test_agreement": 0.2,
+      "test_n_codes": 8,
+      "test_recon_cos": 0.6600933969020844,
+      "rsa_pre_vq_test": -0.5515151515151515,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        63,
+        48,
+        40,
+        56,
+        21
+      ],
+      "test_indices_vj": [
+        56,
+        49,
+        22,
+        23,
+        21
+      ],
+      "split": 5,
+      "seed": 2025,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "stone",
+        "rope",
+        "shadow",
+        "knife",
+        "wheel",
+        "hand",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "fire",
+        "door",
+        "container",
+        "mirror",
+        "wall"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9900709986686707,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6864925920963287,
+      "rsa_pre_vq_test": -0.006060606060606061,
+      "rsa_post_vq_a": 0.1740776559556978,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        24,
+        24,
+        33,
+        6,
+        47
+      ],
+      "test_indices_vj": [
+        28,
+        49,
+        2,
+        41,
+        23
+      ],
+      "split": 6,
+      "seed": 42,
+      "train_concepts": [
+        "chair",
+        "fire",
+        "stone",
+        "rope",
+        "door",
+        "container",
+        "mirror",
+        "knife",
+        "wheel",
+        "wall",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "water",
+        "shadow",
+        "hand",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9909391701221466,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6732912063598633,
+      "rsa_pre_vq_test": -0.006060606060606061,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        7,
+        59,
+        54,
+        57,
+        50
+      ],
+      "test_indices_vj": [
+        0,
+        9,
+        58,
+        54,
+        39
+      ],
+      "split": 6,
+      "seed": 123,
+      "train_concepts": [
+        "chair",
+        "fire",
+        "stone",
+        "rope",
+        "door",
+        "container",
+        "mirror",
+        "knife",
+        "wheel",
+        "wall",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "water",
+        "shadow",
+        "hand",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9870492815971375,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6475543230772018,
+      "rsa_pre_vq_test": -0.006060606060606061,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        22,
+        38,
+        29,
+        12,
+        25
+      ],
+      "test_indices_vj": [
+        29,
+        58,
+        60,
+        55,
+        47
+      ],
+      "split": 6,
+      "seed": 7,
+      "train_concepts": [
+        "chair",
+        "fire",
+        "stone",
+        "rope",
+        "door",
+        "container",
+        "mirror",
+        "knife",
+        "wheel",
+        "wall",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "water",
+        "shadow",
+        "hand",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9993935823440552,
+      "test_agreement": 0.0,
+      "test_n_codes": 8,
+      "test_recon_cos": 0.6678992807865143,
+      "rsa_pre_vq_test": -0.006060606060606061,
+      "rsa_post_vq_a": 0.2901294265928297,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        48,
+        45,
+        37,
+        48,
+        55
+      ],
+      "test_indices_vj": [
+        37,
+        54,
+        9,
+        3,
+        14
+      ],
+      "split": 6,
+      "seed": 99,
+      "train_concepts": [
+        "chair",
+        "fire",
+        "stone",
+        "rope",
+        "door",
+        "container",
+        "mirror",
+        "knife",
+        "wheel",
+        "wall",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "water",
+        "shadow",
+        "hand",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9985332489013672,
+      "test_agreement": 0.0,
+      "test_n_codes": 10,
+      "test_recon_cos": 0.6654210239648819,
+      "rsa_pre_vq_test": -0.006060606060606061,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        38,
+        41,
+        56,
+        29,
+        3
+      ],
+      "test_indices_vj": [
+        26,
+        58,
+        1,
+        14,
+        18
+      ],
+      "split": 6,
+      "seed": 2025,
+      "train_concepts": [
+        "chair",
+        "fire",
+        "stone",
+        "rope",
+        "door",
+        "container",
+        "mirror",
+        "knife",
+        "wheel",
+        "wall",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "apple",
+        "water",
+        "shadow",
+        "hand",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 0.8333333333333334,
+      "train_n_codes": 14,
+      "train_recon_cos": 0.9948848783969879,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6787623763084412,
+      "rsa_pre_vq_test": -0.34545454545454546,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": 0.4061811972299616,
+      "test_indices_st": [
+        34,
+        17,
+        30,
+        37,
+        28
+      ],
+      "test_indices_vj": [
+        55,
+        60,
+        53,
+        35,
+        60
+      ],
+      "split": 7,
+      "seed": 42,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "wheel",
+        "hand",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "water",
+        "fire",
+        "stone",
+        "knife",
+        "wall"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9956858158111572,
+      "test_agreement": 0.0,
+      "test_n_codes": 10,
+      "test_recon_cos": 0.6518164426088333,
+      "rsa_pre_vq_test": -0.34545454545454546,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        29,
+        2,
+        39,
+        30,
+        42
+      ],
+      "test_indices_vj": [
+        28,
+        59,
+        48,
+        36,
+        57
+      ],
+      "split": 7,
+      "seed": 123,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "wheel",
+        "hand",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "water",
+        "fire",
+        "stone",
+        "knife",
+        "wall"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9991766810417175,
+      "test_agreement": 0.0,
+      "test_n_codes": 10,
+      "test_recon_cos": 0.6801978349685669,
+      "rsa_pre_vq_test": -0.34545454545454546,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        10,
+        24,
+        62,
+        56,
+        44
+      ],
+      "test_indices_vj": [
+        43,
+        12,
+        47,
+        34,
+        31
+      ],
+      "split": 7,
+      "seed": 7,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "wheel",
+        "hand",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "water",
+        "fire",
+        "stone",
+        "knife",
+        "wall"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9931780993938446,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6768440306186676,
+      "rsa_pre_vq_test": -0.34545454545454546,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        31,
+        42,
+        40,
+        29,
+        46
+      ],
+      "test_indices_vj": [
+        54,
+        31,
+        62,
+        53,
+        21
+      ],
+      "split": 7,
+      "seed": 99,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "wheel",
+        "hand",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "water",
+        "fire",
+        "stone",
+        "knife",
+        "wall"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9873501658439636,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6693337857723236,
+      "rsa_pre_vq_test": -0.34545454545454546,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": 0.058025885318565944,
+      "test_indices_st": [
+        59,
+        3,
+        63,
+        37,
+        62
+      ],
+      "test_indices_vj": [
+        53,
+        1,
+        24,
+        23,
+        24
+      ],
+      "split": 7,
+      "seed": 2025,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "mirror",
+        "wheel",
+        "hand",
+        "hole",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "water",
+        "fire",
+        "stone",
+        "knife",
+        "wall"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9996019303798676,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.7143011689186096,
+      "rsa_pre_vq_test": 0.13939393939393938,
+      "rsa_post_vq_a": -0.058025885318565944,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        59,
+        5,
+        52,
+        5,
+        47
+      ],
+      "test_indices_vj": [
+        40,
+        14,
+        46,
+        36,
+        51
+      ],
+      "split": 8,
+      "seed": 42,
+      "train_concepts": [
+        "apple",
+        "water",
+        "stone",
+        "rope",
+        "container",
+        "shadow",
+        "mirror",
+        "wheel",
+        "hand",
+        "wall",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "chair",
+        "fire",
+        "door",
+        "knife",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9992817044258118,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6596832424402237,
+      "rsa_pre_vq_test": 0.13939393939393938,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": 0.058025885318565944,
+      "test_indices_st": [
+        34,
+        0,
+        53,
+        6,
+        8
+      ],
+      "test_indices_vj": [
+        30,
+        33,
+        35,
+        33,
+        56
+      ],
+      "split": 8,
+      "seed": 123,
+      "train_concepts": [
+        "apple",
+        "water",
+        "stone",
+        "rope",
+        "container",
+        "shadow",
+        "mirror",
+        "wheel",
+        "hand",
+        "wall",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "chair",
+        "fire",
+        "door",
+        "knife",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9967410862445831,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6682259142398834,
+      "rsa_pre_vq_test": 0.13939393939393938,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        60,
+        57,
+        18,
+        30,
+        19
+      ],
+      "test_indices_vj": [
+        7,
+        55,
+        12,
+        60,
+        2
+      ],
+      "split": 8,
+      "seed": 7,
+      "train_concepts": [
+        "apple",
+        "water",
+        "stone",
+        "rope",
+        "container",
+        "shadow",
+        "mirror",
+        "wheel",
+        "hand",
+        "wall",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "chair",
+        "fire",
+        "door",
+        "knife",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9951673448085785,
+      "test_agreement": 0.0,
+      "test_n_codes": 8,
+      "test_recon_cos": 0.6484636068344116,
+      "rsa_pre_vq_test": 0.13939393939393938,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": 0.058025885318565944,
+      "test_indices_st": [
+        53,
+        26,
+        34,
+        5,
+        45
+      ],
+      "test_indices_vj": [
+        39,
+        20,
+        45,
+        20,
+        48
+      ],
+      "split": 8,
+      "seed": 99,
+      "train_concepts": [
+        "apple",
+        "water",
+        "stone",
+        "rope",
+        "container",
+        "shadow",
+        "mirror",
+        "wheel",
+        "hand",
+        "wall",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "chair",
+        "fire",
+        "door",
+        "knife",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9971309304237366,
+      "test_agreement": 0.0,
+      "test_n_codes": 8,
+      "test_recon_cos": 0.6521824300289154,
+      "rsa_pre_vq_test": 0.13939393939393938,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        6,
+        3,
+        53,
+        34,
+        9
+      ],
+      "test_indices_vj": [
+        53,
+        29,
+        3,
+        22,
+        61
+      ],
+      "split": 8,
+      "seed": 2025,
+      "train_concepts": [
+        "apple",
+        "water",
+        "stone",
+        "rope",
+        "container",
+        "shadow",
+        "mirror",
+        "wheel",
+        "hand",
+        "wall",
+        "bridge",
+        "ladder"
+      ],
+      "test_concepts": [
+        "chair",
+        "fire",
+        "door",
+        "knife",
+        "hole"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9866001605987549,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6802677810192108,
+      "rsa_pre_vq_test": 0.18787878787878787,
+      "rsa_post_vq_a": 0.4061811972299616,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        27,
+        24,
+        44,
+        44,
+        42
+      ],
+      "test_indices_vj": [
+        21,
+        52,
+        15,
+        40,
+        34
+      ],
+      "split": 9,
+      "seed": 42,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "fire",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "knife",
+        "wall",
+        "hole",
+        "bridge"
+      ],
+      "test_concepts": [
+        "stone",
+        "mirror",
+        "wheel",
+        "hand",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9790816307067871,
+      "test_agreement": 0.0,
+      "test_n_codes": 8,
+      "test_recon_cos": 0.6361791789531708,
+      "rsa_pre_vq_test": 0.18787878787878787,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        46,
+        7,
+        30,
+        52,
+        1
+      ],
+      "test_indices_vj": [
+        39,
+        52,
+        29,
+        30,
+        18
+      ],
+      "split": 9,
+      "seed": 123,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "fire",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "knife",
+        "wall",
+        "hole",
+        "bridge"
+      ],
+      "test_concepts": [
+        "stone",
+        "mirror",
+        "wheel",
+        "hand",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9996532499790192,
+      "test_agreement": 0.2,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.65450319647789,
+      "rsa_pre_vq_test": 0.18787878787878787,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        63,
+        25,
+        5,
+        37,
+        34
+      ],
+      "test_indices_vj": [
+        9,
+        12,
+        7,
+        37,
+        50
+      ],
+      "split": 9,
+      "seed": 7,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "fire",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "knife",
+        "wall",
+        "hole",
+        "bridge"
+      ],
+      "test_concepts": [
+        "stone",
+        "mirror",
+        "wheel",
+        "hand",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.997919499874115,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6580498814582825,
+      "rsa_pre_vq_test": 0.18787878787878787,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        32,
+        54,
+        6,
+        13,
+        15
+      ],
+      "test_indices_vj": [
+        50,
+        13,
+        3,
+        43,
+        30
+      ],
+      "split": 9,
+      "seed": 99,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "fire",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "knife",
+        "wall",
+        "hole",
+        "bridge"
+      ],
+      "test_concepts": [
+        "stone",
+        "mirror",
+        "wheel",
+        "hand",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9921234548091888,
+      "test_agreement": 0.0,
+      "test_n_codes": 8,
+      "test_recon_cos": 0.6468636691570282,
+      "rsa_pre_vq_test": 0.18787878787878787,
+      "rsa_post_vq_a": -0.2901294265928297,
+      "rsa_post_vq_b": 0.2901294265928297,
+      "test_indices_st": [
+        43,
+        45,
+        44,
+        2,
+        2
+      ],
+      "test_indices_vj": [
+        46,
+        6,
+        6,
+        59,
+        12
+      ],
+      "split": 9,
+      "seed": 2025,
+      "train_concepts": [
+        "apple",
+        "chair",
+        "water",
+        "fire",
+        "rope",
+        "door",
+        "container",
+        "shadow",
+        "knife",
+        "wall",
+        "hole",
+        "bridge"
+      ],
+      "test_concepts": [
+        "stone",
+        "mirror",
+        "wheel",
+        "hand",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9854319393634796,
+      "test_agreement": 0.2,
+      "test_n_codes": 7,
+      "test_recon_cos": 0.6583060175180435,
+      "rsa_pre_vq_test": 0.16363636363636364,
+      "rsa_post_vq_a": 0.5222329678670935,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        29,
+        52,
+        44,
+        52,
+        3
+      ],
+      "test_indices_vj": [
+        52,
+        54,
+        17,
+        36,
+        3
+      ],
+      "split": 10,
+      "seed": 42,
+      "train_concepts": [
+        "apple",
+        "water",
+        "fire",
+        "stone",
+        "rope",
+        "container",
+        "mirror",
+        "knife",
+        "wheel",
+        "hand",
+        "wall",
+        "bridge"
+      ],
+      "test_concepts": [
+        "chair",
+        "door",
+        "shadow",
+        "hole",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.9973962306976318,
+      "test_agreement": 0.0,
+      "test_n_codes": 8,
+      "test_recon_cos": 0.677373006939888,
+      "rsa_pre_vq_test": 0.16363636363636364,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": 0.1740776559556978,
+      "test_indices_st": [
+        35,
+        7,
+        53,
+        34,
+        0
+      ],
+      "test_indices_vj": [
+        50,
+        25,
+        36,
+        25,
+        53
+      ],
+      "split": 10,
+      "seed": 123,
+      "train_concepts": [
+        "apple",
+        "water",
+        "fire",
+        "stone",
+        "rope",
+        "container",
+        "mirror",
+        "knife",
+        "wheel",
+        "hand",
+        "wall",
+        "bridge"
+      ],
+      "test_concepts": [
+        "chair",
+        "door",
+        "shadow",
+        "hole",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 1.0,
+      "train_n_codes": 12,
+      "train_recon_cos": 0.999656468629837,
+      "test_agreement": 0.0,
+      "test_n_codes": 9,
+      "test_recon_cos": 0.6586254686117172,
+      "rsa_pre_vq_test": 0.16363636363636364,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        33,
+        44,
+        49,
+        51,
+        41
+      ],
+      "test_indices_vj": [
+        9,
+        33,
+        6,
+        28,
+        16
+      ],
+      "split": 10,
+      "seed": 7,
+      "train_concepts": [
+        "apple",
+        "water",
+        "fire",
+        "stone",
+        "rope",
+        "container",
+        "mirror",
+        "knife",
+        "wheel",
+        "hand",
+        "wall",
+        "bridge"
+      ],
+      "test_concepts": [
+        "chair",
+        "door",
+        "shadow",
+        "hole",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9902771413326263,
+      "test_agreement": 0.0,
+      "test_n_codes": 10,
+      "test_recon_cos": 0.6797630488872528,
+      "rsa_pre_vq_test": 0.16363636363636364,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        30,
+        47,
+        60,
+        45,
+        15
+      ],
+      "test_indices_vj": [
+        11,
+        26,
+        0,
+        5,
+        39
+      ],
+      "split": 10,
+      "seed": 99,
+      "train_concepts": [
+        "apple",
+        "water",
+        "fire",
+        "stone",
+        "rope",
+        "container",
+        "mirror",
+        "knife",
+        "wheel",
+        "hand",
+        "wall",
+        "bridge"
+      ],
+      "test_concepts": [
+        "chair",
+        "door",
+        "shadow",
+        "hole",
+        "ladder"
+      ]
+    },
+    {
+      "train_agreement": 0.9166666666666666,
+      "train_n_codes": 13,
+      "train_recon_cos": 0.9953989684581757,
+      "test_agreement": 0.0,
+      "test_n_codes": 10,
+      "test_recon_cos": 0.6727516651153564,
+      "rsa_pre_vq_test": 0.16363636363636364,
+      "rsa_post_vq_a": NaN,
+      "rsa_post_vq_b": NaN,
+      "test_indices_st": [
+        11,
+        18,
+        14,
+        53,
+        2
+      ],
+      "test_indices_vj": [
+        1,
+        61,
+        13,
+        57,
+        39
+      ],
+      "split": 10,
+      "seed": 2025,
+      "train_concepts": [
+        "apple",
+        "water",
+        "fire",
+        "stone",
+        "rope",
+        "container",
+        "mirror",
+        "knife",
+        "wheel",
+        "hand",
+        "wall",
+        "bridge"
+      ],
+      "test_concepts": [
+        "chair",
+        "door",
+        "shadow",
+        "hole",
+        "ladder"
+      ]
+    }
+  ],
+  "verdict": "DOES NOT GENERALIZE \u2014 99% train agreement was likely memorization"
+}

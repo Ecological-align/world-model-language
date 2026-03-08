@@ -1,0 +1,418 @@
+[
+  {
+    "concept": "spring",
+    "text_preview": "Spring(s) may refer to:",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.182920455932617,
+    "st_norm": 0.9999999403953552,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "bark",
+    "text_preview": "Bark  most commonly refers to:",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.073951721191406,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741877555847168
+  },
+  {
+    "concept": "wave",
+    "text_preview": "In mathematics and physical science, a wave is a propagating dynamic disturbance (change from equilibrium) of one or more quantities. Periodic waves oscillate repeatedly about an equilibrium (resting)",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.0158209800720215,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741876602172852
+  },
+  {
+    "concept": "charge",
+    "text_preview": "Charge or charged may refer to:",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.17230749130249,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "field",
+    "text_preview": "Field may refer to:",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.037456035614014,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741876602172852
+  },
+  {
+    "concept": "light",
+    "text_preview": "Light, visible light, or visible radiation is electromagnetic radiation that can be perceived by the human eye. Visible light spans the visible spectrum and is usually defined as having wavelengths in",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.076842308044434,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741876602172852
+  },
+  {
+    "concept": "strike",
+    "text_preview": "Strike may refer to:",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.259608268737793,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "press",
+    "text_preview": "Press may refer to:",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.188985824584961,
+    "st_norm": 0.9999999403953552,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "shoot",
+    "text_preview": "Shoot most commonly refers to:",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 4.777694225311279,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "run",
+    "text_preview": "Run(s) or RUN may refer to: ",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 4.438164234161377,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "hammer",
+    "text_preview": "A  hammer is a tool, most often a hand tool, consisting of a weighted \"head\" fixed to a long handle that is swung to deliver an impact to a small area of an object. This can be, for example, to drive ",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.14091682434082,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "scissors",
+    "text_preview": "Scissors or shears are hand-operated cutting tools that consists of a pair of pivoting blades whose sharpened edges slide firmly against and past each other when the handles (shank) on the opposite si",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 4.545643329620361,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "bowl",
+    "text_preview": "A bowl is a typically round dish or container generally used for preparing, serving, storing, or consuming food. The interior of a bowl is characteristically shaped like a spherical cap, with the edge",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.159762859344482,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "bucket",
+    "text_preview": "A bucket is typically a watertight, vertical cylinder or truncated cone or square, with an open top and a flat bottom that is attached to a semicircular carrying handle called the bail.",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.494510173797607,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "bench",
+    "text_preview": "Bench, The Bench, Benched, or Benching may refer to:",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.444089412689209,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "fence",
+    "text_preview": "A fence is a structure that encloses an area, typically outdoors creating a boundary, and is usually constructed from posts that are connected by boards, wire, rails or netting. A fence differs from a",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.18236780166626,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741876602172852
+  },
+  {
+    "concept": "needle",
+    "text_preview": "Needle or Needles may refer to:",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.28927755355835,
+    "st_norm": 0.9999999403953552,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741876602172852
+  },
+  {
+    "concept": "drum",
+    "text_preview": "The drum is a member of the percussion group of musical instruments. In the Hornbostel\u2013Sachs classification system, it is a membranophone. Drums consist of at least one membrane, called a drumhead or ",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.392536163330078,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "clock",
+    "text_preview": "A clock or chronometer is a device that measures and displays time. The clock is one of the oldest human inventions, meeting the need to measure intervals of time shorter than the natural units such a",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 6.395348072052002,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "telescope",
+    "text_preview": "A telescope is a device used to observe distant objects by their emission, absorption, or reflection of electromagnetic radiation. Originally, it was an optical instrument using lenses, curved mirrors",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.463584899902344,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741876602172852
+  },
+  {
+    "concept": "cloud",
+    "text_preview": "In meteorology, a cloud is an aerosol consisting of a visible mass of miniature liquid droplets, ice crystals, or other particles, suspended in the atmosphere of a planetary body or similar space. Wat",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.284616470336914,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "sand",
+    "text_preview": "Sand is a granular material composed of finely divided mineral particles. Sand has various compositions but is usually defined by its grain size. Sand grains are smaller than gravel and coarser than s",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.373410224914551,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "ice",
+    "text_preview": "Ice is water that is frozen into a solid state, typically forming at or below temperatures of 0 \u00b0C, 32 \u00b0F, or 273.15 K. It occurs naturally on Earth, on other planets, in Oort cloud objects, and as in",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 4.539933681488037,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741876602172852
+  },
+  {
+    "concept": "feather",
+    "text_preview": "Feathers are epidermal growths that form a distinctive outer covering, or plumage, on both avian (bird) and some non-avian dinosaurs and other archosaurs. They are the most complex integumentary struc",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.167664527893066,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741876602172852
+  },
+  {
+    "concept": "leaf",
+    "text_preview": "A leaf (pl.: leaves) is a principal appendage of the stem of a vascular plant, usually borne laterally above ground and specialized for photosynthesis. Leaves are collectively called foliage, as in \"a",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 4.359711647033691,
+    "st_norm": 0.9999999403953552,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "thread",
+    "text_preview": "Thread(s) may refer to:",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.233839511871338,
+    "st_norm": 0.9999999403953552,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "glass",
+    "text_preview": "Glass is an amorphous (non-crystalline) solid. Because it is often transparent and chemically inert, glass has found widespread practical, technological, and decorative use in window panes, tableware,",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.439101219177246,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741876602172852
+  },
+  {
+    "concept": "coin",
+    "text_preview": "A coin is a small object, usually round and flat, used primarily as a medium of exchange or legal tender. They are standardized in weight, and produced in large quantities at a mint in order to facili",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.06899881362915,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "shelf",
+    "text_preview": "Shelf (pl.: shelves) may refer to:",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.068422317504883,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741877555847168
+  },
+  {
+    "concept": "pipe",
+    "text_preview": "Pipe(s), PIPE(S) or piping may refer to:",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.26171875,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "net",
+    "text_preview": "Net or net may refer to:",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.156530857086182,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  },
+  {
+    "concept": "chain",
+    "text_preview": "A chain is a serial assembly of connected links typically made of metal, with an overall character similar to that of a rope in that it is flexible and curved in compression, but linear, rigid, and lo",
+    "image_size": [
+      224,
+      224
+    ],
+    "lm_norm": 5.1619954109191895,
+    "st_norm": 1.0,
+    "clip_norm": 20.713516235351562,
+    "vj_norm": 68.35440063476562,
+    "mae_norm": 13.741875648498535
+  }
+]

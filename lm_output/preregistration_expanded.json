@@ -1,0 +1,582 @@
+{
+  "registered_at": "2026-03-07T18:31:17.383029",
+  "description": "Pre-registration for expanded 50-concept alignment experiment",
+  "scoring": {
+    "formula": "wordnet_noun_senses + (sensorimotor_rating * 4)",
+    "wordnet_source": "WordNet 3.1 noun synsets (manual count)",
+    "sensorimotor_source": "Lancaster Sensorimotor Norms where available, manual estimate (*) otherwise"
+  },
+  "predictions": {
+    "primary": "Top 8 concepts by combined score will require more contrastive pressure",
+    "lambda_0.1": "Top 8 will show lower cross-modal agreement than bottom 8 at lambda=0.1",
+    "lambda_0.5": "At least 3 of top 8 will fail (disagree) in at least 1 of 5 seeds at lambda=0.5",
+    "generalization": "Top-tercile concepts will show lower held-out agreement than bottom-tercile in generalization test"
+  },
+  "predicted_hard": [
+    "hand",
+    "run",
+    "spring",
+    "fire",
+    "stone",
+    "wave",
+    "light",
+    "strike"
+  ],
+  "predicted_easy": [
+    "fence",
+    "cloud",
+    "mirror",
+    "clock",
+    "container",
+    "shelf",
+    "telescope",
+    "coin"
+  ],
+  "all_concepts_ranked": [
+    {
+      "rank": 1,
+      "concept": "hand",
+      "wordnet_senses": 14,
+      "sensorimotor_rating": 5,
+      "combined_score": 34,
+      "notes": "original - pre-registered hard",
+      "predicted": "hard"
+    },
+    {
+      "rank": 2,
+      "concept": "run",
+      "wordnet_senses": 12,
+      "sensorimotor_rating": 5,
+      "combined_score": 32,
+      "notes": "new-hard: locomotion/river run/stocking run \u2014 very high polysemy",
+      "predicted": "hard"
+    },
+    {
+      "rank": 3,
+      "concept": "spring",
+      "wordnet_senses": 11,
+      "sensorimotor_rating": 5,
+      "combined_score": 31,
+      "notes": "new-hard: coil/season/water source/to jump \u2014 high polysemy + haptic",
+      "predicted": "hard"
+    },
+    {
+      "rank": 4,
+      "concept": "fire",
+      "wordnet_senses": 9,
+      "sensorimotor_rating": 5,
+      "combined_score": 29,
+      "notes": "original",
+      "predicted": "hard"
+    },
+    {
+      "rank": 5,
+      "concept": "stone",
+      "wordnet_senses": 13,
+      "sensorimotor_rating": 4,
+      "combined_score": 29,
+      "notes": "original",
+      "predicted": "hard"
+    },
+    {
+      "rank": 6,
+      "concept": "wave",
+      "wordnet_senses": 9,
+      "sensorimotor_rating": 5,
+      "combined_score": 29,
+      "notes": "new-hard: ocean/electromagnetic/gesture \u2014 physical + abstract",
+      "predicted": "hard"
+    },
+    {
+      "rank": 7,
+      "concept": "light",
+      "wordnet_senses": 13,
+      "sensorimotor_rating": 4,
+      "combined_score": 29,
+      "notes": "new-hard: electromagnetic/weight/ignite \u2014 highest polysemy category",
+      "predicted": "hard"
+    },
+    {
+      "rank": 8,
+      "concept": "strike",
+      "wordnet_senses": 9,
+      "sensorimotor_rating": 5,
+      "combined_score": 29,
+      "notes": "new-hard: hit/labor/bowling/lightning \u2014 high action grounding",
+      "predicted": "hard"
+    },
+    {
+      "rank": 9,
+      "concept": "water",
+      "wordnet_senses": 8,
+      "sensorimotor_rating": 5,
+      "combined_score": 28,
+      "notes": "original",
+      "predicted": "medium"
+    },
+    {
+      "rank": 10,
+      "concept": "shoot",
+      "wordnet_senses": 8,
+      "sensorimotor_rating": 5,
+      "combined_score": 28,
+      "notes": "new-hard: projectile/plant shoot/photo \u2014 high action grounding",
+      "predicted": "medium"
+    },
+    {
+      "rank": 11,
+      "concept": "bark",
+      "wordnet_senses": 7,
+      "sensorimotor_rating": 5,
+      "combined_score": 27,
+      "notes": "new-hard: tree bark/dog bark/boat \u2014 tactile + auditory",
+      "predicted": "medium"
+    },
+    {
+      "rank": 12,
+      "concept": "charge",
+      "wordnet_senses": 10,
+      "sensorimotor_rating": 4,
+      "combined_score": 26,
+      "notes": "new-hard: electrical/attack/fee/criminal \u2014 highly polysemous",
+      "predicted": "medium"
+    },
+    {
+      "rank": 13,
+      "concept": "needle",
+      "wordnet_senses": 6,
+      "sensorimotor_rating": 5,
+      "combined_score": 26,
+      "notes": "new-medium: sewing/compass/to needle \u2014 moderate polysemy, high haptic",
+      "predicted": "medium"
+    },
+    {
+      "rank": 14,
+      "concept": "press",
+      "wordnet_senses": 9,
+      "sensorimotor_rating": 4,
+      "combined_score": 25,
+      "notes": "new-hard: printing press/to push/media \u2014 action + tool + institution",
+      "predicted": "medium"
+    },
+    {
+      "rank": 15,
+      "concept": "drum",
+      "wordnet_senses": 5,
+      "sensorimotor_rating": 5,
+      "combined_score": 25,
+      "notes": "new-medium: instrument/container/to drum \u2014 moderate polysemy, high motor",
+      "predicted": "medium"
+    },
+    {
+      "rank": 16,
+      "concept": "knife",
+      "wordnet_senses": 4,
+      "sensorimotor_rating": 5,
+      "combined_score": 24,
+      "notes": "original",
+      "predicted": "medium"
+    },
+    {
+      "rank": 17,
+      "concept": "field",
+      "wordnet_senses": 12,
+      "sensorimotor_rating": 3,
+      "combined_score": 24,
+      "notes": "new-hard: grass field/magnetic/academic \u2014 very high polysemy",
+      "predicted": "medium"
+    },
+    {
+      "rank": 18,
+      "concept": "hammer",
+      "wordnet_senses": 4,
+      "sensorimotor_rating": 5,
+      "combined_score": 24,
+      "notes": "new-medium: tool with clear haptic affordance, few meanings",
+      "predicted": "medium"
+    },
+    {
+      "rank": 19,
+      "concept": "net",
+      "wordnet_senses": 8,
+      "sensorimotor_rating": 4,
+      "combined_score": 24,
+      "notes": "new-medium: fishing/internet/sports \u2014 moderate polysemy",
+      "predicted": "medium"
+    },
+    {
+      "rank": 20,
+      "concept": "scissors",
+      "wordnet_senses": 3,
+      "sensorimotor_rating": 5,
+      "combined_score": 23,
+      "notes": "new-medium: tool, clear haptic affordance",
+      "predicted": "medium"
+    },
+    {
+      "rank": 21,
+      "concept": "glass",
+      "wordnet_senses": 7,
+      "sensorimotor_rating": 4,
+      "combined_score": 23,
+      "notes": "new-medium: material/drinking glass/lens \u2014 moderate polysemy",
+      "predicted": "medium"
+    },
+    {
+      "rank": 22,
+      "concept": "pipe",
+      "wordnet_senses": 7,
+      "sensorimotor_rating": 4,
+      "combined_score": 23,
+      "notes": "new-medium: tube/smoking pipe/to pipe \u2014 moderate polysemy",
+      "predicted": "medium"
+    },
+    {
+      "rank": 23,
+      "concept": "chain",
+      "wordnet_senses": 7,
+      "sensorimotor_rating": 4,
+      "combined_score": 23,
+      "notes": "new-medium: links/sequence/to chain \u2014 moderate polysemy",
+      "predicted": "medium"
+    },
+    {
+      "rank": 24,
+      "concept": "thread",
+      "wordnet_senses": 6,
+      "sensorimotor_rating": 4,
+      "combined_score": 22,
+      "notes": "new-medium: sewing/conversation thread \u2014 moderate polysemy",
+      "predicted": "medium"
+    },
+    {
+      "rank": 25,
+      "concept": "apple",
+      "wordnet_senses": 5,
+      "sensorimotor_rating": 4,
+      "combined_score": 21,
+      "notes": "original",
+      "predicted": "medium"
+    },
+    {
+      "rank": 26,
+      "concept": "rope",
+      "wordnet_senses": 5,
+      "sensorimotor_rating": 4,
+      "combined_score": 21,
+      "notes": "original",
+      "predicted": "medium"
+    },
+    {
+      "rank": 27,
+      "concept": "wheel",
+      "wordnet_senses": 5,
+      "sensorimotor_rating": 4,
+      "combined_score": 21,
+      "notes": "original",
+      "predicted": "medium"
+    },
+    {
+      "rank": 28,
+      "concept": "bowl",
+      "wordnet_senses": 5,
+      "sensorimotor_rating": 4,
+      "combined_score": 21,
+      "notes": "new-medium: container with clear shape, limited polysemy",
+      "predicted": "medium"
+    },
+    {
+      "rank": 29,
+      "concept": "ice",
+      "wordnet_senses": 5,
+      "sensorimotor_rating": 4,
+      "combined_score": 21,
+      "notes": "new-easy: frozen water/ice rink/to ice \u2014 moderate",
+      "predicted": "medium"
+    },
+    {
+      "rank": 30,
+      "concept": "chair",
+      "wordnet_senses": 4,
+      "sensorimotor_rating": 4,
+      "combined_score": 20,
+      "notes": "original",
+      "predicted": "medium"
+    },
+    {
+      "rank": 31,
+      "concept": "hole",
+      "wordnet_senses": 8,
+      "sensorimotor_rating": 3,
+      "combined_score": 20,
+      "notes": "original - pre-registered hard",
+      "predicted": "medium"
+    },
+    {
+      "rank": 32,
+      "concept": "ladder",
+      "wordnet_senses": 4,
+      "sensorimotor_rating": 4,
+      "combined_score": 20,
+      "notes": "original",
+      "predicted": "medium"
+    },
+    {
+      "rank": 33,
+      "concept": "bucket",
+      "wordnet_senses": 4,
+      "sensorimotor_rating": 4,
+      "combined_score": 20,
+      "notes": "new-medium: container, clear physical form",
+      "predicted": "medium"
+    },
+    {
+      "rank": 34,
+      "concept": "sand",
+      "wordnet_senses": 4,
+      "sensorimotor_rating": 4,
+      "combined_score": 20,
+      "notes": "new-easy: material, few meanings, strong tactile",
+      "predicted": "medium"
+    },
+    {
+      "rank": 35,
+      "concept": "feather",
+      "wordnet_senses": 4,
+      "sensorimotor_rating": 4,
+      "combined_score": 20,
+      "notes": "new-easy: bird feather, low polysemy, tactile",
+      "predicted": "medium"
+    },
+    {
+      "rank": 36,
+      "concept": "wall",
+      "wordnet_senses": 7,
+      "sensorimotor_rating": 3,
+      "combined_score": 19,
+      "notes": "original",
+      "predicted": "medium"
+    },
+    {
+      "rank": 37,
+      "concept": "bridge",
+      "wordnet_senses": 7,
+      "sensorimotor_rating": 3,
+      "combined_score": 19,
+      "notes": "original",
+      "predicted": "medium"
+    },
+    {
+      "rank": 38,
+      "concept": "shadow",
+      "wordnet_senses": 6,
+      "sensorimotor_rating": 3,
+      "combined_score": 18,
+      "notes": "original",
+      "predicted": "medium"
+    },
+    {
+      "rank": 39,
+      "concept": "leaf",
+      "wordnet_senses": 6,
+      "sensorimotor_rating": 3,
+      "combined_score": 18,
+      "notes": "new-medium: plant leaf/to leaf through \u2014 some polysemy",
+      "predicted": "medium"
+    },
+    {
+      "rank": 40,
+      "concept": "door",
+      "wordnet_senses": 5,
+      "sensorimotor_rating": 3,
+      "combined_score": 17,
+      "notes": "original",
+      "predicted": "medium"
+    },
+    {
+      "rank": 41,
+      "concept": "bench",
+      "wordnet_senses": 5,
+      "sensorimotor_rating": 3,
+      "combined_score": 17,
+      "notes": "new-medium: seating/workbench \u2014 moderate polysemy",
+      "predicted": "medium"
+    },
+    {
+      "rank": 42,
+      "concept": "fence",
+      "wordnet_senses": 5,
+      "sensorimotor_rating": 3,
+      "combined_score": 17,
+      "notes": "new-medium: barrier/to fence \u2014 some polysemy",
+      "predicted": "easy"
+    },
+    {
+      "rank": 43,
+      "concept": "cloud",
+      "wordnet_senses": 5,
+      "sensorimotor_rating": 3,
+      "combined_score": 17,
+      "notes": "new-easy: weather/cloud computing \u2014 moderate but visual",
+      "predicted": "easy"
+    },
+    {
+      "rank": 44,
+      "concept": "mirror",
+      "wordnet_senses": 4,
+      "sensorimotor_rating": 3,
+      "combined_score": 16,
+      "notes": "original",
+      "predicted": "easy"
+    },
+    {
+      "rank": 45,
+      "concept": "clock",
+      "wordnet_senses": 4,
+      "sensorimotor_rating": 3,
+      "combined_score": 16,
+      "notes": "new-medium: timepiece, low sensorimotor, few meanings",
+      "predicted": "easy"
+    },
+    {
+      "rank": 46,
+      "concept": "container",
+      "wordnet_senses": 3,
+      "sensorimotor_rating": 3,
+      "combined_score": 15,
+      "notes": "original",
+      "predicted": "easy"
+    },
+    {
+      "rank": 47,
+      "concept": "shelf",
+      "wordnet_senses": 3,
+      "sensorimotor_rating": 3,
+      "combined_score": 15,
+      "notes": "new-easy: furniture, very low polysemy",
+      "predicted": "easy"
+    },
+    {
+      "rank": 48,
+      "concept": "telescope",
+      "wordnet_senses": 2,
+      "sensorimotor_rating": 3,
+      "combined_score": 14,
+      "notes": "new-easy: scientific instrument, very low polysemy",
+      "predicted": "easy"
+    },
+    {
+      "rank": 49,
+      "concept": "coin",
+      "wordnet_senses": 4,
+      "sensorimotor_rating": 2,
+      "combined_score": 12,
+      "notes": "new-easy: money, low sensorimotor, few meanings",
+      "predicted": "easy"
+    }
+  ],
+  "new_concept_list": [
+    "spring",
+    "bark",
+    "wave",
+    "charge",
+    "field",
+    "light",
+    "strike",
+    "press",
+    "shoot",
+    "run",
+    "hammer",
+    "scissors",
+    "bowl",
+    "bucket",
+    "bench",
+    "fence",
+    "needle",
+    "drum",
+    "clock",
+    "telescope",
+    "cloud",
+    "sand",
+    "ice",
+    "feather",
+    "leaf",
+    "thread",
+    "glass",
+    "coin",
+    "shelf",
+    "pipe",
+    "net",
+    "chain"
+  ],
+  "original_concept_list": [
+    "apple",
+    "chair",
+    "water",
+    "fire",
+    "stone",
+    "rope",
+    "door",
+    "container",
+    "shadow",
+    "mirror",
+    "knife",
+    "wheel",
+    "hand",
+    "wall",
+    "hole",
+    "bridge",
+    "ladder"
+  ],
+  "full_concept_list": [
+    "apple",
+    "chair",
+    "water",
+    "fire",
+    "stone",
+    "rope",
+    "door",
+    "container",
+    "shadow",
+    "mirror",
+    "knife",
+    "wheel",
+    "hand",
+    "wall",
+    "hole",
+    "bridge",
+    "ladder",
+    "spring",
+    "bark",
+    "wave",
+    "charge",
+    "field",
+    "light",
+    "strike",
+    "press",
+    "shoot",
+    "run",
+    "hammer",
+    "scissors",
+    "bowl",
+    "bucket",
+    "bench",
+    "fence",
+    "needle",
+    "drum",
+    "clock",
+    "telescope",
+    "cloud",
+    "sand",
+    "ice",
+    "feather",
+    "leaf",
+    "thread",
+    "glass",
+    "coin",
+    "shelf",
+    "pipe",
+    "net",
+    "chain"
+  ]
+}
