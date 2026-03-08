@@ -1,8 +1,6 @@
 .venv/
 .claude/
 README.pdf
-*.docx
-blog_post*.html
 lm_output/*_concept.npy
 lm_output/*_imagine.npy
 lm_output/*_physical.npy
