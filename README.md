@@ -274,11 +274,11 @@ Polysemy/sensorimotor score predicts which concepts need more alignment pressure
 ## Citation
 
 ```bibtex
-@misc{[yourname]2026worldmodel,
+@misc{ecological-align2026worldmodel,
   title={Can a World Model and a Language Model Share a Vocabulary?},
   author={[Your Name]},
   year={2026},
-  url={https://github.com/[yourname]/world-model-language-gap}
+  url={https://github.com/Ecological-align/world-model-language}
 }
 ```
 
