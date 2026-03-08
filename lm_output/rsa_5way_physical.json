@@ -1,0 +1,174 @@
+{
+  "n_concepts": 17,
+  "concepts": [
+    "apple",
+    "chair",
+    "water",
+    "fire",
+    "stone",
+    "rope",
+    "door",
+    "container",
+    "shadow",
+    "mirror",
+    "knife",
+    "wheel",
+    "hand",
+    "wall",
+    "hole",
+    "bridge",
+    "ladder"
+  ],
+  "pairs": {
+    "Mistral_vs_ST": {
+      "spearman_r": 0.17098897953341918,
+      "spearman_p": 0.04655411423821091,
+      "pearson_r": 0.18837812542915344,
+      "pearson_p": 0.02807249128818512,
+      "nn_agreement_k3": 0.19411764705882353,
+      "permutation": {
+        "observed_r": 0.17098897953341918,
+        "permuted_mean": 0.001072167358427556,
+        "permuted_std": 0.10880307609068506,
+        "p_value": 0.054,
+        "z_score": 1.561691108957788,
+        "n_permutations": 1000
+      }
+    },
+    "Mistral_vs_CLIP": {
+      "spearman_r": 0.03928247698106006,
+      "spearman_p": 0.6497890062599382,
+      "pearson_r": -0.013361671375205173,
+      "pearson_p": 0.8773013487631556,
+      "nn_agreement_k3": 0.17058823529411765,
+      "permutation": {
+        "observed_r": 0.03928247698106006,
+        "permuted_mean": -0.00019975669099756656,
+        "permuted_std": 0.15234147126946213,
+        "p_value": 0.38,
+        "z_score": 0.259169290878965,
+        "n_permutations": 1000
+      }
+    },
+    "Mistral_vs_V-JEPA2": {
+      "spearman_r": -0.03598110777157578,
+      "spearman_p": 0.6775052584679602,
+      "pearson_r": -0.02064491994678974,
+      "pearson_p": 0.8114452362060547,
+      "nn_agreement_k3": 0.09411764705882353,
+      "permutation": {
+        "observed_r": -0.03598110777157578,
+        "permuted_mean": 0.0017542054291302884,
+        "permuted_std": 0.16277274964906582,
+        "p_value": 0.587,
+        "z_score": -0.2318281835490318,
+        "n_permutations": 1000
+      }
+    },
+    "Mistral_vs_MAE": {
+      "spearman_r": -0.027183817565955823,
+      "spearman_p": 0.7534093983923777,
+      "pearson_r": 0.02474694699048996,
+      "pearson_p": 0.7748965620994568,
+      "nn_agreement_k3": 0.12352941176470589,
+      "permutation": {
+        "observed_r": -0.027183817565955823,
+        "permuted_mean": 0.0027896378989552026,
+        "permuted_std": 0.09846366669279778,
+        "p_value": 0.576,
+        "z_score": -0.3044112963446089,
+        "n_permutations": 1000
+      }
+    },
+    "ST_vs_CLIP": {
+      "spearman_r": 0.08879347359381708,
+      "spearman_p": 0.3039615479694838,
+      "pearson_r": 0.1125072363213698,
+      "pearson_p": 0.1922054301391675,
+      "nn_agreement_k3": 0.2,
+      "permutation": {
+        "observed_r": 0.08879347359381708,
+        "permuted_mean": 5.915748294450185e-06,
+        "permuted_std": 0.11540604606374674,
+        "p_value": 0.224,
+        "z_score": 0.7693492081254308,
+        "n_permutations": 1000
+      }
+    },
+    "ST_vs_V-JEPA2": {
+      "spearman_r": -0.024626687658031582,
+      "spearman_p": 0.7759610715107018,
+      "pearson_r": -0.017758212983608246,
+      "pearson_p": 0.8374161720275879,
+      "nn_agreement_k3": 0.047058823529411764,
+      "permutation": {
+        "observed_r": -0.024626687658031582,
+        "permuted_mean": 0.004052487953818998,
+        "permuted_std": 0.11519991078626395,
+        "p_value": 0.597,
+        "z_score": -0.24895134836993907,
+        "n_permutations": 1000
+      }
+    },
+    "ST_vs_MAE": {
+      "spearman_r": -0.0927866036925719,
+      "spearman_p": 0.2826432875788433,
+      "pearson_r": -0.05984620004892349,
+      "pearson_p": 0.48887524008750916,
+      "nn_agreement_k3": 0.1,
+      "permutation": {
+        "observed_r": -0.0927866036925719,
+        "permuted_mean": 0.0029014789370736126,
+        "permuted_std": 0.09045913461562818,
+        "p_value": 0.845,
+        "z_score": -1.0578044158634898,
+        "n_permutations": 1000
+      }
+    },
+    "CLIP_vs_V-JEPA2": {
+      "spearman_r": 0.40413148227660894,
+      "spearman_p": 1.0651014632404016e-06,
+      "pearson_r": 0.42870842731648506,
+      "pearson_p": 1.9183176658512212e-07,
+      "nn_agreement_k3": 0.2647058823529412,
+      "permutation": {
+        "observed_r": 0.40413148227660894,
+        "permuted_mean": 0.0001425743046610365,
+        "permuted_std": 0.164271600670805,
+        "p_value": 0.005,
+        "z_score": 2.4592740420712658,
+        "n_permutations": 1000
+      }
+    },
+    "CLIP_vs_MAE": {
+      "spearman_r": 0.08683746004484517,
+      "spearman_p": 0.3147798172436591,
+      "pearson_r": 0.10727161807878481,
+      "pearson_p": 0.21385512088709788,
+      "nn_agreement_k3": 0.14705882352941177,
+      "permutation": {
+        "observed_r": 0.08683746004484517,
+        "permuted_mean": -0.0011860884499785304,
+        "permuted_std": 0.09791257449452874,
+        "p_value": 0.18,
+        "z_score": 0.8990013791306098,
+        "n_permutations": 1000
+      }
+    },
+    "V-JEPA2_vs_MAE": {
+      "spearman_r": 0.0066218214779829206,
+      "spearman_p": 0.9390124914768189,
+      "pearson_r": 0.04458188638091087,
+      "pearson_p": 0.6062964797019958,
+      "nn_agreement_k3": 0.10588235294117648,
+      "permutation": {
+        "observed_r": 0.0066218214779829206,
+        "permuted_mean": -0.0011161681217499164,
+        "permuted_std": 0.09965970675626004,
+        "p_value": 0.461,
+        "z_score": 0.07764410587938764,
+        "n_permutations": 1000
+      }
+    }
+  }
+}

@@ -1,0 +1,1440 @@
+{
+  "config": {
+    "seeds": [
+      42,
+      123,
+      7,
+      99,
+      2025
+    ],
+    "lambda_values": [
+      0.1,
+      0.5,
+      1.0
+    ],
+    "n_epochs": 200,
+    "batch_size": 32,
+    "n_augment": 30,
+    "sigma": 0.1,
+    "n_codes": 64,
+    "codebook_dim": 256
+  },
+  "runs": {
+    "0.1": {
+      "42": {
+        "active_codes": 14,
+        "st_vj_agreement_rate": 0.5294117647058824,
+        "post_vq_rsa_st_vj": 0.3892390813444712,
+        "recon_cos_st": 0.7844224572181702,
+        "preservation_st_post_vq": 0.14925823544779238,
+        "per_concept": {
+          "apple": {
+            "st": 0,
+            "clip": 0,
+            "vjepa": 0
+          },
+          "chair": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 17
+          },
+          "water": {
+            "st": 59,
+            "clip": 59,
+            "vjepa": 1
+          },
+          "fire": {
+            "st": 2,
+            "clip": 2,
+            "vjepa": 1
+          },
+          "stone": {
+            "st": 44,
+            "clip": 44,
+            "vjepa": 44
+          },
+          "rope": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 1
+          },
+          "door": {
+            "st": 5,
+            "clip": 5,
+            "vjepa": 1
+          },
+          "container": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "shadow": {
+            "st": 13,
+            "clip": 18,
+            "vjepa": 1
+          },
+          "mirror": {
+            "st": 10,
+            "clip": 18,
+            "vjepa": 1
+          },
+          "knife": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "wheel": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "hand": {
+            "st": 46,
+            "clip": 46,
+            "vjepa": 1
+          },
+          "wall": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "hole": {
+            "st": 12,
+            "clip": 12,
+            "vjepa": 1
+          },
+          "bridge": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "ladder": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          }
+        }
+      },
+      "123": {
+        "active_codes": 20,
+        "st_vj_agreement_rate": 0.8235294117647058,
+        "post_vq_rsa_st_vj": 0.8455925513172635,
+        "recon_cos_st": 0.8133364915847778,
+        "preservation_st_post_vq": 0.36951004245980623,
+        "per_concept": {
+          "apple": {
+            "st": 7,
+            "clip": 7,
+            "vjepa": 7
+          },
+          "chair": {
+            "st": 24,
+            "clip": 28,
+            "vjepa": 28
+          },
+          "water": {
+            "st": 20,
+            "clip": 20,
+            "vjepa": 20
+          },
+          "fire": {
+            "st": 16,
+            "clip": 16,
+            "vjepa": 16
+          },
+          "stone": {
+            "st": 60,
+            "clip": 60,
+            "vjepa": 60
+          },
+          "rope": {
+            "st": 14,
+            "clip": 14,
+            "vjepa": 14
+          },
+          "door": {
+            "st": 25,
+            "clip": 25,
+            "vjepa": 25
+          },
+          "container": {
+            "st": 35,
+            "clip": 35,
+            "vjepa": 0
+          },
+          "shadow": {
+            "st": 15,
+            "clip": 15,
+            "vjepa": 15
+          },
+          "mirror": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          },
+          "knife": {
+            "st": 11,
+            "clip": 11,
+            "vjepa": 11
+          },
+          "wheel": {
+            "st": 5,
+            "clip": 5,
+            "vjepa": 5
+          },
+          "hand": {
+            "st": 19,
+            "clip": 4,
+            "vjepa": 19
+          },
+          "wall": {
+            "st": 2,
+            "clip": 2,
+            "vjepa": 2
+          },
+          "hole": {
+            "st": 21,
+            "clip": 21,
+            "vjepa": 0
+          },
+          "bridge": {
+            "st": 3,
+            "clip": 3,
+            "vjepa": 3
+          },
+          "ladder": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          }
+        }
+      },
+      "7": {
+        "active_codes": 6,
+        "st_vj_agreement_rate": 0.5882352941176471,
+        "post_vq_rsa_st_vj": 0.698683367766127,
+        "recon_cos_st": 0.6944901943206787,
+        "preservation_st_post_vq": 0.0647492957130437,
+        "per_concept": {
+          "apple": {
+            "st": 14,
+            "clip": 14,
+            "vjepa": 1
+          },
+          "chair": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 29
+          },
+          "water": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "fire": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "stone": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "rope": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 1
+          },
+          "door": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "container": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 29
+          },
+          "shadow": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "mirror": {
+            "st": 3,
+            "clip": 3,
+            "vjepa": 1
+          },
+          "knife": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 29
+          },
+          "wheel": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 29
+          },
+          "hand": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 1
+          },
+          "wall": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 1
+          },
+          "hole": {
+            "st": 0,
+            "clip": 0,
+            "vjepa": 1
+          },
+          "bridge": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "ladder": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 1
+          }
+        }
+      },
+      "99": {
+        "active_codes": 10,
+        "st_vj_agreement_rate": 0.7058823529411765,
+        "post_vq_rsa_st_vj": 0.6393958879962517,
+        "recon_cos_st": 0.7555729150772095,
+        "preservation_st_post_vq": 0.10869028036539387,
+        "per_concept": {
+          "apple": {
+            "st": 1,
+            "clip": 1,
+            "vjepa": 1
+          },
+          "chair": {
+            "st": 0,
+            "clip": 0,
+            "vjepa": 0
+          },
+          "water": {
+            "st": 1,
+            "clip": 1,
+            "vjepa": 1
+          },
+          "fire": {
+            "st": 1,
+            "clip": 1,
+            "vjepa": 1
+          },
+          "stone": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 17
+          },
+          "rope": {
+            "st": 1,
+            "clip": 1,
+            "vjepa": 1
+          },
+          "door": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 2
+          },
+          "container": {
+            "st": 1,
+            "clip": 1,
+            "vjepa": 1
+          },
+          "shadow": {
+            "st": 10,
+            "clip": 10,
+            "vjepa": 2
+          },
+          "mirror": {
+            "st": 33,
+            "clip": 33,
+            "vjepa": 2
+          },
+          "knife": {
+            "st": 13,
+            "clip": 13,
+            "vjepa": 13
+          },
+          "wheel": {
+            "st": 5,
+            "clip": 5,
+            "vjepa": 5
+          },
+          "hand": {
+            "st": 1,
+            "clip": 1,
+            "vjepa": 1
+          },
+          "wall": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 2
+          },
+          "hole": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 2
+          },
+          "bridge": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "ladder": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 17
+          }
+        }
+      },
+      "2025": {
+        "active_codes": 11,
+        "st_vj_agreement_rate": 0.47058823529411764,
+        "post_vq_rsa_st_vj": 0.6909370498923559,
+        "recon_cos_st": 0.7370039224624634,
+        "preservation_st_post_vq": 0.0002889688777827071,
+        "per_concept": {
+          "apple": {
+            "st": 12,
+            "clip": 12,
+            "vjepa": 12
+          },
+          "chair": {
+            "st": 0,
+            "clip": 0,
+            "vjepa": 0
+          },
+          "water": {
+            "st": 2,
+            "clip": 2,
+            "vjepa": 3
+          },
+          "fire": {
+            "st": 12,
+            "clip": 12,
+            "vjepa": 12
+          },
+          "stone": {
+            "st": 12,
+            "clip": 12,
+            "vjepa": 12
+          },
+          "rope": {
+            "st": 16,
+            "clip": 16,
+            "vjepa": 3
+          },
+          "door": {
+            "st": 12,
+            "clip": 12,
+            "vjepa": 12
+          },
+          "container": {
+            "st": 27,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "shadow": {
+            "st": 5,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "mirror": {
+            "st": 12,
+            "clip": 12,
+            "vjepa": 3
+          },
+          "knife": {
+            "st": 22,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "wheel": {
+            "st": 1,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "hand": {
+            "st": 12,
+            "clip": 12,
+            "vjepa": 12
+          },
+          "wall": {
+            "st": 12,
+            "clip": 12,
+            "vjepa": 3
+          },
+          "hole": {
+            "st": 7,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "bridge": {
+            "st": 12,
+            "clip": 12,
+            "vjepa": 12
+          },
+          "ladder": {
+            "st": 12,
+            "clip": 12,
+            "vjepa": 12
+          }
+        }
+      }
+    },
+    "0.5": {
+      "42": {
+        "active_codes": 16,
+        "st_vj_agreement_rate": 1.0,
+        "post_vq_rsa_st_vj": 0.9999844947748538,
+        "recon_cos_st": 0.8148437142372131,
+        "preservation_st_post_vq": 0.4796871310208056,
+        "per_concept": {
+          "apple": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "chair": {
+            "st": 20,
+            "clip": 20,
+            "vjepa": 20
+          },
+          "water": {
+            "st": 3,
+            "clip": 3,
+            "vjepa": 3
+          },
+          "fire": {
+            "st": 14,
+            "clip": 14,
+            "vjepa": 14
+          },
+          "stone": {
+            "st": 1,
+            "clip": 1,
+            "vjepa": 1
+          },
+          "rope": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "door": {
+            "st": 0,
+            "clip": 0,
+            "vjepa": 0
+          },
+          "container": {
+            "st": 7,
+            "clip": 7,
+            "vjepa": 7
+          },
+          "shadow": {
+            "st": 31,
+            "clip": 31,
+            "vjepa": 31
+          },
+          "mirror": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 29
+          },
+          "knife": {
+            "st": 21,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "wheel": {
+            "st": 26,
+            "clip": 26,
+            "vjepa": 26
+          },
+          "hand": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "wall": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          },
+          "hole": {
+            "st": 12,
+            "clip": 12,
+            "vjepa": 12
+          },
+          "bridge": {
+            "st": 22,
+            "clip": 22,
+            "vjepa": 22
+          },
+          "ladder": {
+            "st": 16,
+            "clip": 16,
+            "vjepa": 16
+          }
+        }
+      },
+      "123": {
+        "active_codes": 13,
+        "st_vj_agreement_rate": 1.0,
+        "post_vq_rsa_st_vj": 0.9992424748980568,
+        "recon_cos_st": 0.7808741331100464,
+        "preservation_st_post_vq": 0.14779613239000802,
+        "per_concept": {
+          "apple": {
+            "st": 7,
+            "clip": 7,
+            "vjepa": 7
+          },
+          "chair": {
+            "st": 24,
+            "clip": 24,
+            "vjepa": 24
+          },
+          "water": {
+            "st": 11,
+            "clip": 11,
+            "vjepa": 11
+          },
+          "fire": {
+            "st": 16,
+            "clip": 16,
+            "vjepa": 16
+          },
+          "stone": {
+            "st": 0,
+            "clip": 0,
+            "vjepa": 0
+          },
+          "rope": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "door": {
+            "st": 6,
+            "clip": 25,
+            "vjepa": 6
+          },
+          "container": {
+            "st": 28,
+            "clip": 28,
+            "vjepa": 28
+          },
+          "shadow": {
+            "st": 28,
+            "clip": 28,
+            "vjepa": 28
+          },
+          "mirror": {
+            "st": 11,
+            "clip": 11,
+            "vjepa": 11
+          },
+          "knife": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          },
+          "wheel": {
+            "st": 28,
+            "clip": 28,
+            "vjepa": 28
+          },
+          "hand": {
+            "st": 4,
+            "clip": 4,
+            "vjepa": 4
+          },
+          "wall": {
+            "st": 11,
+            "clip": 11,
+            "vjepa": 11
+          },
+          "hole": {
+            "st": 21,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "bridge": {
+            "st": 3,
+            "clip": 3,
+            "vjepa": 3
+          },
+          "ladder": {
+            "st": 11,
+            "clip": 11,
+            "vjepa": 11
+          }
+        }
+      },
+      "7": {
+        "active_codes": 16,
+        "st_vj_agreement_rate": 0.9411764705882353,
+        "post_vq_rsa_st_vj": 0.998825168364146,
+        "recon_cos_st": 0.8251519799232483,
+        "preservation_st_post_vq": 0.2682451782051804,
+        "per_concept": {
+          "apple": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 17
+          },
+          "chair": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "water": {
+            "st": 24,
+            "clip": 31,
+            "vjepa": 31
+          },
+          "fire": {
+            "st": 10,
+            "clip": 10,
+            "vjepa": 10
+          },
+          "stone": {
+            "st": 5,
+            "clip": 5,
+            "vjepa": 5
+          },
+          "rope": {
+            "st": 4,
+            "clip": 4,
+            "vjepa": 4
+          },
+          "door": {
+            "st": 16,
+            "clip": 16,
+            "vjepa": 16
+          },
+          "container": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          },
+          "shadow": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 29
+          },
+          "mirror": {
+            "st": 3,
+            "clip": 3,
+            "vjepa": 3
+          },
+          "knife": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "wheel": {
+            "st": 7,
+            "clip": 7,
+            "vjepa": 7
+          },
+          "hand": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "wall": {
+            "st": 15,
+            "clip": 15,
+            "vjepa": 15
+          },
+          "hole": {
+            "st": 0,
+            "clip": 0,
+            "vjepa": 0
+          },
+          "bridge": {
+            "st": 19,
+            "clip": 19,
+            "vjepa": 19
+          },
+          "ladder": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 29
+          }
+        }
+      },
+      "99": {
+        "active_codes": 16,
+        "st_vj_agreement_rate": 1.0,
+        "post_vq_rsa_st_vj": 0.9999856873984698,
+        "recon_cos_st": 0.7788800597190857,
+        "preservation_st_post_vq": 0.23814243510975064,
+        "per_concept": {
+          "apple": {
+            "st": 4,
+            "clip": 4,
+            "vjepa": 4
+          },
+          "chair": {
+            "st": 21,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "water": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 17
+          },
+          "fire": {
+            "st": 8,
+            "clip": 8,
+            "vjepa": 8
+          },
+          "stone": {
+            "st": 31,
+            "clip": 31,
+            "vjepa": 31
+          },
+          "rope": {
+            "st": 22,
+            "clip": 22,
+            "vjepa": 22
+          },
+          "door": {
+            "st": 25,
+            "clip": 25,
+            "vjepa": 25
+          },
+          "container": {
+            "st": 24,
+            "clip": 24,
+            "vjepa": 24
+          },
+          "shadow": {
+            "st": 10,
+            "clip": 10,
+            "vjepa": 10
+          },
+          "mirror": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 17
+          },
+          "knife": {
+            "st": 13,
+            "clip": 13,
+            "vjepa": 13
+          },
+          "wheel": {
+            "st": 14,
+            "clip": 14,
+            "vjepa": 14
+          },
+          "hand": {
+            "st": 23,
+            "clip": 23,
+            "vjepa": 23
+          },
+          "wall": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 29
+          },
+          "hole": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          },
+          "bridge": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "ladder": {
+            "st": 1,
+            "clip": 1,
+            "vjepa": 1
+          }
+        }
+      },
+      "2025": {
+        "active_codes": 17,
+        "st_vj_agreement_rate": 1.0,
+        "post_vq_rsa_st_vj": 0.9999999999999998,
+        "recon_cos_st": 0.7331206202507019,
+        "preservation_st_post_vq": 0.4026143790849672,
+        "per_concept": {
+          "apple": {
+            "st": 11,
+            "clip": 11,
+            "vjepa": 11
+          },
+          "chair": {
+            "st": 0,
+            "clip": 0,
+            "vjepa": 0
+          },
+          "water": {
+            "st": 2,
+            "clip": 2,
+            "vjepa": 2
+          },
+          "fire": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 17
+          },
+          "stone": {
+            "st": 28,
+            "clip": 28,
+            "vjepa": 28
+          },
+          "rope": {
+            "st": 21,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "door": {
+            "st": 12,
+            "clip": 12,
+            "vjepa": 12
+          },
+          "container": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          },
+          "shadow": {
+            "st": 15,
+            "clip": 15,
+            "vjepa": 15
+          },
+          "mirror": {
+            "st": 3,
+            "clip": 3,
+            "vjepa": 3
+          },
+          "knife": {
+            "st": 22,
+            "clip": 22,
+            "vjepa": 22
+          },
+          "wheel": {
+            "st": 1,
+            "clip": 1,
+            "vjepa": 1
+          },
+          "hand": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "wall": {
+            "st": 10,
+            "clip": 10,
+            "vjepa": 10
+          },
+          "hole": {
+            "st": 7,
+            "clip": 7,
+            "vjepa": 7
+          },
+          "bridge": {
+            "st": 13,
+            "clip": 13,
+            "vjepa": 13
+          },
+          "ladder": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 29
+          }
+        }
+      }
+    },
+    "1.0": {
+      "42": {
+        "active_codes": 11,
+        "st_vj_agreement_rate": 0.8823529411764706,
+        "post_vq_rsa_st_vj": 0.7490890656141794,
+        "recon_cos_st": 0.7693595290184021,
+        "preservation_st_post_vq": 0.356207542050483,
+        "per_concept": {
+          "apple": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "chair": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 17
+          },
+          "water": {
+            "st": 3,
+            "clip": 3,
+            "vjepa": 3
+          },
+          "fire": {
+            "st": 14,
+            "clip": 14,
+            "vjepa": 14
+          },
+          "stone": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          },
+          "rope": {
+            "st": 11,
+            "clip": 11,
+            "vjepa": 11
+          },
+          "door": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          },
+          "container": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 0
+          },
+          "shadow": {
+            "st": 31,
+            "clip": 31,
+            "vjepa": 31
+          },
+          "mirror": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 0
+          },
+          "knife": {
+            "st": 21,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "wheel": {
+            "st": 4,
+            "clip": 4,
+            "vjepa": 4
+          },
+          "hand": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "wall": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          },
+          "hole": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          },
+          "bridge": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          },
+          "ladder": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          }
+        }
+      },
+      "123": {
+        "active_codes": 12,
+        "st_vj_agreement_rate": 1.0,
+        "post_vq_rsa_st_vj": 0.9993354146840798,
+        "recon_cos_st": 0.7827923893928528,
+        "preservation_st_post_vq": 0.287075805316204,
+        "per_concept": {
+          "apple": {
+            "st": 7,
+            "clip": 7,
+            "vjepa": 7
+          },
+          "chair": {
+            "st": 24,
+            "clip": 24,
+            "vjepa": 24
+          },
+          "water": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 29
+          },
+          "fire": {
+            "st": 16,
+            "clip": 16,
+            "vjepa": 16
+          },
+          "stone": {
+            "st": 0,
+            "clip": 0,
+            "vjepa": 0
+          },
+          "rope": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "door": {
+            "st": 25,
+            "clip": 25,
+            "vjepa": 25
+          },
+          "container": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 29
+          },
+          "shadow": {
+            "st": 28,
+            "clip": 28,
+            "vjepa": 28
+          },
+          "mirror": {
+            "st": 28,
+            "clip": 28,
+            "vjepa": 28
+          },
+          "knife": {
+            "st": 5,
+            "clip": 5,
+            "vjepa": 5
+          },
+          "wheel": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 29
+          },
+          "hand": {
+            "st": 19,
+            "clip": 19,
+            "vjepa": 19
+          },
+          "wall": {
+            "st": 28,
+            "clip": 28,
+            "vjepa": 28
+          },
+          "hole": {
+            "st": 21,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "bridge": {
+            "st": 3,
+            "clip": 3,
+            "vjepa": 3
+          },
+          "ladder": {
+            "st": 28,
+            "clip": 28,
+            "vjepa": 28
+          }
+        }
+      },
+      "7": {
+        "active_codes": 12,
+        "st_vj_agreement_rate": 0.9411764705882353,
+        "post_vq_rsa_st_vj": 0.86906153894804,
+        "recon_cos_st": 0.7766969203948975,
+        "preservation_st_post_vq": 0.16583544652150808,
+        "per_concept": {
+          "apple": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 17
+          },
+          "chair": {
+            "st": 1,
+            "clip": 1,
+            "vjepa": 1
+          },
+          "water": {
+            "st": 24,
+            "clip": 24,
+            "vjepa": 24
+          },
+          "fire": {
+            "st": 10,
+            "clip": 10,
+            "vjepa": 10
+          },
+          "stone": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "rope": {
+            "st": 4,
+            "clip": 4,
+            "vjepa": 4
+          },
+          "door": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "container": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          },
+          "shadow": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "mirror": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 3
+          },
+          "knife": {
+            "st": 2,
+            "clip": 2,
+            "vjepa": 2
+          },
+          "wheel": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "hand": {
+            "st": 9,
+            "clip": 9,
+            "vjepa": 9
+          },
+          "wall": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "hole": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 27
+          },
+          "bridge": {
+            "st": 19,
+            "clip": 19,
+            "vjepa": 19
+          },
+          "ladder": {
+            "st": 0,
+            "clip": 0,
+            "vjepa": 0
+          }
+        }
+      },
+      "99": {
+        "active_codes": 15,
+        "st_vj_agreement_rate": 0.8235294117647058,
+        "post_vq_rsa_st_vj": 0.8666682693831398,
+        "recon_cos_st": 0.7810849547386169,
+        "preservation_st_post_vq": 0.18950958631370138,
+        "per_concept": {
+          "apple": {
+            "st": 4,
+            "clip": 4,
+            "vjepa": 4
+          },
+          "chair": {
+            "st": 0,
+            "clip": 0,
+            "vjepa": 0
+          },
+          "water": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 17
+          },
+          "fire": {
+            "st": 8,
+            "clip": 8,
+            "vjepa": 8
+          },
+          "stone": {
+            "st": 31,
+            "clip": 31,
+            "vjepa": 31
+          },
+          "rope": {
+            "st": 1,
+            "clip": 1,
+            "vjepa": 1
+          },
+          "door": {
+            "st": 2,
+            "clip": 2,
+            "vjepa": 2
+          },
+          "container": {
+            "st": 24,
+            "clip": 24,
+            "vjepa": 24
+          },
+          "shadow": {
+            "st": 10,
+            "clip": 10,
+            "vjepa": 10
+          },
+          "mirror": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 17
+          },
+          "knife": {
+            "st": 13,
+            "clip": 13,
+            "vjepa": 13
+          },
+          "wheel": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 17
+          },
+          "hand": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 17
+          },
+          "wall": {
+            "st": 11,
+            "clip": 29,
+            "vjepa": 29
+          },
+          "hole": {
+            "st": 17,
+            "clip": 17,
+            "vjepa": 3
+          },
+          "bridge": {
+            "st": 27,
+            "clip": 27,
+            "vjepa": 16
+          },
+          "ladder": {
+            "st": 1,
+            "clip": 1,
+            "vjepa": 1
+          }
+        }
+      },
+      "2025": {
+        "active_codes": 13,
+        "st_vj_agreement_rate": 1.0,
+        "post_vq_rsa_st_vj": 0.9996576437328343,
+        "recon_cos_st": 0.7683573365211487,
+        "preservation_st_post_vq": 0.25116028387413314,
+        "per_concept": {
+          "apple": {
+            "st": 11,
+            "clip": 11,
+            "vjepa": 11
+          },
+          "chair": {
+            "st": 0,
+            "clip": 0,
+            "vjepa": 0
+          },
+          "water": {
+            "st": 2,
+            "clip": 2,
+            "vjepa": 2
+          },
+          "fire": {
+            "st": 4,
+            "clip": 4,
+            "vjepa": 4
+          },
+          "stone": {
+            "st": 4,
+            "clip": 4,
+            "vjepa": 4
+          },
+          "rope": {
+            "st": 12,
+            "clip": 12,
+            "vjepa": 12
+          },
+          "door": {
+            "st": 21,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "container": {
+            "st": 18,
+            "clip": 18,
+            "vjepa": 18
+          },
+          "shadow": {
+            "st": 21,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "mirror": {
+            "st": 3,
+            "clip": 3,
+            "vjepa": 3
+          },
+          "knife": {
+            "st": 22,
+            "clip": 22,
+            "vjepa": 22
+          },
+          "wheel": {
+            "st": 1,
+            "clip": 1,
+            "vjepa": 1
+          },
+          "hand": {
+            "st": 21,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "wall": {
+            "st": 21,
+            "clip": 21,
+            "vjepa": 21
+          },
+          "hole": {
+            "st": 7,
+            "clip": 7,
+            "vjepa": 7
+          },
+          "bridge": {
+            "st": 13,
+            "clip": 13,
+            "vjepa": 13
+          },
+          "ladder": {
+            "st": 29,
+            "clip": 29,
+            "vjepa": 29
+          }
+        }
+      }
+    }
+  }
+}

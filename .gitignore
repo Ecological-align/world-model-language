@@ -1,0 +1,13 @@
+.venv/
+.claude/
+README.pdf
+*.docx
+blog_post*.html
+lm_output/*_concept.npy
+lm_output/*_imagine.npy
+lm_output/*_physical.npy
+*.pt
+lm_output/image_cache/
+__pycache__/
+*.pyc
+.env

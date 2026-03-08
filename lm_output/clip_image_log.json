@@ -1,0 +1,399 @@
+{
+  "apple": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pink_lady_and_cross_section.jpg/500px-Pink_lady_and_cross_section.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/95apple.jpeg/500px-95apple.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Albrecht_D%C3%BCrer_-_Adam_and_Eve_%28Prado%29_2.jpg/500px-Albrecht_D%C3%BCrer_-_Adam_and_Eve_%28Prado%29_2.jpg"
+    ],
+    "encoded": 3
+  },
+  "chair": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Set_of_fourteen_side_chairs_MET_DP110780.jpg/500px-Set_of_fourteen_side_chairs_MET_DP110780.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Bar_Stools_%2849907001456%29.jpg/500px-Bar_Stools_%2849907001456%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1e/Cadeira_Palmetal_-_Modelo_I_-_Preta_-_Simples.jpg"
+    ],
+    "encoded": 3
+  },
+  "water": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/H2O_2D_labelled.svg/500px-H2O_2D_labelled.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/200407-sandouping-sanxiadaba-4.med.jpg/500px-200407-sandouping-sanxiadaba-4.med.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/And_The_Kitchen_Sink_Too_%28137906641%29.jpeg/500px-And_The_Kitchen_Sink_Too_%28137906641%29.jpeg"
+    ],
+    "encoded": 3
+  },
+  "fire": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Large_bonfire.jpg/500px-Large_bonfire.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Burning_stove_fire_%2855026908190%29.jpg/500px-Burning_stove_fire_%2855026908190%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Combustion_reaction_of_methane.jpg/500px-Combustion_reaction_of_methane.jpg"
+    ],
+    "encoded": 3
+  },
+  "stone": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Marsh_Butte_and_Geikie_Peak%2C_Grand_Canyon.jpg/500px-Marsh_Butte_and_Geikie_Peak%2C_Grand_Canyon.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/%22Liesegang_banding%22_in_quartzose_sandstone_%28Upper_Paleozoic%3B_quarry_near_Crossville%2C_Tennessee%2C_USA%29_2_%2840280403530%29.jpg/500px-%22Liesegang_banding%22_in_quartzose_sandstone_%28Upper_Paleozoic%3B_quarry_near_Crossville%2C_Tennessee%2C_USA%29_2_%2840280403530%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/DirkvdM_rocks.jpg/500px-DirkvdM_rocks.jpg"
+    ],
+    "encoded": 3
+  },
+  "rope": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Cordage_en_chanvre.jpg/500px-Cordage_en_chanvre.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Alpackaull.jpg/500px-Alpackaull.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Ancient_Egypt_rope_manufacture.jpg/500px-Ancient_Egypt_rope_manufacture.jpg"
+    ],
+    "encoded": 3
+  },
+  "door": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/L-door.png/500px-L-door.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/%22Bilt-well%22_mill_work_-_DPLA_-_2582a4be187e8ed28cd57e998727936e_%28page_104%29_%28cropped%29.jpg/500px-%22Bilt-well%22_mill_work_-_DPLA_-_2582a4be187e8ed28cd57e998727936e_%28page_104%29_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/%27Berfrestone%27_%28DB%29_door_and_tympanum_arch_St_Nicholas_Church_Barfrestone_Kent_England_1.jpg/500px-%27Berfrestone%27_%28DB%29_door_and_tympanum_arch_St_Nicholas_Church_Barfrestone_Kent_England_1.jpg"
+    ],
+    "encoded": 3
+  },
+  "container": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Pots_for_sale_in_Kenya.jpg/500px-Pots_for_sale_in_Kenya.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/8205Plastic_containers_03.jpg/500px-8205Plastic_containers_03.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Little_world%2C_Aichi_prefecture_-_Main_exhibition_hall_-_Woven_basket_-_Maya_people_in_Mexico.jpg/500px-Little_world%2C_Aichi_prefecture_-_Main_exhibition_hall_-_Woven_basket_-_Maya_people_in_Mexico.jpg"
+    ],
+    "encoded": 3
+  },
+  "shadow": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/The_shadow_of_a_musician_playing_transverse_flute.jpg/500px-The_shadow_of_a_musician_playing_transverse_flute.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Apollo_9_astronaut_Dave_Scott.jpg/500px-Apollo_9_astronaut_Dave_Scott.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/British_Library_Gate_Shadow.jpg/500px-British_Library_Gate_Shadow.jpg"
+    ],
+    "encoded": 3
+  },
+  "mirror": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/5/52/Mirror.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/-94wiki.jpg/500px--94wiki.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/130_-_Grove_Of_Mirrors%2C_Hilary_Arnold_Baker_%284655892606%29.jpg/500px-130_-_Grove_Of_Mirrors%2C_Hilary_Arnold_Baker_%284655892606%29.jpg"
+    ],
+    "encoded": 3
+  },
+  "knife": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Damascus_Bowie.jpg/500px-Damascus_Bowie.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Arbelos_Shoemakers_Knife.jpg/500px-Arbelos_Shoemakers_Knife.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/BM-AxisLock.jpg/500px-BM-AxisLock.jpg"
+    ],
+    "encoded": 3
+  },
+  "wheel": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Landesmuseum_W%C3%BCrttemberg_Kelten_011.4.jpg/500px-Landesmuseum_W%C3%BCrttemberg_Kelten_011.4.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/AluminumWheel_spoke_design.jpg/500px-AluminumWheel_spoke_design.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/BMW_tire.jpg/500px-BMW_tire.jpg"
+    ],
+    "encoded": 3
+  },
+  "hand": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Hand%2C_fingers_-_back.jpg/500px-Hand%2C_fingers_-_back.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/3D_Medical_Animation_Human_Wrist.jpg/500px-3D_Medical_Animation_Human_Wrist.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/814_Radiograph_of_Hand.jpg/500px-814_Radiograph_of_Hand.jpg"
+    ],
+    "encoded": 3
+  },
+  "wall": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Noel_2005_P%C3%A9kin_031_muraille_de_chine_Mutianyu.jpg/500px-Noel_2005_P%C3%A9kin_031_muraille_de_chine_Mutianyu.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/214_King_-_demountable_walls_and_doors_%285277760889%29.jpg/500px-214_King_-_demountable_walls_and_doors_%285277760889%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Algodones_sand-dune-fence.jpg/500px-Algodones_sand-dune-fence.jpg"
+    ],
+    "encoded": 3
+  },
+  "hole": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Hole_in_wood.jpg/500px-Hole_in_wood.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/BH_LMC.png/500px-BH_LMC.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Bangalay-bird-hollow.jpg/500px-Bangalay-bird-hollow.jpg"
+    ],
+    "encoded": 3
+  },
+  "bridge": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Bridge_Alcantara.JPG/500px-Bridge_Alcantara.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/1_Pont_de_Sidi_M%27Cid.JPG/500px-1_Pont_de_Sidi_M%27Cid.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Abernethy_Bridge_Project_June_2023_%2852956248522%29%2C_enclosed_column.jpg/500px-Abernethy_Bridge_Project_June_2023_%2852956248522%29%2C_enclosed_column.jpg"
+    ],
+    "encoded": 3
+  },
+  "ladder": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ladder.webp/500px-Ladder.webp.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Bamboo_ladder_in_Hainan_-_02.JPG/500px-Bamboo_ladder_in_Hainan_-_02.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/d/de/COLLECTIE_TROPENMUSEUM_De_tau-tau_van_een_vorst_wordt_uit_het_graf_gehaald_om_opnieuw_te_worden_aangekleed_op_de_begraafplaats_der_vorsten_van_Sangalla%27_TMnr_20000480.jpg"
+    ],
+    "encoded": 3
+  },
+  "key": {
+    "urls": [],
+    "encoded": 0
+  },
+  "falling": {
+    "urls": [],
+    "encoded": 0
+  },
+  "pushing": {
+    "urls": [],
+    "encoded": 0
+  },
+  "grasping": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Agrippement_ou_grasping.jpg/500px-Agrippement_ou_grasping.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Greifreflex.JPG/500px-Greifreflex.JPG"
+    ],
+    "encoded": 2
+  },
+  "breaking": {
+    "urls": [],
+    "encoded": 0
+  },
+  "pouring": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Teh_tarik_man_pulling_tea.jpg/500px-Teh_tarik_man_pulling_tea.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Fotothek_df_n-18_0000046_Facharbeiter_f%C3%BCr_Gie%C3%9Fereitechnik.jpg/500px-Fotothek_df_n-18_0000046_Facharbeiter_f%C3%BCr_Gie%C3%9Fereitechnik.jpg"
+    ],
+    "encoded": 2
+  },
+  "cutting": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Scissors.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Glass_cutter.jpg/500px-Glass_cutter.jpg"
+    ],
+    "encoded": 2
+  },
+  "balancing": {
+    "urls": [],
+    "encoded": 0
+  },
+  "rolling": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/36/Rolling_animation.gif",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a1/Moglfm2207_rodadura.jpg"
+    ],
+    "encoded": 2
+  },
+  "bouncing": {
+    "urls": [],
+    "encoded": 0
+  },
+  "sliding": {
+    "urls": [],
+    "encoded": 0
+  },
+  "lifting": {
+    "urls": [],
+    "encoded": 0
+  },
+  "spinning": {
+    "urls": [],
+    "encoded": 0
+  },
+  "colliding": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Collision_9_Block.gif/500px-Collision_9_Block.gif",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Deflection.png/500px-Deflection.png"
+    ],
+    "encoded": 2
+  },
+  "melting": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/1/16/Melting_icecubes.gif"
+    ],
+    "encoded": 1
+  },
+  "flowing": {
+    "urls": [],
+    "encoded": 0
+  },
+  "inside": {
+    "urls": [],
+    "encoded": 0
+  },
+  "above": {
+    "urls": [],
+    "encoded": 0
+  },
+  "beside": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/en/6/64/Byitcover.jpg"
+    ],
+    "encoded": 1
+  },
+  "behind": {
+    "urls": [],
+    "encoded": 0
+  },
+  "between": {
+    "urls": [],
+    "encoded": 0
+  },
+  "touching": {
+    "urls": [],
+    "encoded": 0
+  },
+  "distance": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Distance_board_in_Vizag_cropped.jpg/500px-Distance_board_in_Vizag_cropped.jpg"
+    ],
+    "encoded": 1
+  },
+  "boundary": {
+    "urls": [],
+    "encoded": 0
+  },
+  "path": {
+    "urls": [],
+    "encoded": 0
+  },
+  "center": {
+    "urls": [],
+    "encoded": 0
+  },
+  "surrounding": {
+    "urls": [],
+    "encoded": 0
+  },
+  "through": {
+    "urls": [],
+    "encoded": 0
+  },
+  "against": {
+    "urls": [],
+    "encoded": 0
+  },
+  "along": {
+    "urls": [],
+    "encoded": 0
+  },
+  "danger": {
+    "urls": [],
+    "encoded": 0
+  },
+  "support": {
+    "urls": [],
+    "encoded": 0
+  },
+  "intention": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/c/cd/Socrates.png"
+    ],
+    "encoded": 1
+  },
+  "causation": {
+    "urls": [],
+    "encoded": 0
+  },
+  "similarity": {
+    "urls": [],
+    "encoded": 0
+  },
+  "change": {
+    "urls": [],
+    "encoded": 0
+  },
+  "direction": {
+    "urls": [],
+    "encoded": 0
+  },
+  "force": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Force_examples.svg/500px-Force_examples.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/0/09/Addition_av_vektorer_003.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Aristoteles_Louvre2.jpg/500px-Aristoteles_Louvre2.jpg"
+    ],
+    "encoded": 3
+  },
+  "pattern": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Ionic_frieze_from_the_Erechtheum%2C_dimensions_130_x_50_cm%2C_in_the_Glyptothek.jpg/500px-Ionic_frieze_from_the_Erechtheum%2C_dimensions_130_x_50_cm%2C_in_the_Glyptothek.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Animal_skin.jpg/500px-Animal_skin.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Cracked_earth_in_the_Rann_of_Kutch.jpg/500px-Cracked_earth_in_the_Rann_of_Kutch.jpg"
+    ],
+    "encoded": 3
+  },
+  "constraint": {
+    "urls": [],
+    "encoded": 0
+  },
+  "possibility": {
+    "urls": [],
+    "encoded": 0
+  },
+  "sequence": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Cauchy_sequence_illustration2.svg/500px-Cauchy_sequence_illustration2.svg.png"
+    ],
+    "encoded": 1
+  },
+  "category": {
+    "urls": [],
+    "encoded": 0
+  },
+  "quantity": {
+    "urls": [],
+    "encoded": 0
+  },
+  "helping": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Workers_and_Volunteers_helping_out.jpg/500px-Workers_and_Volunteers_helping_out.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Kin_selection.JPG/500px-Kin_selection.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Negative_state_relief.JPG/500px-Negative_state_relief.JPG"
+    ],
+    "encoded": 3
+  },
+  "blocking": {
+    "urls": [],
+    "encoded": 0
+  },
+  "following": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/en/5/55/Following_film_poster.jpg"
+    ],
+    "encoded": 1
+  },
+  "pointing": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Joe_Schmidt_coaching_Irish_team_%28cropped%29.jpg/500px-Joe_Schmidt_coaching_Irish_team_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Chiffre_%22huit%22_en_Chine.JPG/500px-Chiffre_%22huit%22_en_Chine.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Chiffre_%22un%22_en_Chine.JPG/500px-Chiffre_%22un%22_en_Chine.JPG"
+    ],
+    "encoded": 3
+  },
+  "giving": {
+    "urls": [],
+    "encoded": 0
+  },
+  "taking": {
+    "urls": [],
+    "encoded": 0
+  },
+  "waiting": {
+    "urls": [],
+    "encoded": 0
+  },
+  "approaching": {
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/SNO_Approaching_Album_Cover_01.jpg/500px-SNO_Approaching_Album_Cover_01.jpg"
+    ],
+    "encoded": 1
+  },
+  "avoiding": {
+    "urls": [],
+    "encoded": 0
+  },
+  "leading": {
+    "urls": [],
+    "encoded": 0
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "reconstruction": {
+    "mistral_mse": 0.0002814332547131926,
+    "mistral_cos": 0.21717692911624908,
+    "vjepa2_mse": 0.0007439613691531122,
+    "vjepa2_cos": 0.49037373065948486
+  },
+  "code_utilization": {
+    "total_codes": 64,
+    "mistral_unique": 1,
+    "vjepa2_unique": 1,
+    "combined_unique": 2
+  },
+  "cross_modal_agreement": {
+    "n_agree": 0,
+    "n_total": 17,
+    "agreement_rate": 0.0,
+    "chance_agreement": 0.0,
+    "per_concept": {
+      "apple": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "chair": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "water": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "fire": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "stone": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "rope": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "door": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "container": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "shadow": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "mirror": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "knife": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "wheel": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "hand": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "wall": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "hole": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "bridge": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      },
+      "ladder": {
+        "mistral_code": 22,
+        "vjepa2_code": 25,
+        "match": false
+      }
+    }
+  },
+  "rsa": {
+    "original": {
+      "r": -0.03598110777157578,
+      "p": 0.6775052584679602
+    },
+    "pre_vq_shared_space": {
+      "r": -0.03322416051492132,
+      "p": 0.7009883258452442
+    },
+    "post_vq_quantized": {
+      "r": NaN,
+      "p": NaN
+    }
+  },
+  "structure_preservation": {
+    "mistral_pre_vq": 0.964738689058741,
+    "mistral_post_vq": NaN,
+    "vjepa2_pre_vq": 0.8916177663279422,
+    "vjepa2_post_vq": NaN
+  },
+  "training_history": {
+    "final_loss": 0.0021497339621419087,
+    "final_recon_lm": 0.0003359464553795988,
+    "final_recon_vj": 0.0011134136075270362,
+    "final_commit": 0.002801495633320883
+  },
+  "architecture": {
+    "codebook_dim": 256,
+    "n_codes": 64,
+    "n_concepts": 17,
+    "concepts": [
+      "apple",
+      "chair",
+      "water",
+      "fire",
+      "stone",
+      "rope",
+      "door",
+      "container",
+      "shadow",
+      "mirror",
+      "knife",
+      "wheel",
+      "hand",
+      "wall",
+      "hole",
+      "bridge",
+      "ladder"
+    ],
+    "n_augment": 30,
+    "sigma": 0.1,
+    "n_epochs": 200,
+    "lr": 0.001,
+    "commitment_weight": 0.25
+  }
+}

@@ -1,0 +1,742 @@
+{
+  "vjepa2": {
+    "apple": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\apple_0.jpg",
+        "lm_output\\image_cache\\apple_1.jpg",
+        "lm_output\\image_cache\\apple_2.jpg"
+      ]
+    },
+    "chair": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\chair_0.jpg",
+        "lm_output\\image_cache\\chair_1.jpg",
+        "lm_output\\image_cache\\chair_2.jpg"
+      ]
+    },
+    "water": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\water_0.jpg",
+        "lm_output\\image_cache\\water_1.jpg",
+        "lm_output\\image_cache\\water_2.jpg"
+      ]
+    },
+    "fire": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\fire_0.jpg",
+        "lm_output\\image_cache\\fire_1.jpg",
+        "lm_output\\image_cache\\fire_2.jpg"
+      ]
+    },
+    "stone": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\stone_0.jpg",
+        "lm_output\\image_cache\\stone_1.jpg",
+        "lm_output\\image_cache\\stone_2.jpg"
+      ]
+    },
+    "rope": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\rope_0.jpg",
+        "lm_output\\image_cache\\rope_1.jpg",
+        "lm_output\\image_cache\\rope_2.jpg"
+      ]
+    },
+    "door": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\door_0.jpg",
+        "lm_output\\image_cache\\door_1.jpg",
+        "lm_output\\image_cache\\door_2.jpg"
+      ]
+    },
+    "container": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\container_0.jpg",
+        "lm_output\\image_cache\\container_1.jpg",
+        "lm_output\\image_cache\\container_2.jpg"
+      ]
+    },
+    "shadow": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\shadow_0.jpg",
+        "lm_output\\image_cache\\shadow_1.jpg",
+        "lm_output\\image_cache\\shadow_2.jpg"
+      ]
+    },
+    "mirror": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\mirror_0.jpg",
+        "lm_output\\image_cache\\mirror_1.jpg",
+        "lm_output\\image_cache\\mirror_2.jpg"
+      ]
+    },
+    "knife": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\knife_0.jpg",
+        "lm_output\\image_cache\\knife_1.jpg",
+        "lm_output\\image_cache\\knife_2.jpg"
+      ]
+    },
+    "wheel": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\wheel_0.jpg",
+        "lm_output\\image_cache\\wheel_1.jpg",
+        "lm_output\\image_cache\\wheel_2.jpg"
+      ]
+    },
+    "hand": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\hand_0.jpg",
+        "lm_output\\image_cache\\hand_1.jpg",
+        "lm_output\\image_cache\\hand_2.jpg"
+      ]
+    },
+    "wall": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\wall_0.jpg",
+        "lm_output\\image_cache\\wall_1.jpg",
+        "lm_output\\image_cache\\wall_2.jpg"
+      ]
+    },
+    "hole": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\hole_0.jpg",
+        "lm_output\\image_cache\\hole_1.jpg",
+        "lm_output\\image_cache\\hole_2.jpg"
+      ]
+    },
+    "bridge": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\bridge_0.jpg",
+        "lm_output\\image_cache\\bridge_1.jpg",
+        "lm_output\\image_cache\\bridge_2.jpg"
+      ]
+    },
+    "ladder": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\ladder_0.jpg",
+        "lm_output\\image_cache\\ladder_1.jpg",
+        "lm_output\\image_cache\\ladder_2.jpg"
+      ]
+    },
+    "key": {
+      "status": "no_images"
+    },
+    "falling": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "pushing": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "grasping": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "breaking": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "pouring": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "cutting": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "balancing": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "rolling": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "bouncing": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "sliding": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "lifting": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "spinning": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "colliding": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "melting": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "flowing": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "inside": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "above": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "beside": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "behind": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "between": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "touching": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "distance": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "boundary": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "path": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "center": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "surrounding": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "through": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "against": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "along": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "danger": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "support": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "intention": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "causation": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "similarity": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "change": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "direction": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "force": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "pattern": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "constraint": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "possibility": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "sequence": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "category": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "quantity": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "helping": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "blocking": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "following": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "pointing": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "giving": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "taking": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "waiting": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "approaching": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "avoiding": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "leading": {
+      "status": "skipped",
+      "reason": "non-physical"
+    }
+  },
+  "mae": {
+    "apple": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\apple_0.jpg",
+        "lm_output\\image_cache\\apple_1.jpg",
+        "lm_output\\image_cache\\apple_2.jpg"
+      ]
+    },
+    "chair": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\chair_0.jpg",
+        "lm_output\\image_cache\\chair_1.jpg",
+        "lm_output\\image_cache\\chair_2.jpg"
+      ]
+    },
+    "water": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\water_0.jpg",
+        "lm_output\\image_cache\\water_1.jpg",
+        "lm_output\\image_cache\\water_2.jpg"
+      ]
+    },
+    "fire": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\fire_0.jpg",
+        "lm_output\\image_cache\\fire_1.jpg",
+        "lm_output\\image_cache\\fire_2.jpg"
+      ]
+    },
+    "stone": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\stone_0.jpg",
+        "lm_output\\image_cache\\stone_1.jpg",
+        "lm_output\\image_cache\\stone_2.jpg"
+      ]
+    },
+    "rope": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\rope_0.jpg",
+        "lm_output\\image_cache\\rope_1.jpg",
+        "lm_output\\image_cache\\rope_2.jpg"
+      ]
+    },
+    "door": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\door_0.jpg",
+        "lm_output\\image_cache\\door_1.jpg",
+        "lm_output\\image_cache\\door_2.jpg"
+      ]
+    },
+    "container": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\container_0.jpg",
+        "lm_output\\image_cache\\container_1.jpg",
+        "lm_output\\image_cache\\container_2.jpg"
+      ]
+    },
+    "shadow": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\shadow_0.jpg",
+        "lm_output\\image_cache\\shadow_1.jpg",
+        "lm_output\\image_cache\\shadow_2.jpg"
+      ]
+    },
+    "mirror": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\mirror_0.jpg",
+        "lm_output\\image_cache\\mirror_1.jpg",
+        "lm_output\\image_cache\\mirror_2.jpg"
+      ]
+    },
+    "knife": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\knife_0.jpg",
+        "lm_output\\image_cache\\knife_1.jpg",
+        "lm_output\\image_cache\\knife_2.jpg"
+      ]
+    },
+    "wheel": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\wheel_0.jpg",
+        "lm_output\\image_cache\\wheel_1.jpg",
+        "lm_output\\image_cache\\wheel_2.jpg"
+      ]
+    },
+    "hand": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\hand_0.jpg",
+        "lm_output\\image_cache\\hand_1.jpg",
+        "lm_output\\image_cache\\hand_2.jpg"
+      ]
+    },
+    "wall": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\wall_0.jpg",
+        "lm_output\\image_cache\\wall_1.jpg",
+        "lm_output\\image_cache\\wall_2.jpg"
+      ]
+    },
+    "hole": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\hole_0.jpg",
+        "lm_output\\image_cache\\hole_1.jpg",
+        "lm_output\\image_cache\\hole_2.jpg"
+      ]
+    },
+    "bridge": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\bridge_0.jpg",
+        "lm_output\\image_cache\\bridge_1.jpg",
+        "lm_output\\image_cache\\bridge_2.jpg"
+      ]
+    },
+    "ladder": {
+      "status": "ok",
+      "n_encoded": 3,
+      "image_paths": [
+        "lm_output\\image_cache\\ladder_0.jpg",
+        "lm_output\\image_cache\\ladder_1.jpg",
+        "lm_output\\image_cache\\ladder_2.jpg"
+      ]
+    },
+    "key": {
+      "status": "no_images"
+    },
+    "falling": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "pushing": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "grasping": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "breaking": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "pouring": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "cutting": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "balancing": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "rolling": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "bouncing": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "sliding": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "lifting": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "spinning": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "colliding": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "melting": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "flowing": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "inside": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "above": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "beside": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "behind": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "between": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "touching": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "distance": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "boundary": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "path": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "center": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "surrounding": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "through": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "against": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "along": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "danger": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "support": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "intention": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "causation": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "similarity": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "change": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "direction": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "force": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "pattern": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "constraint": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "possibility": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "sequence": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "category": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "quantity": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "helping": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "blocking": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "following": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "pointing": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "giving": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "taking": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "waiting": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "approaching": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "avoiding": {
+      "status": "skipped",
+      "reason": "non-physical"
+    },
+    "leading": {
+      "status": "skipped",
+      "reason": "non-physical"
+    }
+  }
+}

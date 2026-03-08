@@ -1,0 +1,92 @@
+=================================================================
+THREE-WAY RSA: Mistral 7B vs ST (all-mpnet) vs CLIP (visual)
+=================================================================
+
+Valid concept intersection (CLIP coverage): 33/71
+
+Coverage by category:
+  Category     |      CLIP |        ST |   Mistral | Valid concepts
+  -------------+-----------+-----------+-----------+---------------
+  physical     |   17/18   |   18/18   |   18/18   | apple, chair, water, fire, stone, rope, door, container, shadow, mirror, knife, wheel, hand, wall, hole, bridge, ladder
+  actions      |    6/15   |   15/15   |   15/15   | grasping, pouring, cutting, rolling, colliding, melting
+  spatial      |    2/14   |   14/14   |   14/14   | beside, distance
+  abstract     |    4/14   |   14/14   |   14/14   | intention, force, pattern, sequence
+  social       |    4/10   |   10/10   |   10/10   | helping, following, pointing, approaching
+
+  Note: ST and Mistral have valid embeddings for all 71 concepts.
+  CLIP coverage reflects whether a canonical visual exists on Wikipedia.
+  Missing CLIP signal for action/spatial/abstract concepts is a finding.
+
+=================================================================
+PAIRWISE RSA ON 33-CONCEPT VALID SUBSET
+=================================================================
+
+[ Mistral vs ST ]
+  Overall  Spearman r = +0.1476  (p = 6.71e-04)
+  Overall  Pearson  r = +0.1573  (p = 2.85e-04)
+  Nearest-neighbor agreement (k=5): 0.2005
+  (Random baseline: 0.1562)
+
+  Per-category breakdown:
+    Category     |   n | Spearman r |          p | sig
+    -------------+-----+------------+------------+----
+    physical     |  17 |    +0.1710 |   4.66e-02 | ✓
+    actions      |   6 |    +0.1214 |   6.66e-01 |  
+    spatial      |   2 | (n<3, skip) |            |
+    abstract     |   4 |    +0.0286 |   9.57e-01 |  
+    social       |   4 |    +0.6000 |   2.08e-01 |  
+
+[ Mistral vs CLIP ]
+  Overall  Spearman r = +0.3254  (p = 1.72e-14)
+  Overall  Pearson  r = +0.3069  (p = 5.60e-13)
+  Nearest-neighbor agreement (k=5): 0.1194
+  (Random baseline: 0.1562)
+
+  Per-category breakdown:
+    Category     |   n | Spearman r |          p | sig
+    -------------+-----+------------+------------+----
+    physical     |  17 |    +0.0393 |   6.50e-01 |  
+    actions      |   6 |    -0.0250 |   9.30e-01 |  
+    spatial      |   2 | (n<3, skip) |            |
+    abstract     |   4 |    +0.2571 |   6.23e-01 |  
+    social       |   4 |    +0.6000 |   2.08e-01 |  
+
+[ ST vs CLIP ]
+  Overall  Spearman r = +0.0125  (p = 7.75e-01)
+  Overall  Pearson  r = -0.0141  (p = 7.46e-01)
+  Nearest-neighbor agreement (k=5): 0.1494
+  (Random baseline: 0.1562)
+
+  Per-category breakdown:
+    Category     |   n | Spearman r |          p | sig
+    -------------+-----+------------+------------+----
+    physical     |  17 |    +0.0888 |   3.04e-01 |  
+    actions      |   6 |    +0.1464 |   6.03e-01 |  
+    spatial      |   2 | (n<3, skip) |            |
+    abstract     |   4 |    -0.0857 |   8.72e-01 |  
+    social       |   4 |    +0.0286 |   9.57e-01 |  
+
+=================================================================
+PERMUTATION TESTS (1000 permutations each)
+=================================================================
+
+  Mistral vs ST:  observed r=+0.1476  permuted=-0.0012±0.0630  z=+2.36  p=0.0110
+
+  Mistral vs CLIP:  observed r=+0.3254  permuted=+0.0039±0.0863  z=+3.72  p=0.0000
+
+  ST vs CLIP:  observed r=+0.0125  permuted=-0.0007±0.0948  z=+0.14  p=0.4380
+
+=================================================================
+INTERPRETATION
+=================================================================
+
+  Mistral vs ST:   r = +0.1476  (both text-based)
+  Mistral vs CLIP: r = +0.3254  (text vs visual)
+  ST     vs CLIP:  r = +0.0125  (text vs visual)
+
+  Text-visual agreement (0.325) >= text-text (0.148).
+  Unexpected: visual structure aligns with LLM as well as text encoders.
+
+  Coverage note: CLIP has 0% coverage of purely spatial/abstract concepts.
+  The RSA comparison is biased toward physical concepts where CLIP excels.
+  Interpret cross-modal scores with this selection bias in mind.

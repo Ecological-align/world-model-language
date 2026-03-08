@@ -1,0 +1,69 @@
+{
+  "n_concepts": 17,
+  "concepts": [
+    "apple",
+    "chair",
+    "water",
+    "fire",
+    "stone",
+    "rope",
+    "door",
+    "container",
+    "shadow",
+    "mirror",
+    "knife",
+    "wheel",
+    "hand",
+    "wall",
+    "hole",
+    "bridge",
+    "ladder"
+  ],
+  "results": {
+    "Mistral_vs_ST": {
+      "spearman_r": 0.17098897953341918,
+      "spearman_p": 0.04655411423821091,
+      "pearson_r": 0.18837812542915344,
+      "pearson_p": 0.02807249128818512,
+      "nn_agreement_k3": 0.19411764705882353,
+      "permutation_test": {
+        "observed_r": 0.17098897953341918,
+        "permuted_mean": -0.0005566480606841279,
+        "permuted_std": 0.11534921370330116,
+        "p_value": 0.078,
+        "z_score": 1.487184933600848,
+        "n_permutations": 1000
+      }
+    },
+    "Mistral_vs_CLIP": {
+      "spearman_r": 0.03928247698106006,
+      "spearman_p": 0.6497890062599382,
+      "pearson_r": -0.013361671375205173,
+      "pearson_p": 0.8773013487631556,
+      "nn_agreement_k3": 0.17058823529411765,
+      "permutation_test": {
+        "observed_r": 0.03928247698106006,
+        "permuted_mean": 0.011705834645293638,
+        "permuted_std": 0.15930604389993652,
+        "p_value": 0.41,
+        "z_score": 0.173104798346759,
+        "n_permutations": 1000
+      }
+    },
+    "ST_vs_CLIP": {
+      "spearman_r": 0.08879347359381708,
+      "spearman_p": 0.3039615479694838,
+      "pearson_r": 0.1125072363213698,
+      "pearson_p": 0.1922054301391675,
+      "nn_agreement_k3": 0.2,
+      "permutation_test": {
+        "observed_r": 0.08879347359381708,
+        "permuted_mean": 0.0008562663995038408,
+        "permuted_std": 0.11471425633777473,
+        "p_value": 0.234,
+        "z_score": 0.766576032795984,
+        "n_permutations": 1000
+      }
+    }
+  }
+}

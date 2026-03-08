@@ -1,0 +1,47 @@
+============================================================
+LLM EXTRACTION SANITY CHECK
+============================================================
+
+Shape: 71 concepts x 4096 dimensions
+
+Vector norms:
+  mean=5.09  std=0.12  min=4.83  max=5.39
+
+Pairwise cosine similarities (off-diagonal):
+  mean=0.8810  std=0.1149  min=0.0000  max=0.9804
+
+Within-category vs across-category similarity:
+  Category     |   within |   across |  ratio | clustered?
+  -------------+----------+----------+--------+-----------
+  physical     |   0.9256 |   0.8730 |   1.06 |       ✗ NO
+  actions      |   0.9456 |   0.8926 |   1.06 |       ✗ NO
+  spatial      |   0.9037 |   0.8844 |   1.02 |       ✗ NO
+  abstract     |   0.9354 |   0.8897 |   1.05 |       ✗ NO
+  social       |   0.9246 |   0.8899 |   1.04 |       ✗ NO
+
+Top 10 most similar concept pairs:
+  rolling         <-> spinning         sim=0.9804  (same cat)
+  stone           <-> rope             sim=0.9753  (same cat)
+  distance        <-> direction        sim=0.9746  (diff cat)
+  water           <-> fire             sim=0.9737  (same cat)
+  blocking        <-> pointing         sim=0.9727  (same cat)
+  chair           <-> door             sim=0.9718  (same cat)
+  rolling         <-> sliding          sim=0.9712  (same cat)
+  wheel           <-> wall             sim=0.9706  (same cat)
+  sliding         <-> lifting          sim=0.9705  (same cat)
+  pushing         <-> bouncing         sim=0.9702  (same cat)
+
+Prompt consistency (do different prompts give similar RSMs?):
+  'concept' vs 'physical':  r=0.4541  p=1.03e-126
+    WARNING: Low consistency. Prompt choice significantly affects structure.
+  'concept' vs 'imagine':  r=0.5361  p=6.30e-185
+    WARNING: Low consistency. Prompt choice significantly affects structure.
+  'physical' vs 'imagine':  r=0.3971  p=1.25e-94
+    WARNING: Low consistency. Prompt choice significantly affects structure.
+
+============================================================
+VERDICT
+============================================================
+✗ No category clustering detected.
+  Either the representations are degenerate or the
+  concept list needs revision. Check the top pairs above.

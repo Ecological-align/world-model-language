@@ -1,0 +1,276 @@
+{
+  "reconstruction": {
+    "mistral": {
+      "mse": 0.00028263789135962725,
+      "cos": 0.19943057000637054
+    },
+    "vjepa2": {
+      "mse": 0.0007234445656649768,
+      "cos": 0.5101257562637329
+    },
+    "clip": {
+      "mse": 0.0009803938446566463,
+      "cos": 0.4974114000797272
+    }
+  },
+  "code_utilization": {
+    "total_codes": 64,
+    "mistral": 1,
+    "vjepa2": 1,
+    "clip": 1,
+    "combined": 2
+  },
+  "cross_modal_agreement": {
+    "V-JEPA2_vs_CLIP": {
+      "n_agree": 17,
+      "n_total": 17,
+      "rate": 1.0,
+      "chance": 1.0
+    },
+    "Mistral_vs_CLIP": {
+      "n_agree": 0,
+      "n_total": 17,
+      "rate": 0.0,
+      "chance": 0.0
+    },
+    "V-JEPA2_vs_Mistral": {
+      "n_agree": 0,
+      "n_total": 17,
+      "rate": 0.0,
+      "chance": 0.0
+    }
+  },
+  "per_concept": {
+    "apple": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "chair": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "water": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "fire": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "stone": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "rope": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "door": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "container": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "shadow": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "mirror": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "knife": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "wheel": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "hand": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "wall": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "hole": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "bridge": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    },
+    "ladder": {
+      "mistral": 22,
+      "clip": 28,
+      "vjepa2": 28,
+      "vjepa2_clip_match": true,
+      "mistral_clip_match": false,
+      "vjepa2_mistral_match": false
+    }
+  },
+  "rsa": {
+    "V-JEPA2_vs_CLIP": {
+      "original": {
+        "r": 0.40413148227660894,
+        "p": 1.0651014632404016e-06
+      },
+      "pre_vq": {
+        "r": 0.4845182166343911,
+        "p": 2.2747486237590643e-09
+      },
+      "post_vq": {
+        "r": 0.0,
+        "p": 1.0
+      }
+    },
+    "Mistral_vs_CLIP": {
+      "original": {
+        "r": 0.03928247698106006,
+        "p": 0.6497890062599382
+      },
+      "pre_vq": {
+        "r": 0.26808686756257805,
+        "p": 0.0016021488203712237
+      },
+      "post_vq": {
+        "r": 0.0,
+        "p": 1.0
+      }
+    },
+    "V-JEPA2_vs_Mistral": {
+      "original": {
+        "r": -0.03598110777157578,
+        "p": 0.6775052584679602
+      },
+      "pre_vq": {
+        "r": 0.11044279453495479,
+        "p": 0.20054355605919605
+      },
+      "post_vq": {
+        "r": 0.0,
+        "p": 1.0
+      }
+    }
+  },
+  "structure_preservation": {
+    "Mistral": {
+      "pre_vq": 0.974761070550257,
+      "post_vq": 0.0
+    },
+    "V-JEPA2": {
+      "pre_vq": 0.8911929087208902,
+      "post_vq": 0.0
+    },
+    "CLIP": {
+      "pre_vq": 0.8048218176879653,
+      "post_vq": 0.0
+    }
+  },
+  "architecture": {
+    "type": "three_way",
+    "codebook_dim": 256,
+    "n_codes": 64,
+    "n_concepts": 17,
+    "concepts": [
+      "apple",
+      "chair",
+      "water",
+      "fire",
+      "stone",
+      "rope",
+      "door",
+      "container",
+      "shadow",
+      "mirror",
+      "knife",
+      "wheel",
+      "hand",
+      "wall",
+      "hole",
+      "bridge",
+      "ladder"
+    ],
+    "n_augment": 30,
+    "sigma": 0.1,
+    "n_epochs": 200,
+    "lr": 0.001,
+    "commitment_weight": 0.25
+  },
+  "training_final": {
+    "recon_lm": 0.00033148690999951214,
+    "recon_vj": 0.001078457702533342,
+    "recon_cl": 0.0013863524436601438,
+    "commit": 0.010508622566703707,
+    "loss": 0.005423452705144882
+  }
+}

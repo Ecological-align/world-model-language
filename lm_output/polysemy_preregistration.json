@@ -1,0 +1,191 @@
+{
+  "hypothesis": "Concepts with high polysemy (many WordNet noun senses) or high sensorimotor grounding (meaning depends on physical experience) will resist cross-modal alignment between V-JEPA 2 and language models.",
+  "methodology": {
+    "polysemy": "WordNet noun synset count via nltk.corpus.wordnet",
+    "sensorimotor": "Manual 1-5 proxy rating based on how much core meaning depends on physical/bodily experience vs abstract definition",
+    "ranking": "Sum of within-dimension ranks (sense_rank + sm_rank), higher = more likely to resist alignment",
+    "prediction": "Top 3 by combined score predicted to fail cross-modal alignment"
+  },
+  "concepts": {
+    "hand": {
+      "wordnet_senses": 14,
+      "sensorimotor_proxy": 5,
+      "sensorimotor_justification": "The paradigm case of embodied meaning. Manipulation, gesture, touch, grip. Massively polysemous precisely because bodily experience is so rich: hand of cards, helping hand, secondhand, handiwork.",
+      "sense_rank": 17,
+      "sm_rank": 17,
+      "combined_score": 34,
+      "combined_rank": 1,
+      "predicted_to_fail": true
+    },
+    "fire": {
+      "wordnet_senses": 9,
+      "sensorimotor_proxy": 5,
+      "sensorimotor_justification": "Intensely multisensory: heat, light, movement, crackling sound, smell. Also highly polysemous (firing someone, gunfire, passion).",
+      "sense_rank": 13,
+      "sm_rank": 16,
+      "combined_score": 29,
+      "combined_rank": 2,
+      "predicted_to_fail": true
+    },
+    "stone": {
+      "wordnet_senses": 13,
+      "sensorimotor_proxy": 4,
+      "sensorimotor_justification": "Strong tactile/weight grounding: hardness, coldness, heaviness. Many metaphorical extensions (stoned, stepping stone, cornerstone).",
+      "sense_rank": 16,
+      "sm_rank": 12,
+      "combined_score": 28,
+      "combined_rank": 3,
+      "predicted_to_fail": true
+    },
+    "water": {
+      "wordnet_senses": 6,
+      "sensorimotor_proxy": 5,
+      "sensorimotor_justification": "Fundamentally sensory: temperature, flow, wetness, taste, sound. Understanding water requires physical experience with liquid states.",
+      "sense_rank": 9,
+      "sm_rank": 15,
+      "combined_score": 24,
+      "combined_rank": 4,
+      "predicted_to_fail": false
+    },
+    "bridge": {
+      "wordnet_senses": 9,
+      "sensorimotor_proxy": 3,
+      "sensorimotor_justification": "Clear physical structure but heavily metaphorical: bridge between ideas, bridge in music, dental bridge, bridge of nose. Functional meaning dominates.",
+      "sense_rank": 15,
+      "sm_rank": 9,
+      "combined_score": 24,
+      "combined_rank": 5,
+      "predicted_to_fail": false
+    },
+    "hole": {
+      "wordnet_senses": 8,
+      "sensorimotor_proxy": 3,
+      "sensorimotor_justification": "Defined by absence of material \u2014 a spatial/relational concept. Visual but its meaning is about what's NOT there. Polysemous: plot hole, hole up.",
+      "sense_rank": 12,
+      "sm_rank": 8,
+      "combined_score": 20,
+      "combined_rank": 6,
+      "predicted_to_fail": false
+    },
+    "knife": {
+      "wordnet_senses": 3,
+      "sensorimotor_proxy": 4,
+      "sensorimotor_justification": "Strong sensorimotor: sharpness, cutting action, grip, weight. Meaning is inseparable from the cutting affordance.",
+      "sense_rank": 5,
+      "sm_rank": 14,
+      "combined_score": 19,
+      "combined_rank": 7,
+      "predicted_to_fail": false
+    },
+    "shadow": {
+      "wordnet_senses": 9,
+      "sensorimotor_proxy": 3,
+      "sensorimotor_justification": "Visual phenomenon requiring light/body interaction. But extensive abstract use: shadow of doubt, shadow government, shadowy figure.",
+      "sense_rank": 14,
+      "sm_rank": 4,
+      "combined_score": 18,
+      "combined_rank": 8,
+      "predicted_to_fail": false
+    },
+    "wall": {
+      "wordnet_senses": 8,
+      "sensorimotor_proxy": 3,
+      "sensorimotor_justification": "Clear physical referent (vertical barrier) but meaning is largely functional: separation, obstacle. Firewall, wall of sound, hit a wall.",
+      "sense_rank": 11,
+      "sm_rank": 7,
+      "combined_score": 18,
+      "combined_rank": 9,
+      "predicted_to_fail": false
+    },
+    "rope": {
+      "wordnet_senses": 2,
+      "sensorimotor_proxy": 4,
+      "sensorimotor_justification": "Defined by tactile/functional properties: flexibility, tension, texture. Limited abstract extension (know the ropes, end of one's rope).",
+      "sense_rank": 3,
+      "sm_rank": 13,
+      "combined_score": 16,
+      "combined_rank": 10,
+      "predicted_to_fail": false
+    },
+    "wheel": {
+      "wordnet_senses": 7,
+      "sensorimotor_proxy": 3,
+      "sensorimotor_justification": "Visual form is distinctive but meaning extends heavily: steering wheel, wheel of fortune, reinvent the wheel, potter's wheel.",
+      "sense_rank": 10,
+      "sm_rank": 6,
+      "combined_score": 16,
+      "combined_rank": 11,
+      "predicted_to_fail": false
+    },
+    "ladder": {
+      "wordnet_senses": 3,
+      "sensorimotor_proxy": 3,
+      "sensorimotor_justification": "Visual form is distinctive, climbing action is embodied. Metaphorical: corporate ladder, social ladder. Moderate extension.",
+      "sense_rank": 6,
+      "sm_rank": 10,
+      "combined_score": 16,
+      "combined_rank": 12,
+      "predicted_to_fail": false
+    },
+    "apple": {
+      "wordnet_senses": 2,
+      "sensorimotor_proxy": 4,
+      "sensorimotor_justification": "Strongly multisensory: color, texture, taste, weight, smell. Minor abstract use (Apple Inc, Adam's apple).",
+      "sense_rank": 2,
+      "sm_rank": 11,
+      "combined_score": 13,
+      "combined_rank": 13,
+      "predicted_to_fail": false
+    },
+    "door": {
+      "wordnet_senses": 5,
+      "sensorimotor_proxy": 3,
+      "sensorimotor_justification": "Physical referent is clear but meaning is heavily functional/spatial: boundary, passage, access. Metaphorical: door of opportunity.",
+      "sense_rank": 8,
+      "sm_rank": 3,
+      "combined_score": 11,
+      "combined_rank": 14,
+      "predicted_to_fail": false
+    },
+    "chair": {
+      "wordnet_senses": 5,
+      "sensorimotor_proxy": 3,
+      "sensorimotor_justification": "Clear visual form but meaning is primarily functional (something to sit on). Metaphorical uses: chair of department, electric chair.",
+      "sense_rank": 7,
+      "sm_rank": 2,
+      "combined_score": 9,
+      "combined_rank": 15,
+      "predicted_to_fail": false
+    },
+    "mirror": {
+      "wordnet_senses": 2,
+      "sensorimotor_proxy": 3,
+      "sensorimotor_justification": "Strong visual/reflective grounding but also deeply metaphorical: mirror neurons, mirror of society. Functional definition dominates.",
+      "sense_rank": 4,
+      "sm_rank": 5,
+      "combined_score": 9,
+      "combined_rank": 16,
+      "predicted_to_fail": false
+    },
+    "container": {
+      "wordnet_senses": 1,
+      "sensorimotor_proxy": 2,
+      "sensorimotor_justification": "Primarily a functional/relational category: 'thing that contains'. Physical form varies enormously (box, jar, bag, room).",
+      "sense_rank": 1,
+      "sm_rank": 1,
+      "combined_score": 2,
+      "combined_rank": 17,
+      "predicted_to_fail": false
+    }
+  },
+  "predicted_failures": [
+    "fire",
+    "hand",
+    "stone"
+  ],
+  "predicted_easy": [
+    "container",
+    "mirror",
+    "chair"
+  ]
+}

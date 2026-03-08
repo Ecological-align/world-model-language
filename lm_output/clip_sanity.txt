@@ -1,0 +1,42 @@
+============================================================
+LLM EXTRACTION SANITY CHECK
+============================================================
+
+Shape: 71 concepts x 768 dimensions
+
+Vector norms:
+  mean=0.42  std=0.45  min=0.00  max=1.00
+  WARNING: 38 concepts have zero-norm vectors (no images found):
+  ['key', 'falling', 'pushing', 'breaking', 'balancing', 'bouncing', 'sliding', 'lifting', 'spinning', 'flowing', 'inside', 'above', 'behind', 'between', 'touching', 'boundary', 'path', 'center', 'surrounding', 'through', 'against', 'along', 'danger', 'support', 'causation', 'similarity', 'change', 'direction', 'constraint', 'possibility', 'category', 'quantity', 'blocking', 'giving', 'taking', 'waiting', 'avoiding', 'leading']
+
+Pairwise cosine similarities (off-diagonal):
+  mean=0.1286  std=0.2558  min=0.0000  max=0.8398
+
+Within-category vs across-category similarity:
+  Category     |   within |   across |  ratio | clustered?
+  -------------+----------+----------+--------+-----------
+  physical     |   0.6312 |   0.1714 |   3.68 |      ✓ YES
+  actions      |   0.0911 |   0.1199 |   0.76 |       ✗ NO
+  spatial      |   0.0041 |   0.0389 |   0.10 |       ✗ NO
+  abstract     |   0.0406 |   0.0853 |   0.48 |       ✗ NO
+  social       |   0.0564 |   0.0973 |   0.58 |       ✗ NO
+
+Top 10 most similar concept pairs:
+  rolling         <-> colliding        sim=0.8398  (same cat)
+  knife           <-> cutting          sim=0.8299  (diff cat)
+  stone           <-> pattern          sim=0.8254  (diff cat)
+  rolling         <-> sequence         sim=0.8203  (diff cat)
+  colliding       <-> sequence         sim=0.8193  (diff cat)
+  rope            <-> container        sim=0.8136  (same cat)
+  mirror          <-> hole             sim=0.8076  (same cat)
+  hole            <-> pattern          sim=0.8070  (diff cat)
+  shadow          <-> hole             sim=0.8062  (same cat)
+  rope            <-> pattern          sim=0.8055  (diff cat)
+
+============================================================
+VERDICT
+============================================================
+~ Mixed results. Some categories cluster, others don't.
+  This may reflect genuine structure (abstract concepts
+  are less clustered in LLMs than physical ones).
+  Probably still usable -- wait for WM comparison.

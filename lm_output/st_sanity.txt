@@ -1,0 +1,46 @@
+============================================================
+LLM EXTRACTION SANITY CHECK
+============================================================
+
+Shape: 71 concepts x 768 dimensions
+
+Vector norms:
+  mean=1.00  std=0.00  min=1.00  max=1.00
+
+Pairwise cosine similarities (off-diagonal):
+  mean=0.3444  std=0.0875  min=0.0000  max=0.7089
+
+Within-category vs across-category similarity:
+  Category     |   within |   across |  ratio | clustered?
+  -------------+----------+----------+--------+-----------
+  physical     |   0.3617 |   0.3314 |   1.09 |       ✗ NO
+  actions      |   0.3625 |   0.3126 |   1.16 |       ✗ NO
+  spatial      |   0.4449 |   0.3500 |   1.27 |      ✓ YES
+  abstract     |   0.4268 |   0.3535 |   1.21 |      ✓ YES
+  social       |   0.4225 |   0.3486 |   1.21 |      ✓ YES
+
+Top 10 most similar concept pairs:
+  hand            <-> grasping         sim=0.7089  (diff cat)
+  support         <-> helping          sim=0.6968  (diff cat)
+  beside          <-> behind           sim=0.6840  (same cat)
+  above           <-> following        sim=0.6750  (diff cat)
+  knife           <-> cutting          sim=0.6684  (diff cat)
+  above           <-> beside           sim=0.6338  (same cat)
+  beside          <-> surrounding      sim=0.6314  (same cat)
+  rolling         <-> spinning         sim=0.6233  (same cat)
+  hand            <-> touching         sim=0.6217  (diff cat)
+  pushing         <-> force            sim=0.6209  (diff cat)
+
+Prompt consistency (do different prompts give similar RSMs?):
+  'concept' vs 'physical':  r=0.7101  p=0.00e+00
+  'concept' vs 'imagine':  r=0.6133  p=1.03e-256
+    WARNING: Low consistency. Prompt choice significantly affects structure.
+  'physical' vs 'imagine':  r=0.6563  p=3.64e-306
+    WARNING: Low consistency. Prompt choice significantly affects structure.
+
+============================================================
+VERDICT
+============================================================
+✓ LLM representations look healthy.
+  Categories show meaningful clustering.
+  Ready to compare against world model representations.
