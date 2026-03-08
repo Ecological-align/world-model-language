@@ -1,0 +1,341 @@
+{
+  "n_concepts": 44,
+  "simple_correlations": {
+    "polysemy_vs_agreement": {
+      "r": 0.2010965513662925,
+      "p": 0.19055446052355274
+    },
+    "sensorimotor_vs_agreement": {
+      "r": 0.13808147559568,
+      "p": 0.3714004697508693
+    },
+    "log_freq_vs_agreement": {
+      "r": -0.11855722958227263,
+      "p": 0.4433852806175129
+    }
+  },
+  "partial_correlations": {
+    "polysemy_given_frequency": {
+      "r": 0.1708470882311525,
+      "p": 0.26750657681292545
+    },
+    "frequency_given_polysemy": {
+      "r": 0.04995359706656069,
+      "p": 0.7474400814998875
+    },
+    "sensorimotor_given_frequency": {
+      "r": 0.16532541572790946,
+      "p": 0.28350647305046306
+    }
+  },
+  "per_concept": [
+    {
+      "concept": "net",
+      "polysemy": 8,
+      "sensorimotor": 4,
+      "log_freq": -4.2403321553103694,
+      "test_agreement": 0.2
+    },
+    {
+      "concept": "field",
+      "polysemy": 12,
+      "sensorimotor": 3,
+      "log_freq": -3.7594507517174,
+      "test_agreement": 0.4
+    },
+    {
+      "concept": "chain",
+      "polysemy": 7,
+      "sensorimotor": 4,
+      "log_freq": -4.349692476868063,
+      "test_agreement": 0.8
+    },
+    {
+      "concept": "leaf",
+      "polysemy": 6,
+      "sensorimotor": 3,
+      "log_freq": -4.779891911959945,
+      "test_agreement": 0.8
+    },
+    {
+      "concept": "fence",
+      "polysemy": 5,
+      "sensorimotor": 3,
+      "log_freq": -4.790484985457369,
+      "test_agreement": 0.8
+    },
+    {
+      "concept": "hand",
+      "polysemy": 14,
+      "sensorimotor": 5,
+      "log_freq": -3.5900668766687054,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "run",
+      "polysemy": 12,
+      "sensorimotor": 5,
+      "log_freq": -3.5100415205751654,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "spring",
+      "polysemy": 11,
+      "sensorimotor": 5,
+      "log_freq": -4.079876673709276,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "fire",
+      "polysemy": 9,
+      "sensorimotor": 5,
+      "log_freq": -3.6989700043360187,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "stone",
+      "polysemy": 13,
+      "sensorimotor": 4,
+      "log_freq": -4.199970640755866,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "light",
+      "polysemy": 13,
+      "sensorimotor": 4,
+      "log_freq": -3.669586226650809,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "strike",
+      "polysemy": 9,
+      "sensorimotor": 5,
+      "log_freq": -4.34008379993015,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "water",
+      "polysemy": 8,
+      "sensorimotor": 5,
+      "log_freq": -3.480172006224281,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "shoot",
+      "polysemy": 8,
+      "sensorimotor": 5,
+      "log_freq": -4.270025714300444,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "bark",
+      "polysemy": 7,
+      "sensorimotor": 5,
+      "log_freq": -5.149966742310231,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "charge",
+      "polysemy": 10,
+      "sensorimotor": 4,
+      "log_freq": -3.9788107009300617,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "press",
+      "polysemy": 9,
+      "sensorimotor": 4,
+      "log_freq": -3.838631997765025,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "drum",
+      "polysemy": 5,
+      "sensorimotor": 5,
+      "log_freq": -4.889410289700751,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "knife",
+      "polysemy": 4,
+      "sensorimotor": 5,
+      "log_freq": -4.590066876668706,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "hammer",
+      "polysemy": 4,
+      "sensorimotor": 5,
+      "log_freq": -4.838631997765025,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "scissors",
+      "polysemy": 3,
+      "sensorimotor": 5,
+      "log_freq": -5.42021640338319,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "glass",
+      "polysemy": 7,
+      "sensorimotor": 4,
+      "log_freq": -4.149966742310231,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "thread",
+      "polysemy": 6,
+      "sensorimotor": 4,
+      "log_freq": -4.560667306169737,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "apple",
+      "polysemy": 5,
+      "sensorimotor": 4,
+      "log_freq": -4.2403321553103694,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "rope",
+      "polysemy": 5,
+      "sensorimotor": 4,
+      "log_freq": -4.939302159646388,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "bowl",
+      "polysemy": 5,
+      "sensorimotor": 4,
+      "log_freq": -4.369572124974976,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "ice",
+      "polysemy": 5,
+      "sensorimotor": 4,
+      "log_freq": -4.0,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "chair",
+      "polysemy": 4,
+      "sensorimotor": 4,
+      "log_freq": -4.309803919971486,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "hole",
+      "polysemy": 8,
+      "sensorimotor": 3,
+      "log_freq": -4.34008379993015,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "ladder",
+      "polysemy": 4,
+      "sensorimotor": 4,
+      "log_freq": -4.97061622231479,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "sand",
+      "polysemy": 4,
+      "sensorimotor": 4,
+      "log_freq": -4.560667306169737,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "feather",
+      "polysemy": 4,
+      "sensorimotor": 4,
+      "log_freq": -5.309803919971486,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "wall",
+      "polysemy": 7,
+      "sensorimotor": 3,
+      "log_freq": -3.958607314841775,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "bridge",
+      "polysemy": 7,
+      "sensorimotor": 3,
+      "log_freq": -4.229884705212898,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "shadow",
+      "polysemy": 6,
+      "sensorimotor": 3,
+      "log_freq": -4.560667306169737,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "door",
+      "polysemy": 5,
+      "sensorimotor": 3,
+      "log_freq": -3.9208187539523753,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "bench",
+      "polysemy": 5,
+      "sensorimotor": 3,
+      "log_freq": -4.610833915635467,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "cloud",
+      "polysemy": 5,
+      "sensorimotor": 3,
+      "log_freq": -4.540607512240769,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "mirror",
+      "polysemy": 4,
+      "sensorimotor": 3,
+      "log_freq": -4.530177984021837,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "clock",
+      "polysemy": 4,
+      "sensorimotor": 3,
+      "log_freq": -4.570247719997592,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "container",
+      "polysemy": 3,
+      "sensorimotor": 3,
+      "log_freq": -4.97061622231479,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "shelf",
+      "polysemy": 3,
+      "sensorimotor": 3,
+      "log_freq": -4.978810700930062,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "telescope",
+      "polysemy": 2,
+      "sensorimotor": 3,
+      "log_freq": -5.250263684430939,
+      "test_agreement": 1.0
+    },
+    {
+      "concept": "coin",
+      "polysemy": 4,
+      "sensorimotor": 2,
+      "log_freq": -4.809668301829708,
+      "test_agreement": 1.0
+    }
+  ]
+}

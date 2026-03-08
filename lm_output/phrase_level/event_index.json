@@ -1,0 +1,1865 @@
+{
+  "events": [
+    {
+      "concept": "apple",
+      "phrase": "an apple falling from a tree branch",
+      "image_query": "apple falling from tree",
+      "event_id": "apple__0",
+      "row": 0
+    },
+    {
+      "concept": "apple",
+      "phrase": "an apple rolling across a wooden table",
+      "image_query": "apple rolling on table",
+      "event_id": "apple__1",
+      "row": 1
+    },
+    {
+      "concept": "apple",
+      "phrase": "an apple being cut with a knife",
+      "image_query": "cutting apple with knife",
+      "event_id": "apple__2",
+      "row": 2
+    },
+    {
+      "concept": "apple",
+      "phrase": "an apple floating in a bucket of water",
+      "image_query": "apple floating water",
+      "event_id": "apple__3",
+      "row": 3
+    },
+    {
+      "concept": "apple",
+      "phrase": "an apple bruising after impact with the floor",
+      "image_query": "bruised apple drop",
+      "event_id": "apple__4",
+      "row": 4
+    },
+    {
+      "concept": "apple",
+      "phrase": "an apple being crushed underfoot",
+      "image_query": "apple crushed underfoot",
+      "event_id": "apple__5",
+      "row": 5
+    },
+    {
+      "concept": "chair",
+      "phrase": "a chair tipping over backwards",
+      "image_query": "chair tipping over",
+      "event_id": "chair__0",
+      "row": 6
+    },
+    {
+      "concept": "chair",
+      "phrase": "a chair bearing the weight of a seated person",
+      "image_query": "person sitting chair weight",
+      "event_id": "chair__1",
+      "row": 7
+    },
+    {
+      "concept": "chair",
+      "phrase": "a wooden chair breaking under excessive load",
+      "image_query": "broken wooden chair collapse",
+      "event_id": "chair__2",
+      "row": 8
+    },
+    {
+      "concept": "chair",
+      "phrase": "a chair sliding across a polished floor",
+      "image_query": "chair sliding floor",
+      "event_id": "chair__3",
+      "row": 9
+    },
+    {
+      "concept": "chair",
+      "phrase": "stacking chairs on top of each other",
+      "image_query": "stacking chairs",
+      "event_id": "chair__4",
+      "row": 10
+    },
+    {
+      "concept": "chair",
+      "phrase": "a chair leg sinking into soft ground",
+      "image_query": "chair leg sinking ground",
+      "event_id": "chair__5",
+      "row": 11
+    },
+    {
+      "concept": "water",
+      "phrase": "water flowing downhill over rocks",
+      "image_query": "water flowing stream rocks",
+      "event_id": "water__0",
+      "row": 12
+    },
+    {
+      "concept": "water",
+      "phrase": "water running down a drain",
+      "image_query": "water going down drain",
+      "event_id": "water__1",
+      "row": 13
+    },
+    {
+      "concept": "water",
+      "phrase": "water filling a container from a tap",
+      "image_query": "water filling container tap",
+      "event_id": "water__2",
+      "row": 14
+    },
+    {
+      "concept": "water",
+      "phrase": "water evaporating from a heated surface",
+      "image_query": "water evaporating hot surface",
+      "event_id": "water__3",
+      "row": 15
+    },
+    {
+      "concept": "water",
+      "phrase": "water freezing into ice in a cold environment",
+      "image_query": "water freezing ice",
+      "event_id": "water__4",
+      "row": 16
+    },
+    {
+      "concept": "water",
+      "phrase": "water spreading across a flat surface",
+      "image_query": "water spreading flat surface",
+      "event_id": "water__5",
+      "row": 17
+    },
+    {
+      "concept": "water",
+      "phrase": "water pressure bursting through a weak seal",
+      "image_query": "water pressure burst pipe",
+      "event_id": "water__6",
+      "row": 18
+    },
+    {
+      "concept": "fire",
+      "phrase": "fire spreading across dry leaves on a forest floor",
+      "image_query": "fire spreading dry leaves",
+      "event_id": "fire__0",
+      "row": 19
+    },
+    {
+      "concept": "fire",
+      "phrase": "fire consuming a wooden plank",
+      "image_query": "fire burning wood plank",
+      "event_id": "fire__1",
+      "row": 20
+    },
+    {
+      "concept": "fire",
+      "phrase": "a campfire burning steadily in a fire pit",
+      "image_query": "campfire burning steadily",
+      "event_id": "fire__2",
+      "row": 21
+    },
+    {
+      "concept": "fire",
+      "phrase": "fire going out when deprived of oxygen",
+      "image_query": "fire extinguished no oxygen",
+      "event_id": "fire__3",
+      "row": 22
+    },
+    {
+      "concept": "fire",
+      "phrase": "fire melting a wax candle from above",
+      "image_query": "fire melting candle wax",
+      "event_id": "fire__4",
+      "row": 23
+    },
+    {
+      "concept": "fire",
+      "phrase": "flames bending in the wind",
+      "image_query": "flames bending wind",
+      "event_id": "fire__5",
+      "row": 24
+    },
+    {
+      "concept": "stone",
+      "phrase": "a stone sinking to the bottom of a pond",
+      "image_query": "stone sinking water",
+      "event_id": "stone__0",
+      "row": 25
+    },
+    {
+      "concept": "stone",
+      "phrase": "a stone rolling down a steep hillside",
+      "image_query": "stone rolling downhill",
+      "event_id": "stone__1",
+      "row": 26
+    },
+    {
+      "concept": "stone",
+      "phrase": "a stone being skipped across a water surface",
+      "image_query": "skipping stone water surface",
+      "event_id": "stone__2",
+      "row": 27
+    },
+    {
+      "concept": "stone",
+      "phrase": "a large stone crushing a wooden crate",
+      "image_query": "heavy stone crushing crate",
+      "event_id": "stone__3",
+      "row": 28
+    },
+    {
+      "concept": "stone",
+      "phrase": "a stone remaining immobile when pushed lightly",
+      "image_query": "large stone immobile push",
+      "event_id": "stone__4",
+      "row": 29
+    },
+    {
+      "concept": "stone",
+      "phrase": "a stone breaking when struck with a hammer",
+      "image_query": "stone breaking hammer strike",
+      "event_id": "stone__5",
+      "row": 30
+    },
+    {
+      "concept": "rope",
+      "phrase": "a rope under tension pulling two objects apart",
+      "image_query": "rope under tension pulling",
+      "event_id": "rope__0",
+      "row": 31
+    },
+    {
+      "concept": "rope",
+      "phrase": "a rope being knotted and pulled tight",
+      "image_query": "rope knot pulled tight",
+      "event_id": "rope__1",
+      "row": 32
+    },
+    {
+      "concept": "rope",
+      "phrase": "a rope fraying where it contacts a sharp edge",
+      "image_query": "rope fraying sharp edge",
+      "event_id": "rope__2",
+      "row": 33
+    },
+    {
+      "concept": "rope",
+      "phrase": "a rope coiled and thrown across a gap",
+      "image_query": "throwing rope across gap",
+      "event_id": "rope__3",
+      "row": 34
+    },
+    {
+      "concept": "rope",
+      "phrase": "a rope snapping under excessive load",
+      "image_query": "rope snapping breaking",
+      "event_id": "rope__4",
+      "row": 35
+    },
+    {
+      "concept": "rope",
+      "phrase": "a rope supporting a hanging weight",
+      "image_query": "rope supporting hanging weight",
+      "event_id": "rope__5",
+      "row": 36
+    },
+    {
+      "concept": "door",
+      "phrase": "a door swinging open on its hinges",
+      "image_query": "door swinging open hinges",
+      "event_id": "door__0",
+      "row": 37
+    },
+    {
+      "concept": "door",
+      "phrase": "a door held shut by a strong wind",
+      "image_query": "door held shut by wind",
+      "event_id": "door__1",
+      "row": 38
+    },
+    {
+      "concept": "door",
+      "phrase": "a door being forced open by pushing",
+      "image_query": "forcing door open push",
+      "event_id": "door__2",
+      "row": 39
+    },
+    {
+      "concept": "door",
+      "phrase": "a sliding door rolling along a track",
+      "image_query": "sliding door track",
+      "event_id": "door__3",
+      "row": 40
+    },
+    {
+      "concept": "door",
+      "phrase": "a door slamming against its frame",
+      "image_query": "door slamming frame",
+      "event_id": "door__4",
+      "row": 41
+    },
+    {
+      "concept": "door",
+      "phrase": "a door wedged open with a stopper",
+      "image_query": "door wedge stopper",
+      "event_id": "door__5",
+      "row": 42
+    },
+    {
+      "concept": "container",
+      "phrase": "a container being filled with liquid from above",
+      "image_query": "pouring liquid into container",
+      "event_id": "container__0",
+      "row": 43
+    },
+    {
+      "concept": "container",
+      "phrase": "a sealed container building up internal pressure",
+      "image_query": "sealed container pressure buildup",
+      "event_id": "container__1",
+      "row": 44
+    },
+    {
+      "concept": "container",
+      "phrase": "a container tipping over and spilling its contents",
+      "image_query": "container tipping spilling",
+      "event_id": "container__2",
+      "row": 45
+    },
+    {
+      "concept": "container",
+      "phrase": "a container floating in water when empty",
+      "image_query": "empty container floating water",
+      "event_id": "container__3",
+      "row": 46
+    },
+    {
+      "concept": "container",
+      "phrase": "a container sinking when filled with water",
+      "image_query": "container sinking when filled",
+      "event_id": "container__4",
+      "row": 47
+    },
+    {
+      "concept": "container",
+      "phrase": "a lidded container being opened by prying",
+      "image_query": "prying open lidded container",
+      "event_id": "container__5",
+      "row": 48
+    },
+    {
+      "concept": "shadow",
+      "phrase": "a shadow moving as the sun changes position",
+      "image_query": "shadow moving with sun",
+      "event_id": "shadow__0",
+      "row": 49
+    },
+    {
+      "concept": "shadow",
+      "phrase": "an object casting a long shadow in low sunlight",
+      "image_query": "long shadow low sunlight",
+      "event_id": "shadow__1",
+      "row": 50
+    },
+    {
+      "concept": "shadow",
+      "phrase": "a shadow disappearing when a cloud covers the sun",
+      "image_query": "shadow disappearing cloud",
+      "event_id": "shadow__2",
+      "row": 51
+    },
+    {
+      "concept": "shadow",
+      "phrase": "overlapping shadows creating a darker region",
+      "image_query": "overlapping shadows darker area",
+      "event_id": "shadow__3",
+      "row": 52
+    },
+    {
+      "concept": "shadow",
+      "phrase": "a shadow shrinking at midday",
+      "image_query": "shadow shrinking midday sun",
+      "event_id": "shadow__4",
+      "row": 53
+    },
+    {
+      "concept": "mirror",
+      "phrase": "a mirror reflecting light onto the opposite wall",
+      "image_query": "mirror reflecting light wall",
+      "event_id": "mirror__0",
+      "row": 54
+    },
+    {
+      "concept": "mirror",
+      "phrase": "a mirror showing a reversed image of a face",
+      "image_query": "mirror reversed reflection face",
+      "event_id": "mirror__1",
+      "row": 55
+    },
+    {
+      "concept": "mirror",
+      "phrase": "a mirror shattering when struck",
+      "image_query": "mirror shattering impact",
+      "event_id": "mirror__2",
+      "row": 56
+    },
+    {
+      "concept": "mirror",
+      "phrase": "a curved mirror distorting a reflected image",
+      "image_query": "curved mirror distorted reflection",
+      "event_id": "mirror__3",
+      "row": 57
+    },
+    {
+      "concept": "mirror",
+      "phrase": "light bouncing off a mirror at an angle",
+      "image_query": "light reflecting mirror angle",
+      "event_id": "mirror__4",
+      "row": 58
+    },
+    {
+      "concept": "knife",
+      "phrase": "a knife slicing through a ripe tomato",
+      "image_query": "knife slicing tomato",
+      "event_id": "knife__0",
+      "row": 59
+    },
+    {
+      "concept": "knife",
+      "phrase": "a knife cutting rope by drawing along the blade",
+      "image_query": "knife cutting rope",
+      "event_id": "knife__1",
+      "row": 60
+    },
+    {
+      "concept": "knife",
+      "phrase": "a knife losing sharpness after cutting hard material",
+      "image_query": "dull knife hard material",
+      "event_id": "knife__2",
+      "row": 61
+    },
+    {
+      "concept": "knife",
+      "phrase": "a blade concentrating force on a thin edge",
+      "image_query": "blade thin edge force",
+      "event_id": "knife__3",
+      "row": 62
+    },
+    {
+      "concept": "knife",
+      "phrase": "a knife bending under lateral force",
+      "image_query": "knife bending lateral force",
+      "event_id": "knife__4",
+      "row": 63
+    },
+    {
+      "concept": "wheel",
+      "phrase": "a wheel rolling along a flat road",
+      "image_query": "wheel rolling flat road",
+      "event_id": "wheel__0",
+      "row": 64
+    },
+    {
+      "concept": "wheel",
+      "phrase": "a wheel spinning in mud without traction",
+      "image_query": "wheel spinning mud no traction",
+      "event_id": "wheel__1",
+      "row": 65
+    },
+    {
+      "concept": "wheel",
+      "phrase": "a wheel decelerating due to braking friction",
+      "image_query": "wheel braking friction deceleration",
+      "event_id": "wheel__2",
+      "row": 66
+    },
+    {
+      "concept": "wheel",
+      "phrase": "a large wheel providing mechanical advantage",
+      "image_query": "large wheel mechanical advantage",
+      "event_id": "wheel__3",
+      "row": 67
+    },
+    {
+      "concept": "wheel",
+      "phrase": "a wheel wobbling when its axle is misaligned",
+      "image_query": "wobbly wheel misaligned axle",
+      "event_id": "wheel__4",
+      "row": 68
+    },
+    {
+      "concept": "hand",
+      "phrase": "a hand gripping a jar lid and twisting",
+      "image_query": "hand gripping jar lid twist",
+      "event_id": "hand__0",
+      "row": 69
+    },
+    {
+      "concept": "hand",
+      "phrase": "a hand catching a thrown object",
+      "image_query": "hand catching thrown ball",
+      "event_id": "hand__1",
+      "row": 70
+    },
+    {
+      "concept": "hand",
+      "phrase": "a hand pressing down on a surface to test firmness",
+      "image_query": "hand pressing surface firmness",
+      "event_id": "hand__2",
+      "row": 71
+    },
+    {
+      "concept": "hand",
+      "phrase": "a hand squeezing water from a wet cloth",
+      "image_query": "hand squeezing wet cloth",
+      "event_id": "hand__3",
+      "row": 72
+    },
+    {
+      "concept": "hand",
+      "phrase": "fingers pinching a small object off a flat surface",
+      "image_query": "fingers pinching small object",
+      "event_id": "hand__4",
+      "row": 73
+    },
+    {
+      "concept": "hand",
+      "phrase": "a hand pushing a heavy box across a floor",
+      "image_query": "hand pushing heavy box floor",
+      "event_id": "hand__5",
+      "row": 74
+    },
+    {
+      "concept": "wall",
+      "phrase": "a wall bearing the load of a ceiling above it",
+      "image_query": "wall bearing ceiling load",
+      "event_id": "wall__0",
+      "row": 75
+    },
+    {
+      "concept": "wall",
+      "phrase": "a wall deflecting sound from one room to another",
+      "image_query": "wall deflecting sound",
+      "event_id": "wall__1",
+      "row": 76
+    },
+    {
+      "concept": "wall",
+      "phrase": "a wall cracking under ground movement",
+      "image_query": "wall cracking ground movement",
+      "event_id": "wall__2",
+      "row": 77
+    },
+    {
+      "concept": "wall",
+      "phrase": "a thin wall transmitting vibration",
+      "image_query": "thin wall transmitting vibration",
+      "event_id": "wall__3",
+      "row": 78
+    },
+    {
+      "concept": "wall",
+      "phrase": "a wall stopping the movement of a rolling object",
+      "image_query": "wall stopping rolling ball",
+      "event_id": "wall__4",
+      "row": 79
+    },
+    {
+      "concept": "hole",
+      "phrase": "an object falling through a hole in a floor",
+      "image_query": "object falling through floor hole",
+      "event_id": "hole__0",
+      "row": 80
+    },
+    {
+      "concept": "hole",
+      "phrase": "water draining through a small hole in a container",
+      "image_query": "water draining through hole",
+      "event_id": "hole__1",
+      "row": 81
+    },
+    {
+      "concept": "hole",
+      "phrase": "a hole in a wall allowing light to pass through",
+      "image_query": "hole in wall letting light through",
+      "event_id": "hole__2",
+      "row": 82
+    },
+    {
+      "concept": "hole",
+      "phrase": "an object too large to pass through a hole",
+      "image_query": "object too large to fit hole",
+      "event_id": "hole__3",
+      "row": 83
+    },
+    {
+      "concept": "hole",
+      "phrase": "a hole deepening as material is removed",
+      "image_query": "hole being dug deeper",
+      "event_id": "hole__4",
+      "row": 84
+    },
+    {
+      "concept": "bridge",
+      "phrase": "a bridge flexing under the weight of a passing truck",
+      "image_query": "bridge flexing under truck",
+      "event_id": "bridge__0",
+      "row": 85
+    },
+    {
+      "concept": "bridge",
+      "phrase": "a bridge transferring load to supports at each end",
+      "image_query": "bridge load transfer supports",
+      "event_id": "bridge__1",
+      "row": 86
+    },
+    {
+      "concept": "bridge",
+      "phrase": "a rope bridge swaying in the wind",
+      "image_query": "rope bridge swaying wind",
+      "event_id": "bridge__2",
+      "row": 87
+    },
+    {
+      "concept": "bridge",
+      "phrase": "a bridge failing under excessive central load",
+      "image_query": "bridge collapse center load",
+      "event_id": "bridge__3",
+      "row": 88
+    },
+    {
+      "concept": "bridge",
+      "phrase": "a stone arch bridge distributing weight outward",
+      "image_query": "stone arch bridge weight",
+      "event_id": "bridge__4",
+      "row": 89
+    },
+    {
+      "concept": "ladder",
+      "phrase": "a ladder leaning against a wall at a safe angle",
+      "image_query": "ladder leaning wall safe angle",
+      "event_id": "ladder__0",
+      "row": 90
+    },
+    {
+      "concept": "ladder",
+      "phrase": "a ladder sliding when its base slips on smooth floor",
+      "image_query": "ladder base sliding smooth floor",
+      "event_id": "ladder__1",
+      "row": 91
+    },
+    {
+      "concept": "ladder",
+      "phrase": "a person climbing a ladder rung by rung",
+      "image_query": "person climbing ladder rungs",
+      "event_id": "ladder__2",
+      "row": 92
+    },
+    {
+      "concept": "ladder",
+      "phrase": "a ladder bearing weight distributed across its rungs",
+      "image_query": "ladder bearing weight rungs",
+      "event_id": "ladder__3",
+      "row": 93
+    },
+    {
+      "concept": "ladder",
+      "phrase": "a ladder tipping sideways when weight is uncentered",
+      "image_query": "ladder tipping sideways",
+      "event_id": "ladder__4",
+      "row": 94
+    },
+    {
+      "concept": "spring",
+      "phrase": "a coiled spring compressing under load",
+      "image_query": "coiled spring compressing load",
+      "event_id": "spring__0",
+      "row": 95
+    },
+    {
+      "concept": "spring",
+      "phrase": "a compressed spring releasing and launching an object",
+      "image_query": "spring releasing launching object",
+      "event_id": "spring__1",
+      "row": 96
+    },
+    {
+      "concept": "spring",
+      "phrase": "a spring stretching under tension",
+      "image_query": "spring stretching tension",
+      "event_id": "spring__2",
+      "row": 97
+    },
+    {
+      "concept": "spring",
+      "phrase": "a spring returning to its rest length",
+      "image_query": "spring returning rest length",
+      "event_id": "spring__3",
+      "row": 98
+    },
+    {
+      "concept": "spring",
+      "phrase": "a stiff spring requiring more force to compress",
+      "image_query": "stiff spring compression force",
+      "event_id": "spring__4",
+      "row": 99
+    },
+    {
+      "concept": "bark",
+      "phrase": "tree bark protecting a trunk from abrasion",
+      "image_query": "tree bark protecting trunk",
+      "event_id": "bark__0",
+      "row": 100
+    },
+    {
+      "concept": "bark",
+      "phrase": "bark peeling off a dead tree trunk",
+      "image_query": "bark peeling dead tree",
+      "event_id": "bark__1",
+      "row": 101
+    },
+    {
+      "concept": "bark",
+      "phrase": "bark burning on the outside of a log in a fire",
+      "image_query": "bark burning log fire",
+      "event_id": "bark__2",
+      "row": 102
+    },
+    {
+      "concept": "bark",
+      "phrase": "rough bark scratching skin on contact",
+      "image_query": "rough bark scratching skin",
+      "event_id": "bark__3",
+      "row": 103
+    },
+    {
+      "concept": "bark",
+      "phrase": "bark absorbing water after rain",
+      "image_query": "bark absorbing rainwater",
+      "event_id": "bark__4",
+      "row": 104
+    },
+    {
+      "concept": "wave",
+      "phrase": "a wave breaking onto a rocky shore",
+      "image_query": "ocean wave breaking shore",
+      "event_id": "wave__0",
+      "row": 105
+    },
+    {
+      "concept": "wave",
+      "phrase": "a wave transferring energy without moving water forward",
+      "image_query": "wave energy transfer water",
+      "event_id": "wave__1",
+      "row": 106
+    },
+    {
+      "concept": "wave",
+      "phrase": "a large wave lifting a floating object",
+      "image_query": "large wave lifting boat",
+      "event_id": "wave__2",
+      "row": 107
+    },
+    {
+      "concept": "wave",
+      "phrase": "wave height increasing in shallow water",
+      "image_query": "wave height increasing shallow",
+      "event_id": "wave__3",
+      "row": 108
+    },
+    {
+      "concept": "wave",
+      "phrase": "a wave reflecting off a solid barrier",
+      "image_query": "wave reflecting barrier",
+      "event_id": "wave__4",
+      "row": 109
+    },
+    {
+      "concept": "charge",
+      "phrase": "static charge building up on a balloon surface",
+      "image_query": "static charge balloon buildup",
+      "event_id": "charge__0",
+      "row": 110
+    },
+    {
+      "concept": "charge",
+      "phrase": "a charged object attracting small paper pieces",
+      "image_query": "charged object attracting paper",
+      "event_id": "charge__1",
+      "row": 111
+    },
+    {
+      "concept": "charge",
+      "phrase": "electric charge jumping as a spark",
+      "image_query": "electric spark discharge",
+      "event_id": "charge__2",
+      "row": 112
+    },
+    {
+      "concept": "charge",
+      "phrase": "charge dissipating when grounded through a conductor",
+      "image_query": "charge dissipating grounding",
+      "event_id": "charge__3",
+      "row": 113
+    },
+    {
+      "concept": "charge",
+      "phrase": "two like charges repelling each other",
+      "image_query": "like charges repelling",
+      "event_id": "charge__4",
+      "row": 114
+    },
+    {
+      "concept": "field",
+      "phrase": "a ball rolling across a flat open field",
+      "image_query": "ball rolling flat grassy field",
+      "event_id": "field__0",
+      "row": 115
+    },
+    {
+      "concept": "field",
+      "phrase": "a field of grass bending under wind",
+      "image_query": "grass field bending wind",
+      "event_id": "field__1",
+      "row": 116
+    },
+    {
+      "concept": "field",
+      "phrase": "an object thrown across an open field following a parabola",
+      "image_query": "object thrown parabola field",
+      "event_id": "field__2",
+      "row": 117
+    },
+    {
+      "concept": "field",
+      "phrase": "rain falling uniformly across a flat field",
+      "image_query": "rain falling flat open field",
+      "event_id": "field__3",
+      "row": 118
+    },
+    {
+      "concept": "field",
+      "phrase": "a flat field providing no cover from wind",
+      "image_query": "flat field no wind cover",
+      "event_id": "field__4",
+      "row": 119
+    },
+    {
+      "concept": "light",
+      "phrase": "light refracting through a glass prism",
+      "image_query": "light refracting glass prism",
+      "event_id": "light__0",
+      "row": 120
+    },
+    {
+      "concept": "light",
+      "phrase": "light casting a sharp shadow behind an object",
+      "image_query": "light sharp shadow object",
+      "event_id": "light__1",
+      "row": 121
+    },
+    {
+      "concept": "light",
+      "phrase": "light intensity decreasing with distance from source",
+      "image_query": "light intensity distance falloff",
+      "event_id": "light__2",
+      "row": 122
+    },
+    {
+      "concept": "light",
+      "phrase": "light reflecting off a polished metal surface",
+      "image_query": "light reflecting polished metal",
+      "event_id": "light__3",
+      "row": 123
+    },
+    {
+      "concept": "light",
+      "phrase": "light passing through a translucent material",
+      "image_query": "light translucent material transmission",
+      "event_id": "light__4",
+      "row": 124
+    },
+    {
+      "concept": "light",
+      "phrase": "light blocked by an opaque barrier creating shadow",
+      "image_query": "light blocked opaque barrier",
+      "event_id": "light__5",
+      "row": 125
+    },
+    {
+      "concept": "strike",
+      "phrase": "a hammer striking a nail and driving it into wood",
+      "image_query": "hammer striking nail into wood",
+      "event_id": "strike__0",
+      "row": 126
+    },
+    {
+      "concept": "strike",
+      "phrase": "a bat striking a ball and sending it forward",
+      "image_query": "bat striking ball impact",
+      "event_id": "strike__1",
+      "row": 127
+    },
+    {
+      "concept": "strike",
+      "phrase": "a fist striking a surface and transferring momentum",
+      "image_query": "fist striking surface impact",
+      "event_id": "strike__2",
+      "row": 128
+    },
+    {
+      "concept": "strike",
+      "phrase": "a stone striking glass and causing it to crack",
+      "image_query": "stone striking glass cracking",
+      "event_id": "strike__3",
+      "row": 129
+    },
+    {
+      "concept": "strike",
+      "phrase": "a hard object striking a soft one and deforming it",
+      "image_query": "hard object striking soft deformation",
+      "event_id": "strike__4",
+      "row": 130
+    },
+    {
+      "concept": "press",
+      "phrase": "pressing two flat surfaces together to seal them",
+      "image_query": "pressing surfaces together seal",
+      "event_id": "press__0",
+      "row": 131
+    },
+    {
+      "concept": "press",
+      "phrase": "pressing a soft material and leaving an impression",
+      "image_query": "pressing soft material impression",
+      "event_id": "press__1",
+      "row": 132
+    },
+    {
+      "concept": "press",
+      "phrase": "hydraulic press crushing a metal can",
+      "image_query": "hydraulic press crushing metal can",
+      "event_id": "press__2",
+      "row": 133
+    },
+    {
+      "concept": "press",
+      "phrase": "pressing juice out of a fruit by squeezing",
+      "image_query": "pressing juice from fruit",
+      "event_id": "press__3",
+      "row": 134
+    },
+    {
+      "concept": "press",
+      "phrase": "pressing down on a spring to compress it",
+      "image_query": "pressing down spring compress",
+      "event_id": "press__4",
+      "row": 135
+    },
+    {
+      "concept": "shoot",
+      "phrase": "a plant shoot growing upward toward light",
+      "image_query": "plant shoot growing toward light",
+      "event_id": "shoot__0",
+      "row": 136
+    },
+    {
+      "concept": "shoot",
+      "phrase": "a new shoot emerging from a cut stem",
+      "image_query": "new shoot emerging cut stem",
+      "event_id": "shoot__1",
+      "row": 137
+    },
+    {
+      "concept": "shoot",
+      "phrase": "a bamboo shoot pushing through soil",
+      "image_query": "bamboo shoot pushing through soil",
+      "event_id": "shoot__2",
+      "row": 138
+    },
+    {
+      "concept": "shoot",
+      "phrase": "a fragile shoot bending under its own weight",
+      "image_query": "fragile shoot bending weight",
+      "event_id": "shoot__3",
+      "row": 139
+    },
+    {
+      "concept": "run",
+      "phrase": "a person running at full speed across a track",
+      "image_query": "person running full speed track",
+      "event_id": "run__0",
+      "row": 140
+    },
+    {
+      "concept": "run",
+      "phrase": "water running in a fast stream over pebbles",
+      "image_query": "water running stream pebbles",
+      "event_id": "run__1",
+      "row": 141
+    },
+    {
+      "concept": "run",
+      "phrase": "a machine running continuously at high speed",
+      "image_query": "machine running high speed",
+      "event_id": "run__2",
+      "row": 142
+    },
+    {
+      "concept": "run",
+      "phrase": "paint running down a vertical surface",
+      "image_query": "paint running down wall",
+      "event_id": "run__3",
+      "row": 143
+    },
+    {
+      "concept": "run",
+      "phrase": "a crack running across a surface under stress",
+      "image_query": "crack running across material stress",
+      "event_id": "run__4",
+      "row": 144
+    },
+    {
+      "concept": "run",
+      "phrase": "a river running between two steep banks",
+      "image_query": "river running between steep banks",
+      "event_id": "run__5",
+      "row": 145
+    },
+    {
+      "concept": "hammer",
+      "phrase": "a hammer driving a nail flush into wood",
+      "image_query": "hammer driving nail flush wood",
+      "event_id": "hammer__0",
+      "row": 146
+    },
+    {
+      "concept": "hammer",
+      "phrase": "a hammer breaking apart a concrete block",
+      "image_query": "hammer breaking concrete block",
+      "event_id": "hammer__1",
+      "row": 147
+    },
+    {
+      "concept": "hammer",
+      "phrase": "a rubber mallet striking without damaging a surface",
+      "image_query": "rubber mallet gentle strike",
+      "event_id": "hammer__2",
+      "row": 148
+    },
+    {
+      "concept": "hammer",
+      "phrase": "a hammer claw pulling a nail out of wood",
+      "image_query": "hammer claw removing nail wood",
+      "event_id": "hammer__3",
+      "row": 149
+    },
+    {
+      "concept": "hammer",
+      "phrase": "missing a nail with a hammer and striking wood",
+      "image_query": "hammer missing nail hitting wood",
+      "event_id": "hammer__4",
+      "row": 150
+    },
+    {
+      "concept": "scissors",
+      "phrase": "scissors shearing through a sheet of paper",
+      "image_query": "scissors cutting paper",
+      "event_id": "scissors__0",
+      "row": 151
+    },
+    {
+      "concept": "scissors",
+      "phrase": "scissors cutting fabric along a marked line",
+      "image_query": "scissors cutting fabric line",
+      "event_id": "scissors__1",
+      "row": 152
+    },
+    {
+      "concept": "scissors",
+      "phrase": "scissors failing to cut thick cardboard",
+      "image_query": "scissors struggling thick cardboard",
+      "event_id": "scissors__2",
+      "row": 153
+    },
+    {
+      "concept": "scissors",
+      "phrase": "the pivot point of scissors concentrating force",
+      "image_query": "scissors pivot point force",
+      "event_id": "scissors__3",
+      "row": 154
+    },
+    {
+      "concept": "scissors",
+      "phrase": "scissors slipping on a smooth material",
+      "image_query": "scissors slipping smooth material",
+      "event_id": "scissors__4",
+      "row": 155
+    },
+    {
+      "concept": "bowl",
+      "phrase": "a bowl holding liquid without spilling",
+      "image_query": "bowl holding liquid",
+      "event_id": "bowl__0",
+      "row": 156
+    },
+    {
+      "concept": "bowl",
+      "phrase": "a bowl tipping when weight is placed on its rim",
+      "image_query": "bowl tipping weight rim",
+      "event_id": "bowl__1",
+      "row": 157
+    },
+    {
+      "concept": "bowl",
+      "phrase": "a heavy bowl staying stable on a flat surface",
+      "image_query": "heavy bowl stable surface",
+      "event_id": "bowl__2",
+      "row": 158
+    },
+    {
+      "concept": "bowl",
+      "phrase": "a bowl being spun and the contents rising up the sides",
+      "image_query": "bowl spinning contents rising",
+      "event_id": "bowl__3",
+      "row": 159
+    },
+    {
+      "concept": "bowl",
+      "phrase": "a shallow bowl unable to hold deep liquid",
+      "image_query": "shallow bowl liquid limit",
+      "event_id": "bowl__4",
+      "row": 160
+    },
+    {
+      "concept": "bucket",
+      "phrase": "a bucket being filled with water from a hose",
+      "image_query": "bucket filling with water hose",
+      "event_id": "bucket__0",
+      "row": 161
+    },
+    {
+      "concept": "bucket",
+      "phrase": "a full bucket being lifted by its handle",
+      "image_query": "full bucket lifted by handle",
+      "event_id": "bucket__1",
+      "row": 162
+    },
+    {
+      "concept": "bucket",
+      "phrase": "a bucket tipping and spilling when unbalanced",
+      "image_query": "bucket tipping spilling",
+      "event_id": "bucket__2",
+      "row": 163
+    },
+    {
+      "concept": "bucket",
+      "phrase": "a bucket sinking into water when filled",
+      "image_query": "filled bucket sinking water",
+      "event_id": "bucket__3",
+      "row": 164
+    },
+    {
+      "concept": "bucket",
+      "phrase": "a bucket swung in a circle keeping water inside",
+      "image_query": "bucket swung circle centripetal",
+      "event_id": "bucket__4",
+      "row": 165
+    },
+    {
+      "concept": "bench",
+      "phrase": "a park bench supporting the weight of two people",
+      "image_query": "park bench two people seated",
+      "event_id": "bench__0",
+      "row": 166
+    },
+    {
+      "concept": "bench",
+      "phrase": "a bench bowing slightly under a heavy load",
+      "image_query": "bench bowing heavy load",
+      "event_id": "bench__1",
+      "row": 167
+    },
+    {
+      "concept": "bench",
+      "phrase": "a bench being used as a step to reach a high shelf",
+      "image_query": "standing on bench reach shelf",
+      "event_id": "bench__2",
+      "row": 168
+    },
+    {
+      "concept": "bench",
+      "phrase": "a workbench providing a stable surface for hammering",
+      "image_query": "workbench stable hammering surface",
+      "event_id": "bench__3",
+      "row": 169
+    },
+    {
+      "concept": "fence",
+      "phrase": "a wooden fence stopping a rolling ball",
+      "image_query": "fence stopping rolling ball",
+      "event_id": "fence__0",
+      "row": 170
+    },
+    {
+      "concept": "fence",
+      "phrase": "a fence bending under lateral force from wind",
+      "image_query": "fence bending wind pressure",
+      "event_id": "fence__1",
+      "row": 171
+    },
+    {
+      "concept": "fence",
+      "phrase": "a person climbing over a fence",
+      "image_query": "person climbing over fence",
+      "event_id": "fence__2",
+      "row": 172
+    },
+    {
+      "concept": "fence",
+      "phrase": "a fence post being driven into the ground",
+      "image_query": "fence post driven into ground",
+      "event_id": "fence__3",
+      "row": 173
+    },
+    {
+      "concept": "fence",
+      "phrase": "a fence providing a boundary but not a barrier to air",
+      "image_query": "fence boundary not air barrier",
+      "event_id": "fence__4",
+      "row": 174
+    },
+    {
+      "concept": "needle",
+      "phrase": "a needle piercing fabric by concentrating force",
+      "image_query": "needle piercing fabric",
+      "event_id": "needle__0",
+      "row": 175
+    },
+    {
+      "concept": "needle",
+      "phrase": "a needle threading through a narrow eye",
+      "image_query": "needle threading narrow eye",
+      "event_id": "needle__1",
+      "row": 176
+    },
+    {
+      "concept": "needle",
+      "phrase": "a needle bending when forced laterally",
+      "image_query": "needle bending lateral force",
+      "event_id": "needle__2",
+      "row": 177
+    },
+    {
+      "concept": "needle",
+      "phrase": "a sharp needle making a small clean hole",
+      "image_query": "needle small clean hole",
+      "event_id": "needle__3",
+      "row": 178
+    },
+    {
+      "concept": "needle",
+      "phrase": "a needle scratching a hard surface lightly",
+      "image_query": "needle scratching hard surface",
+      "event_id": "needle__4",
+      "row": 179
+    },
+    {
+      "concept": "drum",
+      "phrase": "a drumhead vibrating when struck with a stick",
+      "image_query": "drumhead vibrating struck",
+      "event_id": "drum__0",
+      "row": 180
+    },
+    {
+      "concept": "drum",
+      "phrase": "a tightly tuned drumhead producing a high pitch",
+      "image_query": "tight drumhead high pitch",
+      "event_id": "drum__1",
+      "row": 181
+    },
+    {
+      "concept": "drum",
+      "phrase": "a drum skin denting under a hard blow",
+      "image_query": "drum skin denting hard blow",
+      "event_id": "drum__2",
+      "row": 182
+    },
+    {
+      "concept": "drum",
+      "phrase": "resonance building inside a hollow drum body",
+      "image_query": "drum body resonance hollow",
+      "event_id": "drum__3",
+      "row": 183
+    },
+    {
+      "concept": "clock",
+      "phrase": "clock hands rotating at a steady rate",
+      "image_query": "clock hands rotating steady",
+      "event_id": "clock__0",
+      "row": 184
+    },
+    {
+      "concept": "clock",
+      "phrase": "a pendulum swinging at a fixed period",
+      "image_query": "pendulum swinging fixed period",
+      "event_id": "clock__1",
+      "row": 185
+    },
+    {
+      "concept": "clock",
+      "phrase": "a clock mechanism unwinding a coiled spring",
+      "image_query": "clock mechanism spring unwinding",
+      "event_id": "clock__2",
+      "row": 186
+    },
+    {
+      "concept": "clock",
+      "phrase": "a clock running slow when its battery is low",
+      "image_query": "clock running slow low battery",
+      "event_id": "clock__3",
+      "row": 187
+    },
+    {
+      "concept": "telescope",
+      "phrase": "a telescope gathering and focusing light from a star",
+      "image_query": "telescope focusing star light",
+      "event_id": "telescope__0",
+      "row": 188
+    },
+    {
+      "concept": "telescope",
+      "phrase": "a telescope lens magnifying a distant object",
+      "image_query": "telescope lens magnification",
+      "event_id": "telescope__1",
+      "row": 189
+    },
+    {
+      "concept": "telescope",
+      "phrase": "dew forming on a cold telescope lens outdoors",
+      "image_query": "dew forming telescope lens",
+      "event_id": "telescope__2",
+      "row": 190
+    },
+    {
+      "concept": "telescope",
+      "phrase": "a telescope being aimed precisely at a target",
+      "image_query": "telescope precise aiming",
+      "event_id": "telescope__3",
+      "row": 191
+    },
+    {
+      "concept": "cloud",
+      "phrase": "a cloud forming as rising air cools and condenses",
+      "image_query": "cloud forming condensation",
+      "event_id": "cloud__0",
+      "row": 192
+    },
+    {
+      "concept": "cloud",
+      "phrase": "a cloud casting a large moving shadow on the ground",
+      "image_query": "cloud shadow moving ground",
+      "event_id": "cloud__1",
+      "row": 193
+    },
+    {
+      "concept": "cloud",
+      "phrase": "a dark cloud releasing rain below it",
+      "image_query": "dark cloud raining below",
+      "event_id": "cloud__2",
+      "row": 194
+    },
+    {
+      "concept": "cloud",
+      "phrase": "a cloud dissipating as air warms",
+      "image_query": "cloud dissipating warming air",
+      "event_id": "cloud__3",
+      "row": 195
+    },
+    {
+      "concept": "cloud",
+      "phrase": "wind driving a cloud across the sky",
+      "image_query": "wind moving cloud across sky",
+      "event_id": "cloud__4",
+      "row": 196
+    },
+    {
+      "concept": "sand",
+      "phrase": "sand flowing through the neck of an hourglass",
+      "image_query": "sand flowing hourglass",
+      "event_id": "sand__0",
+      "row": 197
+    },
+    {
+      "concept": "sand",
+      "phrase": "sand shifting underfoot and reducing traction",
+      "image_query": "sand shifting underfoot",
+      "event_id": "sand__1",
+      "row": 198
+    },
+    {
+      "concept": "sand",
+      "phrase": "wet sand holding a shape when compressed",
+      "image_query": "wet sand holding shape",
+      "event_id": "sand__2",
+      "row": 199
+    },
+    {
+      "concept": "sand",
+      "phrase": "dry sand collapsing from a pile into a cone",
+      "image_query": "dry sand collapsing pile cone",
+      "event_id": "sand__3",
+      "row": 200
+    },
+    {
+      "concept": "sand",
+      "phrase": "sand abrasion wearing down a surface",
+      "image_query": "sand abrasion wearing surface",
+      "event_id": "sand__4",
+      "row": 201
+    },
+    {
+      "concept": "ice",
+      "phrase": "ice melting when warm water is poured over it",
+      "image_query": "ice melting warm water",
+      "event_id": "ice__0",
+      "row": 202
+    },
+    {
+      "concept": "ice",
+      "phrase": "ice forming a slippery surface underfoot",
+      "image_query": "ice slippery surface underfoot",
+      "event_id": "ice__1",
+      "row": 203
+    },
+    {
+      "concept": "ice",
+      "phrase": "ice expanding as it freezes and cracking a container",
+      "image_query": "ice expanding cracking container",
+      "event_id": "ice__2",
+      "row": 204
+    },
+    {
+      "concept": "ice",
+      "phrase": "ice floating on liquid water",
+      "image_query": "ice cube floating water glass",
+      "event_id": "ice__3",
+      "row": 205
+    },
+    {
+      "concept": "ice",
+      "phrase": "ice fracturing when struck sharply",
+      "image_query": "ice fracturing sharp impact",
+      "event_id": "ice__4",
+      "row": 206
+    },
+    {
+      "concept": "feather",
+      "phrase": "a feather drifting slowly downward in still air",
+      "image_query": "feather drifting down still air",
+      "event_id": "feather__0",
+      "row": 207
+    },
+    {
+      "concept": "feather",
+      "phrase": "a feather being deflected by a light breeze",
+      "image_query": "feather deflected by breeze",
+      "event_id": "feather__1",
+      "row": 208
+    },
+    {
+      "concept": "feather",
+      "phrase": "a feather floating on water without sinking",
+      "image_query": "feather floating on water",
+      "event_id": "feather__2",
+      "row": 209
+    },
+    {
+      "concept": "feather",
+      "phrase": "a feather being crushed flat under light pressure",
+      "image_query": "feather crushed flat",
+      "event_id": "feather__3",
+      "row": 210
+    },
+    {
+      "concept": "leaf",
+      "phrase": "a dry leaf crumbling when squeezed",
+      "image_query": "dry leaf crumbling hand",
+      "event_id": "leaf__0",
+      "row": 211
+    },
+    {
+      "concept": "leaf",
+      "phrase": "a leaf bending in the wind without breaking",
+      "image_query": "leaf bending in wind",
+      "event_id": "leaf__1",
+      "row": 212
+    },
+    {
+      "concept": "leaf",
+      "phrase": "a leaf floating on the surface of water",
+      "image_query": "leaf floating water surface",
+      "event_id": "leaf__2",
+      "row": 213
+    },
+    {
+      "concept": "leaf",
+      "phrase": "a wet leaf sticking to a smooth surface",
+      "image_query": "wet leaf sticking smooth surface",
+      "event_id": "leaf__3",
+      "row": 214
+    },
+    {
+      "concept": "leaf",
+      "phrase": "a leaf burning quickly when exposed to flame",
+      "image_query": "leaf burning fire quickly",
+      "event_id": "leaf__4",
+      "row": 215
+    },
+    {
+      "concept": "thread",
+      "phrase": "a thread breaking when pulled beyond its tensile limit",
+      "image_query": "thread breaking tensile limit",
+      "event_id": "thread__0",
+      "row": 216
+    },
+    {
+      "concept": "thread",
+      "phrase": "a thread being pulled tight around an object",
+      "image_query": "thread pulled tight around object",
+      "event_id": "thread__1",
+      "row": 217
+    },
+    {
+      "concept": "thread",
+      "phrase": "multiple threads twisted together forming a cord",
+      "image_query": "threads twisted forming cord",
+      "event_id": "thread__2",
+      "row": 218
+    },
+    {
+      "concept": "thread",
+      "phrase": "a thread tangling when coiled loosely",
+      "image_query": "thread tangling loose coil",
+      "event_id": "thread__3",
+      "row": 219
+    },
+    {
+      "concept": "thread",
+      "phrase": "a thread being threaded through a needle eye",
+      "image_query": "thread through needle eye",
+      "event_id": "thread__4",
+      "row": 220
+    },
+    {
+      "concept": "glass",
+      "phrase": "a glass shattering into fragments on a hard floor",
+      "image_query": "glass shattering hard floor",
+      "event_id": "glass__0",
+      "row": 221
+    },
+    {
+      "concept": "glass",
+      "phrase": "light passing straight through a clear glass pane",
+      "image_query": "light through clear glass pane",
+      "event_id": "glass__1",
+      "row": 222
+    },
+    {
+      "concept": "glass",
+      "phrase": "a glass cracking from thermal shock",
+      "image_query": "glass cracking thermal shock",
+      "event_id": "glass__2",
+      "row": 223
+    },
+    {
+      "concept": "glass",
+      "phrase": "a glass cutting skin along its broken edge",
+      "image_query": "broken glass cutting skin",
+      "event_id": "glass__3",
+      "row": 224
+    },
+    {
+      "concept": "glass",
+      "phrase": "a glass pane flexing slightly under wind pressure",
+      "image_query": "glass pane flexing wind",
+      "event_id": "glass__4",
+      "row": 225
+    },
+    {
+      "concept": "coin",
+      "phrase": "a coin rolling on its edge and falling flat",
+      "image_query": "coin rolling on edge falling",
+      "event_id": "coin__0",
+      "row": 226
+    },
+    {
+      "concept": "coin",
+      "phrase": "a coin sinking immediately when dropped in water",
+      "image_query": "coin sinking water dropped",
+      "event_id": "coin__1",
+      "row": 227
+    },
+    {
+      "concept": "coin",
+      "phrase": "coins stacking when placed on top of each other",
+      "image_query": "coins stacking pile",
+      "event_id": "coin__2",
+      "row": 228
+    },
+    {
+      "concept": "coin",
+      "phrase": "a coin conducting heat away from a fingertip",
+      "image_query": "coin conducting heat finger",
+      "event_id": "coin__3",
+      "row": 229
+    },
+    {
+      "concept": "coin",
+      "phrase": "a coin being flipped and landing randomly",
+      "image_query": "coin flip landing",
+      "event_id": "coin__4",
+      "row": 230
+    },
+    {
+      "concept": "shelf",
+      "phrase": "a shelf bowing in the middle under heavy books",
+      "image_query": "shelf bowing heavy books middle",
+      "event_id": "shelf__0",
+      "row": 231
+    },
+    {
+      "concept": "shelf",
+      "phrase": "books sliding off an overloaded shelf",
+      "image_query": "books sliding off overloaded shelf",
+      "event_id": "shelf__1",
+      "row": 232
+    },
+    {
+      "concept": "shelf",
+      "phrase": "a shelf bracket pulling out of a wall under load",
+      "image_query": "shelf bracket pulling out wall",
+      "event_id": "shelf__2",
+      "row": 233
+    },
+    {
+      "concept": "shelf",
+      "phrase": "weight distributed across a shelf staying stable",
+      "image_query": "weight distributed shelf stable",
+      "event_id": "shelf__3",
+      "row": 234
+    },
+    {
+      "concept": "shelf",
+      "phrase": "a shelf mounted too high to reach without a step",
+      "image_query": "high shelf unreachable without step",
+      "event_id": "shelf__4",
+      "row": 235
+    },
+    {
+      "concept": "pipe",
+      "phrase": "water flowing through a pipe under pressure",
+      "image_query": "water flowing pipe pressure",
+      "event_id": "pipe__0",
+      "row": 236
+    },
+    {
+      "concept": "pipe",
+      "phrase": "a pipe bursting when internal pressure exceeds wall strength",
+      "image_query": "pipe bursting pressure",
+      "event_id": "pipe__1",
+      "row": 237
+    },
+    {
+      "concept": "pipe",
+      "phrase": "a blocked pipe causing pressure to build upstream",
+      "image_query": "blocked pipe pressure buildup",
+      "event_id": "pipe__2",
+      "row": 238
+    },
+    {
+      "concept": "pipe",
+      "phrase": "a pipe bending without breaking when forced",
+      "image_query": "pipe bending without breaking",
+      "event_id": "pipe__3",
+      "row": 239
+    },
+    {
+      "concept": "pipe",
+      "phrase": "water hammer shock when flow is suddenly stopped",
+      "image_query": "water hammer shock pipe",
+      "event_id": "pipe__4",
+      "row": 240
+    },
+    {
+      "concept": "net",
+      "phrase": "a net trapping fish while letting water through",
+      "image_query": "fishing net trapping fish",
+      "event_id": "net__0",
+      "row": 241
+    },
+    {
+      "concept": "net",
+      "phrase": "a net catching a falling object",
+      "image_query": "safety net catching falling object",
+      "event_id": "net__1",
+      "row": 242
+    },
+    {
+      "concept": "net",
+      "phrase": "a net tearing when the load exceeds its strength",
+      "image_query": "net tearing under load",
+      "event_id": "net__2",
+      "row": 243
+    },
+    {
+      "concept": "net",
+      "phrase": "a net stretching to absorb impact",
+      "image_query": "net stretching absorb impact",
+      "event_id": "net__3",
+      "row": 244
+    },
+    {
+      "concept": "net",
+      "phrase": "an object passing through mesh that is too large",
+      "image_query": "object too large for net mesh",
+      "event_id": "net__4",
+      "row": 245
+    },
+    {
+      "concept": "chain",
+      "phrase": "a chain transmitting tension between two objects",
+      "image_query": "chain transmitting tension",
+      "event_id": "chain__0",
+      "row": 246
+    },
+    {
+      "concept": "chain",
+      "phrase": "a chain wrapped around a capstan to multiply force",
+      "image_query": "chain capstan force multiply",
+      "event_id": "chain__1",
+      "row": 247
+    },
+    {
+      "concept": "chain",
+      "phrase": "a chain snapping at its weakest link under load",
+      "image_query": "chain snapping weakest link",
+      "event_id": "chain__2",
+      "row": 248
+    },
+    {
+      "concept": "chain",
+      "phrase": "a chain failing to push \u2014 buckling under compression",
+      "image_query": "chain buckling compression",
+      "event_id": "chain__3",
+      "row": 249
+    },
+    {
+      "concept": "chain",
+      "phrase": "a chain swinging as a pendulum",
+      "image_query": "chain swinging pendulum",
+      "event_id": "chain__4",
+      "row": 250
+    }
+  ],
+  "n_events": 251,
+  "n_concepts": 49,
+  "concepts": [
+    "apple",
+    "chair",
+    "water",
+    "fire",
+    "stone",
+    "rope",
+    "door",
+    "container",
+    "shadow",
+    "mirror",
+    "knife",
+    "wheel",
+    "hand",
+    "wall",
+    "hole",
+    "bridge",
+    "ladder",
+    "spring",
+    "bark",
+    "wave",
+    "charge",
+    "field",
+    "light",
+    "strike",
+    "press",
+    "shoot",
+    "run",
+    "hammer",
+    "scissors",
+    "bowl",
+    "bucket",
+    "bench",
+    "fence",
+    "needle",
+    "drum",
+    "clock",
+    "telescope",
+    "cloud",
+    "sand",
+    "ice",
+    "feather",
+    "leaf",
+    "thread",
+    "glass",
+    "coin",
+    "shelf",
+    "pipe",
+    "net",
+    "chain"
+  ],
+  "events_per_concept": {
+    "apple": 6,
+    "chair": 6,
+    "water": 7,
+    "fire": 6,
+    "stone": 6,
+    "rope": 6,
+    "door": 6,
+    "container": 6,
+    "shadow": 5,
+    "mirror": 5,
+    "knife": 5,
+    "wheel": 5,
+    "hand": 6,
+    "wall": 5,
+    "hole": 5,
+    "bridge": 5,
+    "ladder": 5,
+    "spring": 5,
+    "bark": 5,
+    "wave": 5,
+    "charge": 5,
+    "field": 5,
+    "light": 6,
+    "strike": 5,
+    "press": 5,
+    "shoot": 4,
+    "run": 6,
+    "hammer": 5,
+    "scissors": 5,
+    "bowl": 5,
+    "bucket": 5,
+    "bench": 4,
+    "fence": 5,
+    "needle": 5,
+    "drum": 4,
+    "clock": 4,
+    "telescope": 4,
+    "cloud": 5,
+    "sand": 5,
+    "ice": 5,
+    "feather": 4,
+    "leaf": 5,
+    "thread": 5,
+    "glass": 5,
+    "coin": 5,
+    "shelf": 5,
+    "pipe": 5,
+    "net": 5,
+    "chain": 5
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "clip_single_vs_multi_rsa": -0.1880224070136926,
+  "vjepa_static_vs_video_rsa": 1.0,
+  "new_vjepa_vs_new_clip_rsa": {
+    "r": -0.1319246304353082,
+    "p": 5.649116581987727e-06
+  },
+  "new_mae_vs_new_clip_rsa": {
+    "r": 0.198586164693868,
+    "p": 6.357863342577223e-12
+  },
+  "new_gap_vjepa_minus_mae": -0.3305107951291762
+}

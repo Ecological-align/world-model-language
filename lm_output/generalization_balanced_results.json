@@ -1,0 +1,20 @@
+{
+  "condition_a_uncontrolled": {
+    "train_mean": 1.0,
+    "train_std": 0.0,
+    "test_mean": 0.8566666865348815,
+    "test_std": 0.1312757820359406,
+    "gap": 0.14333331346511846,
+    "n_runs": 50
+  },
+  "condition_b_balanced": {
+    "train_mean": 1.0,
+    "train_std": 0.0,
+    "test_mean": 0.9183333516120911,
+    "test_std": 0.06767978850967722,
+    "gap": 0.08166664838790894,
+    "n_runs": 50
+  },
+  "verdict": "GENERALISATION IS REAL \u2014 batch balance does not affect result",
+  "drop_A_to_B": -0.061666665077209526
+}

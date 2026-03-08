@@ -1,0 +1,198 @@
+{
+  "apple": {
+    "n": 30,
+    "source": "wikimedia"
+  },
+  "chair": {
+    "n": 4,
+    "source": "wikimedia"
+  },
+  "water": {
+    "n": 3,
+    "source": "wikimedia"
+  },
+  "fire": {
+    "n": 3,
+    "source": "wikimedia"
+  },
+  "stone": {
+    "n": 3,
+    "source": "wikimedia"
+  },
+  "rope": {
+    "n": 7,
+    "source": "wikimedia"
+  },
+  "door": {
+    "n": 2,
+    "source": "wikimedia"
+  },
+  "container": {
+    "n": 26,
+    "source": "wikimedia"
+  },
+  "shadow": {
+    "n": 14,
+    "source": "wikimedia"
+  },
+  "mirror": {
+    "n": 30,
+    "source": "wikimedia"
+  },
+  "knife": {
+    "n": 10,
+    "source": "wikimedia"
+  },
+  "wheel": {
+    "n": 15,
+    "source": "wikimedia"
+  },
+  "hand": {
+    "n": 5,
+    "source": "wikimedia"
+  },
+  "wall": {
+    "n": 2,
+    "source": "icrawler"
+  },
+  "hole": {
+    "n": 0,
+    "source": "icrawler"
+  },
+  "bridge": {
+    "n": 3,
+    "source": "icrawler"
+  },
+  "ladder": {
+    "n": 1,
+    "source": "icrawler"
+  },
+  "spring": {
+    "n": 5,
+    "source": "icrawler"
+  },
+  "bark": {
+    "n": 0,
+    "source": "icrawler"
+  },
+  "wave": {
+    "n": 6,
+    "source": "wikimedia"
+  },
+  "charge": {
+    "n": 16,
+    "source": "wikimedia"
+  },
+  "field": {
+    "n": 11,
+    "source": "wikimedia"
+  },
+  "light": {
+    "n": 0,
+    "source": "icrawler"
+  },
+  "strike": {
+    "n": 8,
+    "source": "wikimedia"
+  },
+  "press": {
+    "n": 30,
+    "source": "wikimedia"
+  },
+  "shoot": {
+    "n": 1,
+    "source": "wikimedia"
+  },
+  "run": {
+    "n": 30,
+    "source": "wikimedia"
+  },
+  "hammer": {
+    "n": 30,
+    "source": "wikimedia"
+  },
+  "scissors": {
+    "n": 28,
+    "source": "wikimedia"
+  },
+  "bowl": {
+    "n": 3,
+    "source": "wikimedia"
+  },
+  "bucket": {
+    "n": 1,
+    "source": "wikimedia"
+  },
+  "bench": {
+    "n": 1,
+    "source": "wikimedia"
+  },
+  "fence": {
+    "n": 2,
+    "source": "wikimedia"
+  },
+  "needle": {
+    "n": 9,
+    "source": "wikimedia"
+  },
+  "drum": {
+    "n": 30,
+    "source": "wikimedia"
+  },
+  "clock": {
+    "n": 30,
+    "source": "wikimedia"
+  },
+  "telescope": {
+    "n": 9,
+    "source": "wikimedia"
+  },
+  "cloud": {
+    "n": 6,
+    "source": "wikimedia"
+  },
+  "sand": {
+    "n": 0,
+    "source": "icrawler"
+  },
+  "ice": {
+    "n": 12,
+    "source": "wikimedia"
+  },
+  "feather": {
+    "n": 2,
+    "source": "wikimedia"
+  },
+  "leaf": {
+    "n": 16,
+    "source": "wikimedia"
+  },
+  "thread": {
+    "n": 5,
+    "source": "wikimedia"
+  },
+  "glass": {
+    "n": 6,
+    "source": "wikimedia"
+  },
+  "coin": {
+    "n": 13,
+    "source": "wikimedia"
+  },
+  "shelf": {
+    "n": 2,
+    "source": "icrawler"
+  },
+  "pipe": {
+    "n": 2,
+    "source": "wikimedia"
+  },
+  "net": {
+    "n": 1,
+    "source": "icrawler"
+  },
+  "chain": {
+    "n": 10,
+    "source": "wikimedia"
+  }
+}

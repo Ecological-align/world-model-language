@@ -8,6 +8,9 @@ lm_output/*_imagine.npy
 lm_output/*_physical.npy
 *.pt
 lm_output/image_cache/
+lm_output/multi_images/
+lm_output/oi_cache/
+lm_output/phrase_images/
 __pycache__/
 *.pyc
 .env

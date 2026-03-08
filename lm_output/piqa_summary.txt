@@ -1,0 +1,84 @@
+=================================================================
+PIQA BENCHMARK: WORLD MODEL CONTEXT INJECTION
+=================================================================
+
+Total matched questions: 918
+
+OVERALL ACCURACY
+  Mistral alone:           72.1%
+  Mistral + WM context:    65.5%
+  Delta:                   -6.6%
+
+QUESTION-LEVEL CHANGES
+  Improved (wrong→right):  174
+  Degraded (right→wrong):  235
+  Unchanged:               509
+  McNemar test (improvements > degradations): p = 0.999 n.s.
+
+PER-CONCEPT BREAKDOWN
+  Concept           N   Alone      WM       Δ
+  ---------------------------------------------
+  shadow            1    0.0%  100.0%  +100.0%
+  spring            2  100.0%    0.0%  -100.0%
+  field             1  100.0%    0.0%  -100.0%
+  feather           2  100.0%    0.0%  -100.0%
+  chain             1    0.0%  100.0%  +100.0%
+  shelf             9  100.0%   22.2%  -77.8%
+  wave              2  100.0%   50.0%  -50.0%
+  fence             2   50.0%  100.0%  +50.0%
+  leaf             17   76.5%   41.2%  -35.3%
+  shoot             3  100.0%   66.7%  -33.3%
+  run              43   81.4%   51.2%  -30.2%
+  strike           20   90.0%   60.0%  -30.0%
+  coin              4   25.0%   50.0%  +25.0%
+  stone            17   76.5%   52.9%  -23.5%
+  mirror            9   88.9%   66.7%  -22.2%
+  hammer           28   82.1%   60.7%  -21.4%
+  door             15   73.3%   53.3%  -20.0%
+  clock            12   91.7%   75.0%  -16.7%
+  pipe             21   76.2%   61.9%  -14.3%
+  container        94   74.5%   60.6%  -13.8%
+  apple            17   70.6%   82.4%  +11.8%
+  sand             19   78.9%   68.4%  -10.5%
+  thread           10   90.0%   80.0%  -10.0%
+  net              10   80.0%   90.0%  +10.0%
+  knife            72   75.0%   65.3%   -9.7%
+  wall             42   61.9%   52.4%   -9.5%
+  wheel            11   72.7%   81.8%   +9.1%
+  rope             36   63.9%   55.6%   -8.3%
+  bowl             71   70.4%   77.5%   +7.0%
+  ice              72   69.4%   75.0%   +5.6%
+  hole             60   71.7%   66.7%   -5.0%
+  hand            107   64.5%   69.2%   +4.7%
+  light            43   69.8%   65.1%   -4.7%
+  scissors         22   68.2%   72.7%   +4.5%
+  water           252   69.4%   65.1%   -4.4%
+  fire             39   59.0%   61.5%   +2.6%
+  glass            48   64.6%   66.7%   +2.1%
+  chair            10   70.0%   70.0%   +0.0%
+  ladder            1  100.0%  100.0%   +0.0%
+  bark              1  100.0%  100.0%   +0.0%
+  charge            7   71.4%   71.4%   +0.0%
+  press            45   62.2%   62.2%   +0.0%
+  bucket           10   90.0%   90.0%   +0.0%
+  bench             1  100.0%  100.0%   +0.0%
+  needle           28   75.0%   75.0%   +0.0%
+  telescope         1  100.0%  100.0%   +0.0%
+  cloud             1  100.0%  100.0%   +0.0%
+
+EXAMPLE IMPROVEMENTS (wrong→right with WM context)
+  [strike] Make outdoor pillow.
+  [door] Remove soap scum from shower door.
+  [hand, leaf] To spare the plant while picking lettuce
+  [water, fire] fire
+  [water] How long should liquid nails dry?
+
+EXAMPLE DEGRADATIONS (right→wrong with WM context)
+  [container, press, glass] How do you attach toilet paper to a glass jar?
+  [feather] How to clean blinds without tearing them up
+  [ice, glass] What alcohol do you pour for a mojito?
+  [run] How to start an automatic transmission car.
+  [wave] To make a bedroom temperature colder without a fan or air conditioner,
+
+INTERPRETATION
+  ~ No meaningful effect (-6.6%). Context neither helps nor hurts.
