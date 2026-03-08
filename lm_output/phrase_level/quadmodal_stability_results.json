@@ -1,0 +1,174 @@
+{
+  "grand_means": {
+    "LM_VIS": 0.4063001237809658,
+    "LM_CLIP": 0.4442271761596203,
+    "LM_MAE": 0.48789361764987316,
+    "VIS_CLIP": 0.15641558500938116,
+    "VIS_MAE": 0.18711880523090563,
+    "CLIP_MAE": 0.29176550443905097
+  },
+  "configs": {
+    "original": {
+      "hyperparameters": {
+        "lambda_cm": 0.04,
+        "lambda_div": 0.5,
+        "codebook_dim": 256,
+        "epochs": 400
+      },
+      "means": {
+        "LM_VIS": 0.5085050523281097,
+        "LM_CLIP": 0.4808767408132553,
+        "LM_MAE": 0.5821088969707489,
+        "VIS_CLIP": 0.18109547151252628,
+        "VIS_MAE": 0.29400229528546334,
+        "CLIP_MAE": 0.39049015045166013
+      },
+      "stds": {
+        "LM_VIS": 0.2350976235056462,
+        "LM_CLIP": 0.256843406241431,
+        "LM_MAE": 0.23874370310055704,
+        "VIS_CLIP": 0.3011740260287459,
+        "VIS_MAE": 0.2984885988117221,
+        "CLIP_MAE": 0.32578824836612846
+      },
+      "top_pair": "LM_MAE",
+      "bottom_pair": "VIS_CLIP",
+      "pattern_stable": true
+    },
+    "low_cm": {
+      "hyperparameters": {
+        "lambda_cm": 0.01,
+        "lambda_div": 0.5,
+        "codebook_dim": 256,
+        "epochs": 400
+      },
+      "means": {
+        "LM_VIS": 0.17617214769124984,
+        "LM_CLIP": 0.5586171090602875,
+        "LM_MAE": 0.38038749396800997,
+        "VIS_CLIP": 0.02800512397661805,
+        "VIS_MAE": 0.02905527576804161,
+        "CLIP_MAE": 0.29869566559791566
+      },
+      "stds": {
+        "LM_VIS": 0.12309013715223706,
+        "LM_CLIP": 0.18755906699194716,
+        "LM_MAE": 0.19554685419292098,
+        "VIS_CLIP": 0.04365508172559946,
+        "VIS_MAE": 0.037240925173367856,
+        "CLIP_MAE": 0.22831974152787424
+      },
+      "top_pair": "LM_CLIP",
+      "bottom_pair": "VIS_CLIP",
+      "pattern_stable": true
+    },
+    "high_div": {
+      "hyperparameters": {
+        "lambda_cm": 0.04,
+        "lambda_div": 1.5,
+        "codebook_dim": 256,
+        "epochs": 400
+      },
+      "means": {
+        "LM_VIS": 0.3801842540502548,
+        "LM_CLIP": 0.41016226410865786,
+        "LM_MAE": 0.477232027053833,
+        "VIS_CLIP": 0.08178169149905443,
+        "VIS_MAE": 0.2571318030357361,
+        "CLIP_MAE": 0.2653999589383602
+      },
+      "stds": {
+        "LM_VIS": 0.13560472130652315,
+        "LM_CLIP": 0.14481624233005194,
+        "LM_MAE": 0.13899095659937893,
+        "VIS_CLIP": 0.0993043847863241,
+        "VIS_MAE": 0.27934656029880245,
+        "CLIP_MAE": 0.2715862211075292
+      },
+      "top_pair": "LM_MAE",
+      "bottom_pair": "VIS_CLIP",
+      "pattern_stable": true
+    },
+    "large_cb": {
+      "hyperparameters": {
+        "lambda_cm": 0.04,
+        "lambda_div": 0.5,
+        "codebook_dim": 512,
+        "epochs": 400
+      },
+      "means": {
+        "LM_VIS": 0.5840041697025299,
+        "LM_CLIP": 0.42621962279081343,
+        "LM_MAE": 0.4829331636428833,
+        "VIS_CLIP": 0.3149829965084791,
+        "VIS_MAE": 0.21921019963920116,
+        "CLIP_MAE": 0.10878114243969321
+      },
+      "stds": {
+        "LM_VIS": 0.17689858044338705,
+        "LM_CLIP": 0.27145540293679365,
+        "LM_MAE": 0.19929079854535514,
+        "VIS_CLIP": 0.21401585885540855,
+        "VIS_MAE": 0.35089624646309353,
+        "CLIP_MAE": 0.10743005627792138
+      },
+      "top_pair": "LM_VIS",
+      "bottom_pair": "CLIP_MAE",
+      "pattern_stable": false
+    },
+    "more_epochs": {
+      "hyperparameters": {
+        "lambda_cm": 0.04,
+        "lambda_div": 0.5,
+        "codebook_dim": 256,
+        "epochs": 800
+      },
+      "means": {
+        "LM_VIS": 0.4905902683734894,
+        "LM_CLIP": 0.4909974902868271,
+        "LM_MAE": 0.6141191899776459,
+        "VIS_CLIP": 0.2223417492583394,
+        "VIS_MAE": 0.24903687611222267,
+        "CLIP_MAE": 0.41749562323093414
+      },
+      "stds": {
+        "LM_VIS": 0.21430073513885944,
+        "LM_CLIP": 0.2759561461669792,
+        "LM_MAE": 0.21935709758421534,
+        "VIS_CLIP": 0.27813258746984604,
+        "VIS_MAE": 0.2823719782638806,
+        "CLIP_MAE": 0.3312393837349767
+      },
+      "top_pair": "LM_MAE",
+      "bottom_pair": "VIS_CLIP",
+      "pattern_stable": true
+    },
+    "balanced": {
+      "hyperparameters": {
+        "lambda_cm": 0.02,
+        "lambda_div": 1.0,
+        "codebook_dim": 256,
+        "epochs": 600
+      },
+      "means": {
+        "LM_VIS": 0.29834485054016113,
+        "LM_CLIP": 0.29848982989788053,
+        "LM_MAE": 0.39058093428611756,
+        "VIS_CLIP": 0.11028647730126977,
+        "VIS_MAE": 0.07427638154476882,
+        "CLIP_MAE": 0.26973048597574234
+      },
+      "stds": {
+        "LM_VIS": 0.03503824119648023,
+        "LM_CLIP": 0.09404631668507163,
+        "LM_MAE": 0.060681033653995575,
+        "VIS_CLIP": 0.12759532769758283,
+        "VIS_MAE": 0.058730233067385625,
+        "CLIP_MAE": 0.2792736882168554
+      },
+      "top_pair": "LM_MAE",
+      "bottom_pair": "VIS_MAE",
+      "pattern_stable": true
+    }
+  }
+}
