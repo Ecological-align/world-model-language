@@ -1,0 +1,154 @@
+{
+  "objects": {
+    "LM\u2194VIS": {
+      "train_mean": 85.52381038665771,
+      "train_std": 10.077252021376593,
+      "test_mean": 9.333333611488342,
+      "active_codes": 10.18
+    },
+    "LM\u2194MAE": {
+      "train_mean": 83.52381044626236,
+      "train_std": 13.808209470647299,
+      "test_mean": 10.000000268220901,
+      "active_codes": 7.88
+    },
+    "LM\u2194CLIP": {
+      "train_mean": 86.76190555095673,
+      "train_std": 9.53760848171949,
+      "test_mean": 13.000000387430191,
+      "active_codes": 10.8
+    },
+    "VIS\u2194MAE": {
+      "train_mean": 93.04761946201324,
+      "train_std": 12.74946012414433,
+      "test_mean": 40.6666673719883,
+      "active_codes": 9.7
+    },
+    "VIS\u2194CLIP": {
+      "train_mean": 90.47619104385376,
+      "train_std": 14.380636162410571,
+      "test_mean": 46.66666716337204,
+      "active_codes": 10.32
+    },
+    "CLIP\u2194MAE": {
+      "train_mean": 91.9047623872757,
+      "train_std": 12.715265835271708,
+      "test_mean": 38.666667103767395,
+      "active_codes": 9.72
+    }
+  },
+  "processes": {
+    "LM\u2194VIS": {
+      "train_mean": 98.66666674613953,
+      "train_std": 3.6106835201802383,
+      "test_mean": 17.333333730697632,
+      "active_codes": 7.98
+    },
+    "LM\u2194MAE": {
+      "train_mean": 97.5555557012558,
+      "train_std": 4.602736431701731,
+      "test_mean": 11.333333671092987,
+      "active_codes": 7.26
+    },
+    "LM\u2194CLIP": {
+      "train_mean": 97.5555557012558,
+      "train_std": 5.111110806465149,
+      "test_mean": 15.333333790302275,
+      "active_codes": 7.84
+    },
+    "VIS\u2194MAE": {
+      "train_mean": 96.66666686534882,
+      "train_std": 5.55555522441864,
+      "test_mean": 30.66666758060455,
+      "active_codes": 8.38
+    },
+    "VIS\u2194CLIP": {
+      "train_mean": 94.88888919353485,
+      "train_std": 7.440296908871812,
+      "test_mean": 48.66666769981384,
+      "active_codes": 8.14
+    },
+    "CLIP\u2194MAE": {
+      "train_mean": 97.33333349227905,
+      "train_std": 5.23992240881031,
+      "test_mean": 27.3333340883255,
+      "active_codes": 8.12
+    }
+  },
+  "materials": {
+    "LM\u2194VIS": {
+      "train_mean": 89.20000052452087,
+      "train_std": 16.593974174522653,
+      "test_mean": 4.0,
+      "active_codes": 4.56
+    },
+    "LM\u2194MAE": {
+      "train_mean": 90.80000048875809,
+      "train_std": 15.078460762040946,
+      "test_mean": 7.000000000000001,
+      "active_codes": 4.6
+    },
+    "LM\u2194CLIP": {
+      "train_mean": 90.8000003695488,
+      "train_std": 17.06927014944334,
+      "test_mean": 6.0,
+      "active_codes": 4.56
+    },
+    "VIS\u2194MAE": {
+      "train_mean": 77.60000097751617,
+      "train_std": 21.029502470921663,
+      "test_mean": 40.0,
+      "active_codes": 4.54
+    },
+    "VIS\u2194CLIP": {
+      "train_mean": 72.0000010728836,
+      "train_std": 21.90890202814992,
+      "test_mean": 62.0,
+      "active_codes": 4.54
+    },
+    "CLIP\u2194MAE": {
+      "train_mean": 81.20000094175339,
+      "train_std": 17.62271198518071,
+      "test_mean": 44.0,
+      "active_codes": 4.54
+    }
+  },
+  "all": {
+    "LM\u2194VIS": {
+      "train_mean": 85.24999928474426,
+      "train_std": 6.479669053143302,
+      "test_mean": 14.000000372529032,
+      "active_codes": 12.56
+    },
+    "LM\u2194MAE": {
+      "train_mean": 70.6249997317791,
+      "train_std": 14.850236238640916,
+      "test_mean": 15.846154287457468,
+      "active_codes": 8.92
+    },
+    "LM\u2194CLIP": {
+      "train_mean": 88.29166638851166,
+      "train_std": 6.507074481127945,
+      "test_mean": 13.38461582362652,
+      "active_codes": 13.04
+    },
+    "VIS\u2194MAE": {
+      "train_mean": 97.70833349227905,
+      "train_std": 4.88140603726641,
+      "test_mean": 52.76923224329948,
+      "active_codes": 13.26
+    },
+    "VIS\u2194CLIP": {
+      "train_mean": 96.66666722297668,
+      "train_std": 7.180703335841522,
+      "test_mean": 58.153847575187676,
+      "active_codes": 13.9
+    },
+    "CLIP\u2194MAE": {
+      "train_mean": 96.45833337306976,
+      "train_std": 5.59405137990027,
+      "test_mean": 50.46153989434242,
+      "active_codes": 12.78
+    }
+  }
+}
