@@ -73,9 +73,12 @@ LM_VARIANTS = {
 
 # ── Visual models ──────────────────────────────────────────────────────────────
 VISUAL_MODELS = {
-    "vis":  ("vjepa2_hiddens_phrase.npy",  "V-JEPA2"),
-    "mae":  ("mae_hiddens_phrase.npy",     "MAE"),
-    "clip": ("clip_hiddens_phrase.npy",    "CLIP"),
+    "vis":          ("vjepa2_hiddens_phrase.npy",          "V-JEPA2"),
+    "mae":          ("mae_hiddens_phrase.npy",             "MAE"),
+    "clip":         ("clip_hiddens_phrase.npy",            "CLIP"),
+    "videomae":     ("videomae_hiddens_phrase.npy",        "VideoMAE"),
+    "videomae_ssv2":("videomae_ssv2_hiddens_phrase.npy",  "VideoMAE-SSv2"),
+    "dinov2":       ("dinov2_hiddens_phrase.npy",          "DINOv2"),
 }
 
 

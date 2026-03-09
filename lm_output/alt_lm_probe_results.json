@@ -18,6 +18,24 @@
         "train_std": 6.370505121179273,
         "test": 15.230769664049149,
         "codes": 13.0
+      },
+      "LM\u2194VideoMAE": {
+        "train": 85.91666638851166,
+        "train_std": 6.991562406799376,
+        "test": 12.923077300190924,
+        "codes": 11.78
+      },
+      "LM\u2194VideoMAE-SSv2": {
+        "train": 83.41666659712791,
+        "train_std": 14.098857234040043,
+        "test": 13.07692348957062,
+        "codes": 11.78
+      },
+      "LM\u2194DINOv2": {
+        "train": 83.9166669845581,
+        "train_std": 6.808899049765094,
+        "test": 15.846154198050499,
+        "codes": 12.44
       }
     },
     "qwen25_7b": {
@@ -38,6 +56,24 @@
         "train_std": 6.900206010234225,
         "test": 12.307692661881447,
         "codes": 12.18
+      },
+      "LM\u2194VideoMAE": {
+        "train": 67.25000023841858,
+        "train_std": 13.988090117909252,
+        "test": 11.692308068275452,
+        "codes": 10.36
+      },
+      "LM\u2194VideoMAE-SSv2": {
+        "train": 63.41666668653488,
+        "train_std": 12.897566772184959,
+        "test": 16.923077315092087,
+        "codes": 9.42
+      },
+      "LM\u2194DINOv2": {
+        "train": 73.91666662693024,
+        "train_std": 6.912649752915162,
+        "test": 13.846154198050497,
+        "codes": 11.44
       }
     },
     "llama31_8b": {
@@ -58,6 +94,24 @@
         "train_std": 6.0754800090137655,
         "test": 17.53846202790737,
         "codes": 13.22
+      },
+      "LM\u2194VideoMAE": {
+        "train": 85.49999964237213,
+        "train_std": 6.640050942036282,
+        "test": 15.230769619345667,
+        "codes": 11.78
+      },
+      "LM\u2194VideoMAE-SSv2": {
+        "train": 85.33333337306976,
+        "train_std": 6.7951161628890615,
+        "test": 12.153846487402916,
+        "codes": 11.56
+      },
+      "LM\u2194DINOv2": {
+        "train": 84.66666650772095,
+        "train_std": 6.95671140637752,
+        "test": 15.384615778923036,
+        "codes": 12.52
       }
     },
     "qwen25_32b": {
@@ -78,6 +132,24 @@
         "train_std": 5.554183758277744,
         "test": 15.692308083176613,
         "codes": 12.24
+      },
+      "LM\u2194VideoMAE": {
+        "train": 79.29166638851166,
+        "train_std": 10.378346407299304,
+        "test": 13.230769589543343,
+        "codes": 11.2
+      },
+      "LM\u2194VideoMAE-SSv2": {
+        "train": 79.37500011920929,
+        "train_std": 8.632645600107217,
+        "test": 10.153846487402916,
+        "codes": 11.02
+      },
+      "LM\u2194DINOv2": {
+        "train": 78.20833313465118,
+        "train_std": 8.581816071020043,
+        "test": 15.846154227852821,
+        "codes": 11.9
       }
     }
   },
@@ -87,25 +159,37 @@
       "scores": {
         "LM\u2194V-JEPA2": 12.923077300190924,
         "LM\u2194MAE": 17.69230817258358,
-        "LM\u2194CLIP": 15.230769664049149
+        "LM\u2194CLIP": 15.230769664049149,
+        "LM\u2194VideoMAE": 12.923077300190924,
+        "LM\u2194VideoMAE-SSv2": 13.07692348957062,
+        "LM\u2194DINOv2": 15.846154198050499
       },
       "ranking": [
         "LM\u2194MAE",
+        "LM\u2194DINOv2",
         "LM\u2194CLIP",
-        "LM\u2194V-JEPA2"
+        "LM\u2194VideoMAE-SSv2",
+        "LM\u2194V-JEPA2",
+        "LM\u2194VideoMAE"
       ],
-      "matches_mistral_pattern": true
+      "matches_mistral_pattern": false
     },
     {
       "lm": "Qwen2.5-7B",
       "scores": {
         "LM\u2194V-JEPA2": 11.07692338526249,
         "LM\u2194MAE": 32.00000071525574,
-        "LM\u2194CLIP": 12.307692661881447
+        "LM\u2194CLIP": 12.307692661881447,
+        "LM\u2194VideoMAE": 11.692308068275452,
+        "LM\u2194VideoMAE-SSv2": 16.923077315092087,
+        "LM\u2194DINOv2": 13.846154198050497
       },
       "ranking": [
         "LM\u2194MAE",
+        "LM\u2194VideoMAE-SSv2",
+        "LM\u2194DINOv2",
         "LM\u2194CLIP",
+        "LM\u2194VideoMAE",
         "LM\u2194V-JEPA2"
       ],
       "matches_mistral_pattern": true
@@ -115,30 +199,42 @@
       "scores": {
         "LM\u2194V-JEPA2": 15.076923474669456,
         "LM\u2194MAE": 20.61538502573967,
-        "LM\u2194CLIP": 17.53846202790737
+        "LM\u2194CLIP": 17.53846202790737,
+        "LM\u2194VideoMAE": 15.230769619345667,
+        "LM\u2194VideoMAE-SSv2": 12.153846487402916,
+        "LM\u2194DINOv2": 15.384615778923036
       },
       "ranking": [
         "LM\u2194MAE",
         "LM\u2194CLIP",
-        "LM\u2194V-JEPA2"
+        "LM\u2194DINOv2",
+        "LM\u2194VideoMAE",
+        "LM\u2194V-JEPA2",
+        "LM\u2194VideoMAE-SSv2"
       ],
-      "matches_mistral_pattern": true
+      "matches_mistral_pattern": false
     },
     {
       "lm": "Qwen2.5-32B",
       "scores": {
         "LM\u2194V-JEPA2": 10.923077285289764,
         "LM\u2194MAE": 25.230769857764244,
-        "LM\u2194CLIP": 15.692308083176613
+        "LM\u2194CLIP": 15.692308083176613,
+        "LM\u2194VideoMAE": 13.230769589543343,
+        "LM\u2194VideoMAE-SSv2": 10.153846487402916,
+        "LM\u2194DINOv2": 15.846154227852821
       },
       "ranking": [
         "LM\u2194MAE",
+        "LM\u2194DINOv2",
         "LM\u2194CLIP",
-        "LM\u2194V-JEPA2"
+        "LM\u2194VideoMAE",
+        "LM\u2194V-JEPA2",
+        "LM\u2194VideoMAE-SSv2"
       ],
-      "matches_mistral_pattern": true
+      "matches_mistral_pattern": false
     }
   ],
-  "replications": 4,
+  "replications": 1,
   "total": 4
 }
