@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Gap Between Language Models and World Models Is Temporal, Not Visual</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1d4ed8;
+    --accent-light: #eff6ff;
+    --border: #e2e8f0;
+    --bg: #ffffff;
+    --callout-bg: #f8fafc;
+    --new-bg: #f0fdf4;
+    --new-border: #16a34a;
+    --warn-bg: #fffbeb;
+    --warn-border: #d97706;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Georgia', serif; color: var(--text); background: var(--bg); line-height: 1.75; font-size: 18px; }
+  .container { max-width: 740px; margin: 0 auto; padding: 48px 24px 96px; }
+  .label { font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+  h1 { font-size: 2.1rem; line-height: 1.2; font-weight: 700; margin-bottom: 16px; }
+  .subtitle { font-size: 1.1rem; color: var(--muted); margin-bottom: 32px; line-height: 1.5; }
+  .meta { font-family: 'Arial', sans-serif; font-size: 13px; color: var(--muted); display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+  .meta span { display: flex; align-items: center; gap: 4px; }
+  h2 { font-size: 1.45rem; font-weight: 700; margin: 52px 0 16px; }
+  h3 { font-size: 1.15rem; font-weight: 700; margin: 32px 0 12px; color: #222; }
+  p { margin-bottom: 20px; }
+  .callout { background: var(--callout-bg); border-left: 4px solid var(--accent); padding: 20px 24px; margin: 32px 0; border-radius: 0 6px 6px 0; }
+  .callout p { margin: 0; }
+  .callout strong { color: var(--accent); }
+  .new-finding { background: var(--new-bg); border: 1px solid var(--new-border); border-left: 4px solid var(--new-border); padding: 20px 24px; margin: 32px 0; border-radius: 0 6px 6px 0; }
+  .new-finding .tag { font-family: 'Arial', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--new-border); margin-bottom: 8px; }
+  .new-finding p { margin: 0; }
+  .warn { background: var(--warn-bg); border-left: 4px solid var(--warn-border); padding: 20px 24px; margin: 32px 0; border-radius: 0 6px 6px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 15px; font-family: 'Arial', sans-serif; }
+  th { background: #f1f5f9; padding: 10px 14px; text-align: left; font-weight: 700; border-bottom: 2px solid var(--border); }
+  td { padding: 9px 14px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: none; }
+  .check { color: #16a34a; font-weight: 700; }
+  .cross { color: #dc2626; font-weight: 700; }
+  .toc { background: var(--callout-bg); border: 1px solid var(--border); border-radius: 8px; padding: 24px 28px; margin: 40px 0; }
+  .toc h4 { font-family: 'Arial', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+  .toc ol { padding-left: 20px; }
+  .toc li { font-family: 'Arial', sans-serif; font-size: 14px; margin-bottom: 6px; color: var(--accent); }
+  .toc li a { color: var(--accent); text-decoration: none; }
+  .toc li a:hover { text-decoration: underline; }
+  code { font-family: 'Courier New', monospace; font-size: 14px; background: #f1f5f9; padding: 2px 6px; border-radius: 3px; }
+  .footnote { font-size: 14px; color: var(--muted); border-top: 1px solid var(--border); margin-top: 64px; padding-top: 24px; }
+  .footnote p { margin-bottom: 8px; }
+  .exp-tag { display: inline-block; font-family: 'Arial', sans-serif; font-size: 11px; font-weight: 700; background: var(--accent); color: white; padding: 2px 8px; border-radius: 3px; letter-spacing: 0.05em; margin-bottom: 8px; }
+  .highlight-row { background: #eff6ff; font-weight: 700; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="label">Representations · 2026 Research</div>
+
+<h1>The Gap Between Language Models and World Models Is Temporal, Not Visual</h1>
+
+<p class="subtitle">14 experiments · 4 LLMs · 5 visual models · 61 physical concepts · 323 events</p>
+
+<div class="meta">
+  <span>~22 min read</span>
+  <span>Independent research</span>
+  <span>Updated March 2026</span>
+</div>
+
+<div class="new-finding">
+  <div class="tag">Core finding — updated</div>
+  <p>The gap between language models and world models is not a modality gap, and not a supervision-type gap. It is a <strong>temporal dynamics gap</strong>. Models trained on static inputs — text, static images, or image-caption pairs — cluster together in shared representational space regardless of modality. Only V-JEPA 2, trained to predict masked spatio-temporal video regions, occupies a structurally distinct position. This pattern replicates across <strong>4/4 language model architectures and scales</strong> (Mistral-7B, Qwen2.5-7B, Llama-3.1-8B, Qwen2.5-32B), and V-JEPA 2's temporal representations diverge specifically on <strong>process concepts</strong> (fall, dissolve, shatter) — concepts defined by state change over time.</p>
+</div>
+
+<div class="toc">
+  <h4>In this post</h4>
+  <ol>
+    <li><a href="#setup">Setup: five models, 17 physical concepts</a></li>
+    <li><a href="#rsa">The cross-modal RSA signal is an artifact</a></li>
+    <li><a href="#collapse">Codebooks collapse without supervision</a></li>
+    <li><a href="#contrastive">Contrastive loss fixes the collapse</a></li>
+    <li><a href="#preregister">The pre-registered prediction</a></li>
+    <li><a href="#generalization">Does it generalize? No — then yes</a></li>
+    <li><a href="#piqa">The downstream test: does it help on PIQA?</a></li>
+    <li><a href="#phrase">Phrase-level grounding solves the sense problem</a></li>
+    <li><a href="#multimodal">The multimodal probe: where the gap actually is</a></li>
+    <li><a href="#process">Exp 13: The gap is about processes, not objects</a></li>
+    <li><a href="#replication">Exp 14: The pattern replicates across 4 LLMs</a></li>
+    <li><a href="#implications">What this means</a></li>
+  </ol>
+</div>
+
+<p>The field has spent years asking whether vision models and language models converge on similar internal representations. The Platonic Representation Hypothesis (Huh et al., ICML 2024) gives the optimistic answer: as models scale up, their representations align — different training objectives, different data, but ultimately converging toward the same statistical model of reality.</p>
+
+<p>We wanted to test a sharper version. Not "do large models converge in general," but: do a language model and a world model — trained to predict what happens next in video — organize physical concepts similarly enough that you could give them a shared codebook and have them agree on a symbol for "fire"?</p>
+
+<p>Short answer: not automatically, but you can make it work — and it generalizes. More importantly, the structure of the failure reveals something specific about what's missing.</p>
+
+<hr>
+
+<h2 id="setup">The setup: five models, 17 physical concepts</h2>
+
+<p>We ran five models on the same 17 physical concepts and extracted their internal representations. The models are genuinely different kinds of thing:</p>
+
+<table>
+  <tr><th>Model</th><th>Training signal</th><th>What it sees</th></tr>
+  <tr><td><strong>Mistral 7B</strong></td><td>Next-token prediction on text</td><td>"fire" as a word with semantic neighborhood: combustion, danger, warmth</td></tr>
+  <tr><td><strong>Sentence-Transformers</strong></td><td>Contrastive pairs (NLI)</td><td>Phrase-level semantic similarity</td></tr>
+  <tr><td><strong>CLIP ViT-L/14</strong></td><td>Image-caption pairs</td><td>Fire as a visual object paired with how humans describe it</td></tr>
+  <tr><td><strong>V-JEPA 2 ViT-L</strong></td><td>Masked video prediction</td><td>Fire as a dynamic process — how it moves, spreads, flickers</td></tr>
+  <tr><td><strong>MAE ViT-L</strong></td><td>Masked image reconstruction</td><td>Fire as static spatial structure — patches, textures, colors</td></tr>
+</table>
+
+<hr>
+
+<h2 id="rsa">The cross-modal RSA signal is an artifact</h2>
+
+<p>We used Representational Similarity Analysis (RSA): for each model, build a similarity matrix, then compare matrices across models. On a 33-concept set (17 physical + 16 abstract), Mistral and CLIP correlate at r=+0.325. Restrict to only physical concepts, and it disappears.</p>
+
+<table>
+  <tr><th>Model pair</th><th>r (all 33)</th><th>r (physical only)</th><th>r (49 concepts)</th><th>Verdict</th></tr>
+  <tr><td>Mistral vs CLIP</td><td>+0.325*</td><td>+0.039</td><td>+0.085</td><td>Artifact → weak</td></tr>
+  <tr><td>ST vs CLIP</td><td>+0.013</td><td>+0.089</td><td>−0.055</td><td>No alignment</td></tr>
+  <tr><td>V-JEPA 2 vs CLIP</td><td>—</td><td>—</td><td class="check">+0.917</td><td>Strong</td></tr>
+  <tr><td>MAE vs CLIP</td><td>—</td><td>—</td><td>+0.723</td><td>Strong</td></tr>
+  <tr><td>CLIP image vs CLIP text</td><td>—</td><td>—</td><td>−0.020</td><td>Near zero</td></tr>
+</table>
+
+<div class="callout">
+  <p>⚡ The r=+0.325 signal is not cross-modal alignment. It is models agreeing that physical things are different from abstract things. Remove that category structure and there is nothing left. CLIP's own image and text encoders produce r=−0.020 on physical concepts — text-based and image-based geometries are essentially orthogonal even within CLIP.</p>
+</div>
+
+<hr>
+
+<h2 id="collapse">Codebooks collapse without supervision</h2>
+
+<p>Can we build a shared codebook — discrete symbols that all model types can use to represent the same concepts? Linear encoders → shared 256-dim space → VQ (64 codes) → decoders. Train to minimize reconstruction error. Result across every configuration: total collapse to 2 codes. One code for everything linguistic, one for everything visual. Cross-modal agreement: 0%.</p>
+
+<p>The collapse is structural. Between-modality variance dominates within-modality variance. The optimal VQ solution for reconstruction is always 1 code per modality cluster.</p>
+
+<hr>
+
+<h2 id="contrastive">Contrastive loss fixes the collapse</h2>
+
+<p>Add NT-Xent contrastive loss at λ=0.5: pulls same-concept representations from different modalities together. Result: 99% ± 2% cross-modal agreement, robust across 5/5 seeds, 15.6 ± 1.4 active codes.</p>
+
+<table>
+  <tr><th>λ</th><th>Agreement</th><th>Std</th><th>Active codes</th></tr>
+  <tr><td>0</td><td>0%</td><td>—</td><td>2</td></tr>
+  <tr><td>0.1</td><td>62%</td><td>±13%</td><td>12.2</td></tr>
+  <tr class="highlight-row"><td>0.5 ✦</td><td>99%</td><td>±2%</td><td>15.6</td></tr>
+  <tr><td>1.0</td><td>93%</td><td>±7%</td><td>12.6</td></tr>
+</table>
+
+<hr>
+
+<h2 id="preregister">The pre-registered prediction: which concepts resist?</h2>
+
+<p>Before running multi-seed experiments, we committed to a prediction: high-polysemy, sensorimotor-heavy concepts will resist alignment. <strong>hand</strong> (14 WordNet senses, SM 5/5) was confirmed as hardest. <strong>fire</strong> and <strong>stone</strong> were not confirmed — they align reliably at λ=0.5. The polysemy score is a useful prior for alignment pressure required, not a predictor of categorical failure.</p>
+
+<hr>
+
+<h2 id="generalization">Does it generalize? No — then yes</h2>
+
+<p>17 concepts: train 95% / test 2%. Memorization. The codebook learned a lookup table for those specific items. We expanded to 49 concepts stratified by polysemy and sensorimotor score.</p>
+
+<table>
+  <tr><th>Experiment</th><th>Train</th><th>Test</th><th>Gap</th><th>Verdict</th></tr>
+  <tr><td>17 concepts (12/5 split)</td><td>95%</td><td>2%</td><td>93%</td><td class="cross">Memorization</td></tr>
+  <tr><td>49 concepts, uncontrolled</td><td>100%</td><td>86%</td><td>14%</td><td class="check">Generalizes</td></tr>
+  <tr class="highlight-row"><td>49 concepts, batch-balanced</td><td>100%</td><td>92%</td><td>8%</td><td class="check">Generalizes — batch artifact ruled out</td></tr>
+</table>
+
+<p>Tripling the concept set solved memorization. The batch-balanced control rules out the batch-identity shortcut. The codebook found genuinely transferable structure.</p>
+
+<hr>
+
+<h2 id="piqa">The downstream test: does it help on PIQA?</h2>
+
+<p>918 matched PIQA questions (49.9% of 1,838). Mistral alone: 72.1%. Mistral + V-JEPA 2 context: 65.5%. Δ = −6.6%. McNemar p=0.999 against improvement. World model context hurts.</p>
+
+<div class="warn">
+  <p><strong>Sense mismatch, not knowledge mismatch.</strong> Concrete, unambiguous concepts (apple, bowl, ice) show modest gains. Polysemous action words (run, strike, leaf, shelf) show catastrophic losses. V-JEPA 2's descriptions of "run" cover bipedal locomotion; PIQA questions test running water or running a machine. The translation to natural language collapsed the sense distinction that makes the knowledge useful. The path from world model to LM cannot go through natural language description — it needs a learned, differentiable interface that preserves sense distinctions.</p>
+</div>
+
+<hr>
+
+<h2 id="phrase">Phrase-level grounding solves the sense problem</h2>
+
+<p>Instead of single concept words, we built a phrase bank: 61 concepts × ~5 phrases each = 323 event-level descriptions. "fire spreading across dry leaves" and "fire melting a wax candle" are separate events, each with its own image and embedding.</p>
+
+<p>Results: 89.5% test agreement, generalization gap of −1.0% (test > train), 2 active codes. The collapse to 2 codes is now diagnostic, not problematic — it means two modalities have one dominant axis of disagreement. The lambda sweep confirmed: binary collapse is objective-driven, not a VQ pathology. A diversity-only condition (λ_cm=0) produced 9 codes; the binary split only emerges under cross-modal alignment pressure.</p>
+
+<hr>
+
+<h2 id="multimodal">The multimodal probe: where the gap actually is</h2>
+
+<p>We extended to four modalities (LM + V-JEPA 2 + CLIP-text + MAE) to characterize the structure of the gap. The first hypothesis — language vs. visual — is wrong. CLIP-text, a vision model trained on language, clusters closer to Mistral than to V-JEPA 2. The second hypothesis — language-supervised vs. physics-supervised — is also wrong. MAE is self-supervised (no language), yet it clusters with language models.</p>
+
+<table>
+  <tr><th>Model</th><th>Training input</th><th>Temporal?</th><th>Agreement with LM</th></tr>
+  <tr class="highlight-row"><td><strong>MAE</strong></td><td>Static images (reconstruction)</td><td>No</td><td><strong>48.8%</strong></td></tr>
+  <tr><td>CLIP-text</td><td>Image-caption pairs (alignment)</td><td>No</td><td>44.4%</td></tr>
+  <tr><td>V-JEPA 2</td><td>Video (temporal prediction)</td><td class="check">Yes</td><td>40.6%</td></tr>
+</table>
+
+<div class="callout">
+  <p><strong>The pattern is monotonic and stable across 5/6 hyperparameter configurations:</strong> LM↔MAE consistently highest (48.8%), VIS↔CLIP consistently lowest (15.6%). Models trained on static inputs cluster together regardless of modality; only V-JEPA 2 — trained to predict masked spatio-temporal video regions — occupies a structurally distinct position.</p>
+</div>
+
+<hr>
+
+<h2 id="process">Experiment 13: The gap is about processes, not objects</h2>
+
+<div class="exp-tag">NEW — Experiment 13</div>
+
+<p>A reviewer correctly identified that our 49 concepts are dominated by objects and materials (apple, rope, stone). If the temporal hypothesis is correct, V-JEPA 2 should diverge specifically on <em>process concepts</em> — concepts defined by state change over time. We added 12 process concepts: <strong>fall, bounce, collision, spill, slide, dissolve, shatter, ignite, rust, vibration, compression, flow</strong>.</p>
+
+<p>The probe compared codebook alignment separately for object concepts (27) and process concepts (12) across all modality pairs.</p>
+
+<table>
+  <tr><th>Pair</th><th>Objects (test)</th><th>Processes (test)</th><th>Δ</th><th>Result</th></tr>
+  <tr><td>LM↔VIS</td><td>9.3%</td><td>17.3%</td><td>+8.0%</td><td>Higher for processes</td></tr>
+  <tr><td>LM↔MAE</td><td>10.0%</td><td>11.3%</td><td>+1.3%</td><td>≈ similar</td></tr>
+  <tr class="highlight-row"><td><strong>VIS↔MAE</strong></td><td><strong>40.7%</strong></td><td><strong>30.7%</strong></td><td><strong>−10.0%</strong></td><td class="check"><strong>Lower for processes ← key result</strong></td></tr>
+</table>
+
+<p>The predicted direction (LM↔VIS lower for processes) did not hold — but the result is more interesting. The key finding is <strong>VIS↔MAE drops by 10% on process concepts</strong>. V-JEPA 2 and MAE agree less on processes than on objects: V-JEPA 2's temporal training is doing something genuinely different for concepts defined by dynamics.</p>
+
+<div class="new-finding">
+  <div class="tag">Revised interpretation</div>
+  <p>The temporal gap is primarily between <strong>visual models</strong> — static reconstruction (MAE) and temporal prediction (V-JEPA 2) diverge specifically on process concepts. Meanwhile, LM↔VIS actually <em>increases</em> for processes (+8%), suggesting that when V-JEPA 2 encodes temporal dynamics, its representations become <em>more</em> compatible with language, not less. Language models may be rich in process/event semantics (verbs, causal relations) that align with temporal prediction but not with static reconstruction.</p>
+</div>
+
+<p>Note: the LM↔visual absolute values (9–17%) are low due to small sample sizes at concept level. The visual-visual comparison (VIS↔MAE at 30–40%) is the more reliable signal.</p>
+
+<hr>
+
+<h2 id="replication">Experiment 14: The pattern replicates across 4 LLMs</h2>
+
+<div class="exp-tag">NEW — Experiment 14</div>
+
+<p>Is the MAE > CLIP > V-JEPA2 ranking specific to Mistral-7B? We extracted phrase-level embeddings from three additional language models — Qwen2.5-7B, Llama-3.1-8B, and Qwen2.5-32B — and ran the same codebook alignment probe against the same visual models.</p>
+
+<table>
+  <tr><th>LLM</th><th>LM↔V-JEPA2</th><th>LM↔MAE</th><th>LM↔CLIP</th><th>Ranking</th><th>Matches?</th></tr>
+  <tr><td>Mistral-7B</td><td>12.9%</td><td>17.7%</td><td>15.2%</td><td>MAE > CLIP > VIS</td><td class="check">✓</td></tr>
+  <tr><td>Qwen2.5-7B</td><td>11.1%</td><td>32.0%</td><td>12.3%</td><td>MAE > CLIP > VIS</td><td class="check">✓</td></tr>
+  <tr><td>Llama-3.1-8B</td><td>15.1%</td><td>20.6%</td><td>17.5%</td><td>MAE > CLIP > VIS</td><td class="check">✓</td></tr>
+  <tr class="highlight-row"><td>Qwen2.5-32B</td><td>10.9%</td><td>25.2%</td><td>15.7%</td><td>MAE > CLIP > VIS</td><td class="check">✓</td></tr>
+</table>
+
+<div class="new-finding">
+  <div class="tag">Strong evidence</div>
+  <p><strong>4/4 language models replicate the same ranking: MAE > CLIP > V-JEPA2.</strong> The pattern spans three model families (Mistral, Qwen, Llama), two parameter scales (7–8B and 32B), and different tokenizers and training corpora. The Qwen models show the most dramatic gap (MAE=25–32% vs VIS=11%), and scaling from 7B to 32B does not close the gap with V-JEPA 2. The finding is structural, not a Mistral artifact.</p>
+</div>
+
+<hr>
+
+<h2 id="implications">What this means</h2>
+
+<p>The central claim, sharpened by fourteen experiments:</p>
+
+<blockquote style="border-left:4px solid var(--accent);padding-left:20px;margin:24px 0;font-style:italic;color:#333;">
+Language models and static vision models share a representational bias toward static snapshots of the world. V-JEPA 2 — trained to predict what happens next — diverges specifically on process concepts, and this divergence is <em>between visual models</em>: temporal prediction and static reconstruction disagree most on concepts defined by state change. Language models, surprisingly, are more compatible with temporal prediction than with static reconstruction on process concepts — consistent with the verb-rich, causally-structured semantics of language.
+</blockquote>
+
+<p><strong>On the codebook:</strong> contrastive supervision is sufficient for alignment; VQ discretization is optional. A no-VQ baseline (contrastive projection only) achieves RSA r=+0.855, stronger than full VQ (r=+0.731). Use VQ if you need discrete tokens; otherwise contrastive projection alone works.</p>
+
+<p><strong>On the PIQA failure:</strong> the interface between world model and LM must be differentiable, not text-mediated. The codebook alignment is the right architecture — routing physical queries through the aligned embedding space rather than through natural language translation that destroys sense distinctions.</p>
+
+<p><strong>On scaling:</strong> Qwen2.5-32B shows the same MAE > CLIP > V-JEPA2 ranking as Qwen2.5-7B, with a larger absolute MAE advantage. More parameters do not close the temporal gap. The fix is temporal training, not scale.</p>
+
+<p><strong>The remaining open question:</strong> does the VIS↔MAE process concept divergence survive when V-JEPA 2 actually sees video (not static frames repeated 8×)? The Something-Something v2 evaluation would determine whether the process concept divergence increases, stays flat, or disappears under genuine temporal input. Based on the process probe results, the prediction is that it should increase — V-JEPA 2 on real video should diverge even more from MAE on process concepts.</p>
+
+<hr>
+
+<h2>Caveats</h2>
+
+<p><strong>Static video proxy:</strong> V-JEPA 2 is evaluated on static images repeated 8 frames — no temporal variation. The CLS token under this "zero-velocity" condition may differ from genuine video input. The Something-Something v2 experiment would close this confound.</p>
+
+<p><strong>Small process concept sample:</strong> 12 process concepts is too small for reliable codebook training at concept level. The VIS↔MAE result is the most trustworthy comparison; LM↔visual absolute values are noisy at this n.</p>
+
+<p><strong>Concept sampling:</strong> even with 61 concepts (49 original + 12 process), the set is still object-heavy. More process and action concepts would give cleaner tests of the temporal hypothesis.</p>
+
+<p><strong>Generalization splits:</strong> do not control for semantic proximity between train and test concepts. The 92% figure may slightly overestimate generalization to genuinely novel concept clusters.</p>
+
+<div class="footnote">
+  <p><strong>Models:</strong> Mistral 7B Instruct · Qwen2.5-7B/32B · Llama-3.1-8B · all-mpnet-base-v2 · CLIP ViT-L/14 · V-JEPA 2 ViT-L · MAE ViT-L</p>
+  <p><strong>Concepts:</strong> 61 total (49 original + 12 process concepts) · 323 phrase-level events</p>
+  <p><strong>Phrase bank:</strong> 61 concepts × ~5 phrases = 323 events · phrase-level extraction with PYTHONPATH=. from repo root</p>
+  <p><strong>Multi-seed:</strong> 50 runs (10 splits × 5 seeds) for all phrase-level codebook experiments</p>
+  <p><strong>Alt LLM probe:</strong> 4 LLMs × 3 visual models × 50 runs · 4/4 replicate MAE > CLIP > V-JEPA2</p>
+  <p><strong>Process probe:</strong> 27 object concepts vs 12 process concepts · VIS↔MAE: objects 40.7%, processes 30.7% (Δ=−10%)</p>
+  <p><strong>Hardware:</strong> RTX 5090 32GB · CUDA 12.9 · PyTorch 2.10 · transformers 5.3.0</p>
+  <p><strong>Code &amp; data:</strong> <a href="https://github.com/Ecological-align/world-model-language">github.com/Ecological-align/world-model-language</a></p>
+  <p><strong>References:</strong> Huh et al. (2024) Platonic Representation Hypothesis, ICML · Assran et al. (2025) V-JEPA 2, arXiv:2506.09985 · He et al. (2022) MAE, CVPR · van den Oord et al. (2017) VQ-VAE, NeurIPS · Liu et al. (2022) Cross-modal VQ, ACL · Duan et al. (2022) Representation Codebook, CVPR · Bisk et al. (2020) PIQA, AAAI · Kriegeskorte et al. (2008) RSA, Front. Systems Neuroscience</p>
+</div>
+
+</div>
+</body>
+</html>
