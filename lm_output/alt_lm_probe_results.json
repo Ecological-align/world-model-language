@@ -1,0 +1,144 @@
+{
+  "results": {
+    "mistral_7b": {
+      "LM\u2194V-JEPA2": {
+        "train": 85.66666615009308,
+        "train_std": 6.004049966923735,
+        "test": 12.923077300190924,
+        "codes": 12.1
+      },
+      "LM\u2194MAE": {
+        "train": 72.91666662693024,
+        "train_std": 12.520815901921456,
+        "test": 17.69230817258358,
+        "codes": 9.08
+      },
+      "LM\u2194CLIP": {
+        "train": 86.75000011920929,
+        "train_std": 6.370505121179273,
+        "test": 15.230769664049149,
+        "codes": 13.0
+      }
+    },
+    "qwen25_7b": {
+      "LM\u2194V-JEPA2": {
+        "train": 74.16666626930237,
+        "train_std": 8.838834792929877,
+        "test": 11.07692338526249,
+        "codes": 11.0
+      },
+      "LM\u2194MAE": {
+        "train": 52.083333052694805,
+        "train_std": 27.988092554840172,
+        "test": 32.00000071525574,
+        "codes": 4.56
+      },
+      "LM\u2194CLIP": {
+        "train": 77.29166650772095,
+        "train_std": 6.900206010234225,
+        "test": 12.307692661881447,
+        "codes": 12.18
+      }
+    },
+    "llama31_8b": {
+      "LM\u2194V-JEPA2": {
+        "train": 85.91666686534882,
+        "train_std": 6.299250288557899,
+        "test": 15.076923474669456,
+        "codes": 12.28
+      },
+      "LM\u2194MAE": {
+        "train": 71.66666680574417,
+        "train_std": 11.718634298248038,
+        "test": 20.61538502573967,
+        "codes": 9.66
+      },
+      "LM\u2194CLIP": {
+        "train": 86.125,
+        "train_std": 6.0754800090137655,
+        "test": 17.53846202790737,
+        "codes": 13.22
+      }
+    },
+    "qwen25_32b": {
+      "LM\u2194V-JEPA2": {
+        "train": 80.00000011920929,
+        "train_std": 6.137883475720848,
+        "test": 10.923077285289764,
+        "codes": 11.36
+      },
+      "LM\u2194MAE": {
+        "train": 53.54166655614973,
+        "train_std": 25.746662236282386,
+        "test": 25.230769857764244,
+        "codes": 5.72
+      },
+      "LM\u2194CLIP": {
+        "train": 83.70833349227905,
+        "train_std": 5.554183758277744,
+        "test": 15.692308083176613,
+        "codes": 12.24
+      }
+    }
+  },
+  "summary": [
+    {
+      "lm": "Mistral-7B",
+      "scores": {
+        "LM\u2194V-JEPA2": 12.923077300190924,
+        "LM\u2194MAE": 17.69230817258358,
+        "LM\u2194CLIP": 15.230769664049149
+      },
+      "ranking": [
+        "LM\u2194MAE",
+        "LM\u2194CLIP",
+        "LM\u2194V-JEPA2"
+      ],
+      "matches_mistral_pattern": true
+    },
+    {
+      "lm": "Qwen2.5-7B",
+      "scores": {
+        "LM\u2194V-JEPA2": 11.07692338526249,
+        "LM\u2194MAE": 32.00000071525574,
+        "LM\u2194CLIP": 12.307692661881447
+      },
+      "ranking": [
+        "LM\u2194MAE",
+        "LM\u2194CLIP",
+        "LM\u2194V-JEPA2"
+      ],
+      "matches_mistral_pattern": true
+    },
+    {
+      "lm": "Llama-3.1-8B",
+      "scores": {
+        "LM\u2194V-JEPA2": 15.076923474669456,
+        "LM\u2194MAE": 20.61538502573967,
+        "LM\u2194CLIP": 17.53846202790737
+      },
+      "ranking": [
+        "LM\u2194MAE",
+        "LM\u2194CLIP",
+        "LM\u2194V-JEPA2"
+      ],
+      "matches_mistral_pattern": true
+    },
+    {
+      "lm": "Qwen2.5-32B",
+      "scores": {
+        "LM\u2194V-JEPA2": 10.923077285289764,
+        "LM\u2194MAE": 25.230769857764244,
+        "LM\u2194CLIP": 15.692308083176613
+      },
+      "ranking": [
+        "LM\u2194MAE",
+        "LM\u2194CLIP",
+        "LM\u2194V-JEPA2"
+      ],
+      "matches_mistral_pattern": true
+    }
+  ],
+  "replications": 4,
+  "total": 4
+}

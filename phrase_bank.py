@@ -18,7 +18,7 @@ Design principles:
   4. 5–9 phrases per concept; more for high-polysemy concepts.
   5. image_query should find a photo, not a diagram — world models need naturalistic images.
 
-Total events: ~343 (49 concepts × ~7 each)
+Total events: ~413 (61 concepts × ~7 each)
 """
 
 PHRASE_BANK = {
@@ -381,6 +381,110 @@ PHRASE_BANK = {
         ("a chain snapping at its weakest link under load",     "chain snapping weakest link"),
         ("a chain failing to push — buckling under compression","chain buckling compression"),
         ("a chain swinging as a pendulum",                      "chain swinging pendulum"),
+    ],
+
+    # ── PROCESS / EVENT CONCEPTS ─────────────────────────────────────────────
+
+    # Pure dynamics
+    "fall": [
+        ("a heavy object falling and accelerating toward the ground",   "object falling acceleration gravity"),
+        ("a leaf falling slowly through still air",                     "leaf falling slowly still air"),
+        ("a person tripping and falling forward",                       "person tripping falling forward"),
+        ("a stack of books falling off a shelf",                        "books falling off shelf"),
+        ("water falling as rain onto a surface",                        "rain falling on surface"),
+        ("a ball falling and bouncing on impact",                       "ball falling bouncing ground"),
+    ],
+    "bounce": [
+        ("a rubber ball bouncing repeatedly off a hard floor",          "rubber ball bouncing floor"),
+        ("a basketball bouncing off the backboard",                     "basketball bouncing backboard"),
+        ("a ball bouncing lower and lower until it stops",              "ball bouncing diminishing height"),
+        ("a stone bouncing off a wall at an angle",                     "stone bouncing off wall angle"),
+        ("a child bouncing on a trampoline",                            "child bouncing trampoline"),
+        ("a superball bouncing unpredictably on irregular surface",     "superball bouncing irregular surface"),
+    ],
+    "collision": [
+        ("two billiard balls colliding and transferring momentum",      "billiard balls collision momentum"),
+        ("a car colliding with a stationary barrier",                   "car collision barrier impact"),
+        ("two shopping carts colliding in an aisle",                    "shopping carts colliding"),
+        ("a hammer colliding with a nail head",                         "hammer hitting nail head"),
+        ("two pendulum balls colliding in Newton's cradle",             "Newton cradle collision transfer"),
+        ("a falling object colliding with water surface",               "object hitting water surface splash"),
+    ],
+    "spill": [
+        ("a glass of water tipping over and spilling",                  "glass tipping spilling water"),
+        ("liquid spilling over the edge of a full container",           "liquid spilling over full container"),
+        ("sand spilling through a hole in a bag",                       "sand spilling through hole bag"),
+        ("oil spilling across a flat surface and spreading",            "oil spilling spreading flat surface"),
+        ("milk spilling and pooling on a table",                        "milk spilled pooling table"),
+        ("coins spilling out of an overturned jar",                     "coins spilling overturned jar"),
+    ],
+    "slide": [
+        ("a block sliding down a ramp due to gravity",                  "block sliding down ramp gravity"),
+        ("a person sliding on ice and losing balance",                  "person sliding ice losing balance"),
+        ("furniture sliding across a polished floor",                   "furniture sliding polished floor"),
+        ("mud sliding down a hillside after rain",                      "mud sliding hillside rain"),
+        ("a drawer sliding smoothly in its track",                      "drawer sliding smoothly track"),
+        ("a bead sliding along a curved wire",                          "bead sliding curved wire physics"),
+    ],
+
+    # State transitions
+    "dissolve": [
+        ("sugar dissolving in warm water",                              "sugar dissolving warm water"),
+        ("salt dissolving completely in a glass of water",              "salt dissolving water glass"),
+        ("a tablet dissolving and fizzing in water",                    "effervescent tablet dissolving fizzing"),
+        ("ink dissolving and diffusing through water",                  "ink dissolving diffusing water"),
+        ("soap dissolving in hot water",                                "soap dissolving hot water"),
+        ("a sugar cube dissolving slowly in tea",                       "sugar cube dissolving tea"),
+    ],
+    "shatter": [
+        ("a glass falling and shattering on a hard floor",              "glass shattering on floor"),
+        ("ice shattering when struck with a pick",                      "ice shattering ice pick"),
+        ("a ceramic plate shattering on impact",                        "ceramic plate shattering impact"),
+        ("a window shattering outward from pressure",                   "window shattering outward pressure"),
+        ("a brittle material shattering under sudden stress",           "brittle material shattering stress"),
+        ("tempered glass shattering into small cubes",                  "tempered glass shattering cubes"),
+    ],
+    "ignite": [
+        ("a match igniting when struck against a rough surface",        "match igniting striking surface"),
+        ("dry paper igniting when held near a flame",                   "paper igniting near flame"),
+        ("a gas burner igniting with a click",                          "gas burner igniting click spark"),
+        ("kindling igniting as fire is carefully built",                "kindling igniting building fire"),
+        ("a spark igniting a trail of gunpowder",                       "spark igniting gunpowder trail"),
+        ("wood igniting slowly from smoldering ember",                  "wood igniting from ember"),
+    ],
+    "rust": [
+        ("iron rusting slowly when exposed to moisture and oxygen",     "iron rusting moisture oxygen"),
+        ("a nail rusting and weakening over time",                      "nail rusting over time"),
+        ("rust spreading across an unprotected steel surface",          "rust spreading steel surface"),
+        ("a bike chain rusting after being left in rain",               "bike chain rusting rain"),
+        ("rust flaking off an old iron gate",                           "rust flaking old iron gate"),
+        ("metal rusting at the edges where paint has chipped",          "metal rusting chipped paint edge"),
+    ],
+
+    # Mechanical processes
+    "vibration": [
+        ("a tuning fork vibrating and producing a sustained tone",      "tuning fork vibrating tone"),
+        ("a surface vibrating and causing small objects to move",       "surface vibrating objects moving"),
+        ("vibrations traveling through a taut string",                  "vibration traveling taut string"),
+        ("a bridge vibrating as wind passes over it",                   "bridge vibrating wind resonance"),
+        ("a speaker cone vibrating to produce sound",                   "speaker cone vibrating sound"),
+        ("a machine vibrating on its mounting due to imbalance",        "machine vibrating imbalance mount"),
+    ],
+    "compression": [
+        ("a spring being compressed between two surfaces",              "spring being compressed surfaces"),
+        ("a sponge being compressed and deforming",                     "sponge compressed deforming"),
+        ("air being compressed inside a piston",                        "air compressed inside piston"),
+        ("a cardboard box being crushed under weight",                  "cardboard box crushed under weight"),
+        ("foam compression absorbing impact energy",                    "foam compression absorbing impact"),
+        ("a balloon being squeezed and changing shape",                 "balloon squeezed changing shape"),
+    ],
+    "flow": [
+        ("water flowing faster through a narrow pipe",                  "water flowing faster narrow pipe"),
+        ("air flowing over an airfoil and generating lift",             "air flowing airfoil lift"),
+        ("traffic flowing and slowing as lanes merge",                  "traffic flowing merging lanes"),
+        ("sand flowing through an hourglass",                           "sand flowing hourglass"),
+        ("lava flowing slowly down a volcanic slope",                   "lava flowing volcanic slope"),
+        ("electricity flowing through a circuit and lighting a bulb",   "electricity flowing circuit bulb"),
     ],
 }
 
