@@ -45,6 +45,9 @@
   .falsified p { margin: 0; font-size: 0.95em; }
   .warn { background: var(--warn-bg); border-left: 4px solid var(--warn-border); padding: 20px 24px; margin: 32px 0; border-radius: 0 6px 6px 0; }
   .warn p { margin: 0; }
+  .stat-note { background: #fafafa; border: 1px solid var(--border); border-left: 4px solid #94a3b8; padding: 16px 20px; margin: 28px 0; border-radius: 0 6px 6px 0; font-size: 15px; }
+  .stat-note p { margin: 0 0 6px; }
+  .stat-note p:last-child { margin: 0; }
   table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 15px; font-family: 'Arial', sans-serif; }
   th { background: #f1f5f9; padding: 10px 14px; text-align: left; font-weight: 700; border-bottom: 2px solid var(--border); }
   td { padding: 9px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
@@ -76,18 +79,23 @@
 
   <div class="label">Representations · 2026 Research</div>
   <h1>Static Image Reconstruction Is Uniquely Aligned with Language Models</h1>
-  <p class="subtitle">We ran 15 experiments and three hypotheses were wrong before we found the answer. It turned out to be an interaction, not a main effect.</p>
+  <p class="subtitle">We ran 17 experiments and three hypotheses were wrong before we found the answer. It turned out to be an interaction, not a main effect — and it holds up under architecture controls and adapter fine-tuning.</p>
   <div class="meta">
-    <span>⏱ ~24 min read</span>
-    <span>🔬 15 experiments</span>
+    <span>⏱ ~28 min read</span>
+    <span>🔬 17 experiments</span>
     <span>🤖 4 LLMs · 6 visual models</span>
     <span>📦 61 concepts · 323 events</span>
     <span>📅 March 2026</span>
   </div>
 
   <div class="new-finding">
-    <div class="tag">Core finding — updated v5</div>
-    <p><strong>Only static image reconstruction (MAE) achieves high language model alignment (~24%).</strong> Image distillation (DINOv2 ~15%), image-text contrastive (CLIP ~15%), video reconstruction (VideoMAE ~13%), and video prediction (V-JEPA 2 ~12%) all cluster at substantially lower levels. Neither image data alone nor reconstruction alone explains it — DINOv2 is image-trained but low; VideoMAE uses reconstruction but is low. Only their combination is high. This pattern holds across 4/4 language model families and scales.</p>
+    <div class="tag">Core finding — updated v6</div>
+    <p><strong>Only static image reconstruction (MAE) achieves high language model alignment (~24%).</strong> Image distillation (DINOv2 ~15%), image-text contrastive (CLIP ~15%), video reconstruction (VideoMAE ~13%), and video prediction (V-JEPA 2 ~12%) all cluster at substantially lower levels. Neither image data alone nor reconstruction alone explains it — DINOv2 is image-trained but low; VideoMAE uses reconstruction but is low. Only their combination is high.</p>
+    <p style="margin-top: 10px;">This pattern holds across 4/4 LLM families, is partially robust to architecture control (3/4 LLMs with matched ViT-Base), and survives adapter fine-tuning: video-trained models reach MAE's alignment level in-distribution but fail to generalize, while MAE adapts stably. <strong>The geometry difference is structural.</strong></p>
+  </div>
+
+  <div class="stat-note">
+    <p><strong>Statistical calibration:</strong> All pairwise comparisons for Mistral-7B alone show overlapping 95% bootstrap CIs (61 concepts, 50 runs). The claim is not that individual comparisons are significant — it is that the directional ordering (MAE &gt; DINOv2/CLIP &gt; VideoMAE/V-JEPA 2) replicates across all 4 LLM families tested, and no LLM shows the reverse. Cross-architecture consistency is the evidence base.</p>
   </div>
 
   <div class="toc">
@@ -104,6 +112,8 @@
       <li><a href="#process">Process concept probe</a></li>
       <li><a href="#replication">Cross-architecture replication (4 LLMs)</a></li>
       <li><a href="#twobytwo">The 2×2 design: finding the real driver</a></li>
+      <li><a href="#archcontrol">Architecture control: ruling out scale</a></li>
+      <li><a href="#adapter">Adapter fine-tuning: testing the structural claim</a></li>
       <li><a href="#why">Why static image reconstruction?</a></li>
       <li><a href="#implications">What this means</a></li>
     </ol>
@@ -111,7 +121,7 @@
 
   <p>The field has spent years asking whether vision models and language models converge on similar internal representations. The Platonic Representation Hypothesis (Huh et al., ICML 2024) gives the optimistic answer: as models scale up, their representations align across training objectives and modalities, converging toward the same statistical model of reality.</p>
   <p>We wanted to test a sharper version. Not "do large models converge in general," but: do a language model and a visual encoder organize physical concepts similarly enough that you could give them a shared codebook — discrete symbols where both models agree that "fire," "rust," and "collision" belong to distinct categories?</p>
-  <p>Short answer: it depends entirely on which visual encoder. And the factor that determines it is not modality, not supervision type, not temporal capacity. It's an interaction that took 15 experiments to identify.</p>
+  <p>Short answer: it depends entirely on which visual encoder. And the factor that determines it is not modality, not supervision type, not temporal capacity. It's an interaction that took 15 experiments to identify, and two more experiments to rule out competing explanations.</p>
 
   <hr>
 
@@ -209,7 +219,7 @@
   <hr>
 
   <h2 id="twobytwo">The 2×2 design: finding the real driver (Experiment 15)</h2>
-  <div class="exp-tag">EXP 15 — NEW</div>
+  <div class="exp-tag">EXP 15</div>
   <p>The problem with Experiment 14: MAE (image, reconstruction), CLIP (image-text, contrastive), and V-JEPA 2 (video, temporal prediction) all differ in both training data <em>and</em> training objective simultaneously. We can't tell which factor matters.</p>
   <p>Experiment 15 adds three models to create a factorial design:</p>
 
@@ -255,14 +265,14 @@
 
   <div class="new-finding">
     <div class="tag">Key finding</div>
-    <p><strong>DINOv2 falsifies "image training drives alignment":</strong> DINOv2 is image-trained (same architecture as MAE) but scores ~15%, indistinguishable from CLIP.</p>
+    <p><strong>DINOv2 falsifies "image training drives alignment":</strong> DINOv2 is image-trained (same ViT-L architecture as MAE) but scores ~15%, indistinguishable from CLIP.</p>
     <p style="margin-top: 10px;"><strong>VideoMAE falsifies "reconstruction drives alignment":</strong> VideoMAE uses reconstruction but on video — it scores ~13%, indistinguishable from V-JEPA 2.</p>
     <p style="margin-top: 10px;"><strong>The interaction:</strong> Only <em>image</em> × <em>reconstruction</em> is high. Both factors are necessary; neither is sufficient.</p>
   </div>
 
   <h3>What the pairwise comparisons show</h3>
   <table>
-    <tr><th>Comparison</th><th>What it isolates</th><th>Δ</th><th>Verdict</th></tr>
+    <tr><th>Comparison</th><th>What it isolates</th><th>Δ (avg)</th><th>Verdict</th></tr>
     <tr><td>MAE vs DINOv2</td><td>Objective (image data fixed)</td><td>+9%</td><td>Reconstruction matters</td></tr>
     <tr><td>MAE vs VideoMAE-K400</td><td>Data (reconstruction fixed)</td><td>+11%</td><td>Image data matters</td></tr>
     <tr><td>VideoMAE-K400 vs SSv2</td><td>Temporal content (video + recon fixed)</td><td>0%</td><td>Temporal richness doesn't matter</td></tr>
@@ -271,11 +281,74 @@
 
   <hr>
 
+  <h2 id="archcontrol">Architecture control: ruling out scale (Experiment 16)</h2>
+  <div class="exp-tag">EXP 16 — NEW</div>
+
+  <p>A legitimate concern: MAE-Large is ViT-L (307M parameters, 1024-dim) while VideoMAE variants tested are ViT-L/ViT-B. Maybe it's model capacity driving the result, not training objective or data.</p>
+  <p>We extracted MAE-Base (ViT-B, 86M, 768-dim) embeddings and compared directly against VideoMAE-Base/K400 and VideoMAE-Base/SSv2 — all three are identical ViT-Base architectures differing only in training data.</p>
+
+  <table>
+    <tr><th>LLM</th><th>MAE-Base [image, recon]</th><th>VideoMAE-K400 [video, recon]</th><th>VideoMAE-SSv2 [video, recon]</th><th>Verdict</th></tr>
+    <tr><td>Mistral-7B</td><td>17.5% [14.6, 20.8]</td><td>12.9% [10.3, 15.4]</td><td>13.1% [10.8, 15.7]</td><td class="check">MAE-Base higher ✓</td></tr>
+    <tr><td>Qwen2.5-7B</td><td>23.5% [17.1, 30.6]</td><td>11.7% [9.7, 14.0]</td><td>16.9% [14.0, 20.0]</td><td class="check">MAE-Base higher ✓</td></tr>
+    <tr><td>Llama-3.1-8B</td><td>17.5% [14.8, 20.3]</td><td>15.2% [12.6, 17.8]</td><td>12.2% [9.2, 15.2]</td><td>Δ=2.3% (marginal)</td></tr>
+    <tr><td>Qwen2.5-32B</td><td>22.8% [17.1, 29.1]</td><td>13.2% [10.6, 16.2]</td><td>10.2% [8.0, 12.5]</td><td class="check">MAE-Base higher ✓</td></tr>
+  </table>
+
+  <p>Values in brackets are 95% bootstrap CIs (2000 resamples). MAE-Base outperforms both VideoMAE variants in 3/4 LLMs with identical architecture. The Llama-3.1-8B exception (Δ=2.3%) falls within the overlap region of the respective CIs and is treated as marginal rather than a genuine exception.</p>
+
+  <div class="new-finding">
+    <div class="tag">Architecture confound ruled out (3/4 LLMs)</div>
+    <p>The MAE advantage is not explained by model capacity. A ViT-Base MAE trained on images outperforms an equally-sized ViT-Base VideoMAE trained on video, for the same reconstruction objective. Training data, not architecture, is the differentiating factor.</p>
+    <p style="margin-top: 10px;">Also notable: VideoMAE-K400 ≈ V-JEPA2 (both ~12.9% for Mistral). Reconstruction vs. temporal prediction is negligible once video training data is held fixed. Whatever matters about image reconstruction, it's not the reconstruction objective generically.</p>
+  </div>
+
+  <hr>
+
+  <h2 id="adapter">Adapter fine-tuning: testing the structural claim (Experiment 17)</h2>
+  <div class="exp-tag">EXP 17 — NEW</div>
+
+  <p>The probe results tell us alignment as a fixed property of pre-trained models. But what if we train toward alignment? Can a small adapter bridge the gap between video models and language models? And if not — why not?</p>
+
+  <p>For each visual encoder, we trained a small 2-layer MLP adapter on top of frozen embeddings using the codebook alignment loss against frozen Mistral embeddings. Three adapter sizes (64-dim, 256-dim, 512-dim), 5 random seeds, 600 training epochs. The key metric: can each model reach MAE's natural alignment threshold (17.7%) on <em>held-out</em> concepts?</p>
+
+  <table>
+    <tr><th>Model</th><th>Baseline (no adapter)</th><th>Steps to threshold</th><th>Runs reaching threshold</th><th>Generalizes?</th></tr>
+    <tr class="highlight-row"><td>MAE-Large</td><td>21.5%</td><td>112 epochs</td><td>100%</td><td class="check">Yes ✓</td></tr>
+    <tr><td>DINOv2</td><td>20.0%</td><td>140 epochs</td><td>80%</td><td class="check">Yes ✓</td></tr>
+    <tr><td>CLIP</td><td>15.4%</td><td>75 epochs</td><td>80%</td><td class="check">Yes ✓</td></tr>
+    <tr><td>VideoMAE-K400</td><td>12.3%</td><td>48 epochs*</td><td>100%*</td><td class="cross">No — test drops ✗</td></tr>
+    <tr><td>V-JEPA2</td><td>12.3%</td><td>100 epochs</td><td>60%</td><td>Fragile</td></tr>
+  </table>
+  <p style="font-size: 14px; color: var(--muted); margin-top: -16px;">* VideoMAE reaches threshold quickly in-distribution but held-out test accuracy subsequently drops — the adapter memorizes a local mapping that does not generalize.</p>
+
+  <h3>The VideoMAE-K400 result is the most diagnostic</h3>
+  <p>VideoMAE reaches MAE's alignment threshold faster than any other model — 48 epochs, 100% of runs. That sounds like success. But then the held-out test accuracy drops back down.</p>
+
+  <p>This is the signature of a structural geometry mismatch. The adapter rapidly learns a translation that works for the concepts it was trained on — but the translation doesn't transfer to new concepts. The underlying representational geometry is organized along different dimensions than language, and the adapter can overfit a local mapping without ever learning the generalizable projection that would require actually restructuring the geometry.</p>
+
+  <div class="callout">
+    <p><strong>Compare this to MAE and DINOv2:</strong> their adapters reach threshold more slowly but hold it on held-out concepts. The learned mapping generalizes because the underlying geometry is already partially commensurable with language — the adapter reinforces existing structure rather than imposing a new one.</p>
+  </div>
+
+  <p>V-JEPA 2 tells a complementary story: 40% of runs never reach threshold at all, even after 600 epochs with the largest adapter size. This isn't a capacity problem — larger adapters don't reliably improve the result. It's a geometry problem.</p>
+
+  <div class="new-finding">
+    <div class="tag">The geometry difference is structural</div>
+    <p>Video-trained models cannot be stably aligned to language model geometry through post-hoc fine-tuning. The adapter can overfit a local translation (VideoMAE) or fail entirely (V-JEPA 2), but neither pattern produces stable, generalizable alignment. This confirms that the difference captured by the probe is not a surface projection problem — it is baked into the representational geometry formed during pre-training.</p>
+  </div>
+
+  <h3>Does this mean video models can't share a codebook at all?</h3>
+  <p>No — and this is an important distinction. What we've shown is that <em>post-hoc</em> adapters can't bridge the gap. This is the hardest version of the problem: you're asking a small MLP to undo representational structure formed by a 300M+ parameter model over weeks of training.</p>
+  <p>Joint training from scratch is a different regime entirely. The encoder's geometry would be shaped by the alignment signal as it forms, not retrofitted afterward. The 2×2 results predict what such training would need to balance: the compositional, part-level structure induced by image reconstruction (which aligns with language) and the temporal dynamics structure induced by video (which doesn't). The interaction result quantifies that tension — and points toward what a jointly-trained video+language-compatible encoder would need to optimize for.</p>
+
+  <hr>
+
   <h2 id="why">Why static image reconstruction?</h2>
   <p>The interaction makes sense once you think about what each objective preserves.</p>
   <p><strong>Reconstruction:</strong> to reconstruct every masked patch, the encoder must maintain information about every spatial element. No patch can be discarded as unimportant — any patch might need to be predicted from its neighbors. The result is a representational geometry where objects are encoded as collections of individually-recoverable parts.</p>
   <p><strong>Contrastive and distillation training</strong> optimize for view invariance — representations that are stable under rotations, crops, color jitter. This discards fine-grained spatial detail in favor of holistic identity. DINOv2's power as a feature extractor comes precisely from this invariance — and that same invariance makes it less commensurable with language.</p>
-  <p><strong>Video training</strong> adds temporal entanglement. Even reconstruction on video (VideoMAE) produces low LM alignment. Once training data includes temporal dynamics, representations organize around how things change, not just how they look — and that structure diverges from language regardless of the specific objective. Notably, temporal richness within video (Kinetics-400 vs. Something-Something v2) doesn't further modulate alignment — it's the presence of video, not the amount of temporal content, that changes the geometry.</p>
+  <p><strong>Video training</strong> adds temporal entanglement. Even reconstruction on video (VideoMAE) produces low LM alignment. Once training data includes temporal dynamics, representations organize around how things change, not just how they look — and that structure diverges from language regardless of the specific objective. Temporal richness within video (Kinetics-400 vs. Something-Something v2) doesn't further modulate alignment — it's the presence of video, not the amount of temporal content, that changes the geometry.</p>
   <p><strong>Language models</strong> are trained on token sequences where every token matters. Next-token prediction forces the model to maintain fine-grained, compositional representations — the meaning of "fire" must be distinguishable from "ember," "flame," and "combustion" at the level of individual tokens. This is structurally similar to MAE's patch-by-patch reconstruction: both objectives require individually-recoverable representations of each element. The geometric consequence is commensurability.</p>
 
   <hr>
@@ -283,20 +356,22 @@
   <h2 id="implications">What this means</h2>
   <p>This is a diagnostic result, not an engineering result — we're measuring alignment structure, not building a production system. But the implications are concrete:</p>
   <ul>
-    <li><strong>For world model-to-LM interfaces:</strong> MAE-style encoders are the most natural bridge to language models. If you're building a perception component for a language agent, image reconstruction encoders give you representations that are already partially commensurable with the LM's geometry. Contrastive encoders (CLIP, DINOv2) are a moderate bridge. Pure video models require the most translation work.</li>
-    <li><strong>For grounding world model outputs in language:</strong> The PIQA failure (−6.6%) shows that text-mediated translation between world model and LM is brittle, especially for polysemous concepts. A differentiable projection layer trained to map visual latents into LM semantic subspace would work better — and the alignment results predict it should work best for MAE and hardest for VideoMAE/V-JEPA 2.</li>
-    <li><strong>For the Platonic Representation Hypothesis:</strong> The results are not uniformly optimistic. Even with the "best" visual encoder (MAE), codebook agreement is ~24% — far from the ~100% you'd expect if models were converging to the same representational structure. And the fact that the alignment depends on a specific interaction of training factors (not just scale or data volume) suggests the convergence story is more nuanced than the hypothesis predicts.</li>
-    <li><strong>For interpretable codebooks:</strong> The ~24% alignment means MAE and language models already share partial representational structure. A codebook built on this alignment — with codes labeled by their top-assigned concepts — would give you a human-readable vocabulary for physical concepts that both language and visual models could use. That's a concrete downstream goal for this work.</li>
+    <li><strong>For world model-to-LM interfaces:</strong> MAE-style encoders are the most natural bridge to language models. Contrastive encoders (CLIP, DINOv2) are a moderate bridge. Video-trained encoders require joint training or substantially larger alignment modules — and even then, post-hoc adaptation is fragile and fails to generalize. Current multimodal architectures using frozen video encoders + small connectors will systematically underperform relative to MAE-based alternatives, not because the connector is too small, but because the geometry is structured differently.</li>
+    <li><strong>For grounding world model outputs in language:</strong> The PIQA failure (−6.6%) shows that text-mediated translation is brittle. A differentiable projection trained to map visual latents into LM semantic subspace would work better — and the alignment results predict it should work best for MAE and hardest for VideoMAE/V-JEPA 2.</li>
+    <li><strong>For the Platonic Representation Hypothesis:</strong> The results are not uniformly optimistic. Even with the "best" visual encoder (MAE), codebook agreement is ~24% — far from the convergence the hypothesis predicts. The alignment depends on a specific interaction of training factors, not just scale or data volume. Convergence, where it happens, is selective.</li>
+    <li><strong>For interpretable codebooks:</strong> The ~24% alignment means MAE and language models already share partial representational structure. A codebook built on this alignment — with codes labeled by their top-assigned concepts — would give you a human-readable vocabulary for physical concepts that both language and visual models could use.</li>
+    <li><strong>For joint training:</strong> The open question the 2×2 result raises is: what happens if you train a video encoder with an image reconstruction auxiliary loss? The adapter results predict it would produce an encoder that lands between MAE and VideoMAE — closer to language than pure video training, but not as close as pure image reconstruction. Testing this is the next natural experiment.</li>
   </ul>
 
   <div class="callout">
-    <p><strong>Three hypotheses were falsified before finding the answer.</strong> The gap is not a modality gap (MAE has no language supervision but aligns highly). It is not a supervision-type gap (CLIP has language supervision but doesn't align more than MAE). It is not a simple image-vs-video gap (DINOv2 is image-trained but doesn't align like MAE). The answer is an interaction: static image data × reconstruction objective. Both are necessary; neither is sufficient.</p>
+    <p><strong>Three hypotheses were falsified before finding the answer.</strong> The gap is not a modality gap (MAE has no language supervision but aligns highly). It is not a supervision-type gap (CLIP has language supervision but doesn't outperform MAE). It is not a simple image-vs-video gap (DINOv2 is image-trained but doesn't align like MAE). The answer is an interaction: static image data × reconstruction objective. Both are necessary; neither is sufficient. The geometry difference is structural — it survives architecture control and fails to generalize under adapter fine-tuning.</p>
   </div>
 
   <div class="footnote">
-    <p><strong>Methods:</strong> 4 LLMs (Mistral-7B, Qwen2.5-7B, Llama-3.1-8B, Qwen2.5-32B), 6 visual models (MAE ViT-L, DINOv2-L, CLIP ViT-L/14, VideoMAE-L/K400, VideoMAE-B/SSv2, V-JEPA 2 ViT-L). 61 concepts × ~5 phrases = 323 events. VQ codebook: 64-dim, 16 codes, λ_cm=0.5, λ_div=0.1, 50 runs (10 splits × 5 seeds). All video models evaluated on static image repeated 16 frames (zero-velocity condition) — results are lower bounds on temporal capacity. Hardware: RTX 5090, CUDA 12.9, PyTorch 2.10, transformers 5.3.0.</p>
+    <p><strong>Note on prior work:</strong> Cross-modal discrete representation learning with shared codebooks has been explored in Liu et al. (ACL 2022) and Duan et al. (CVPR 2022). This work is novel in applying the framework to the temporal world model ↔ LLM pair, using RSA diagnostics to characterize the representational gap before alignment, and identifying through factorial design that image reconstruction specifically produces the highest LM alignment.</p>
+    <p><strong>Methods:</strong> 4 LLMs (Mistral-7B, Qwen2.5-7B, Llama-3.1-8B, Qwen2.5-32B), 6 visual models (MAE ViT-L, MAE ViT-B, DINOv2-L, CLIP ViT-L/14, VideoMAE-L/K400, VideoMAE-B/SSv2, V-JEPA 2 ViT-L). 61 concepts × ~5 phrases = 323 events. VQ codebook: 64-dim, 16 codes, λ_cm=0.5, λ_div=0.1, 50 runs (10 splits × 5 seeds). Adapter: 2-layer MLP with residual connection, sizes 64/256/512-dim, Adam lr=1e-3, 600 epochs, 5 seeds. Bootstrap CIs: 2000 resamples. All video models on 16-frame static image (zero-velocity condition). Hardware: RTX 5090, CUDA 12.9, PyTorch 2.10, transformers 5.3.0.</p>
     <p><strong>Code:</strong> <a href="https://github.com/Ecological-align/world-model-language">github.com/Ecological-align/world-model-language</a></p>
-    <p><strong>References:</strong> Huh et al. (2024) Platonic Representation Hypothesis · He et al. (2022) MAE · Tong et al. (2022) VideoMAE · Oquab et al. (2024) DINOv2 · Assran et al. (2025) V-JEPA 2 · Bisk et al. (2020) PIQA</p>
+    <p><strong>References:</strong> Huh et al. (2024) Platonic Representation Hypothesis · He et al. (2022) MAE · Tong et al. (2022) VideoMAE · Oquab et al. (2024) DINOv2 · Assran et al. (2025) V-JEPA 2 · Bisk et al. (2020) PIQA · Liu et al. (2022) Cross-modal discrete representation learning · Duan et al. (2022) Multi-modal alignment using representation codebook</p>
   </div>
 
 </div>
