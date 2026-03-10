@@ -1,0 +1,236 @@
+{
+  "mae": {
+    "label": "MAE-Large",
+    "dtype": "image",
+    "obj": "reconstruction",
+    "baseline": {
+      "mean": 21.538462191820145,
+      "std": 8.970695531468088
+    },
+    "small": {
+      "hidden_dim": 64,
+      "n_params": 134208,
+      "baseline": 21.538462191820145,
+      "final_mean": 7.692307829856873,
+      "final_std": 9.73008523507627,
+      "gain": -13.846154361963272,
+      "steps_to_threshold": 160.0,
+      "reached_threshold_pct": 100.0
+    },
+    "medium": {
+      "hidden_dim": 256,
+      "n_params": 527616,
+      "baseline": 21.538462191820145,
+      "final_mean": 12.307692468166351,
+      "final_std": 9.230769226948421,
+      "gain": -9.230769723653793,
+      "steps_to_threshold": 112.0,
+      "reached_threshold_pct": 100.0
+    },
+    "large": {
+      "hidden_dim": 512,
+      "n_params": 1052160,
+      "baseline": 21.538462191820145,
+      "final_mean": 10.769231170415878,
+      "final_std": 3.7684458985135105,
+      "gain": -10.769231021404266,
+      "steps_to_threshold": 128.0,
+      "reached_threshold_pct": 100.0
+    }
+  },
+  "dinov2": {
+    "label": "DINOv2",
+    "dtype": "image",
+    "obj": "distillation",
+    "baseline": {
+      "mean": 20.000000447034836,
+      "std": 7.844645580868858
+    },
+    "small": {
+      "hidden_dim": 64,
+      "n_params": 134208,
+      "baseline": 20.000000447034836,
+      "final_mean": 9.23076942563057,
+      "final_std": 7.536891523275211,
+      "gain": -10.769231021404266,
+      "steps_to_threshold": 65.0,
+      "reached_threshold_pct": 80.0
+    },
+    "medium": {
+      "hidden_dim": 256,
+      "n_params": 527616,
+      "baseline": 20.000000447034836,
+      "final_mean": 13.84615421295166,
+      "final_std": 5.75639595514451,
+      "gain": -6.153846234083176,
+      "steps_to_threshold": 140.0,
+      "reached_threshold_pct": 80.0
+    },
+    "large": {
+      "hidden_dim": 512,
+      "n_params": 1052160,
+      "baseline": 20.000000447034836,
+      "final_mean": 9.230769574642181,
+      "final_std": 3.076923191547394,
+      "gain": -10.769230872392654,
+      "steps_to_threshold": 120.0,
+      "reached_threshold_pct": 100.0
+    }
+  },
+  "clip": {
+    "label": "CLIP",
+    "dtype": "image",
+    "obj": "contrastive",
+    "baseline": {
+      "mean": 15.384615957736969,
+      "std": 8.426501198606484
+    },
+    "small": {
+      "hidden_dim": 64,
+      "n_params": 100672,
+      "baseline": 15.384615957736969,
+      "final_mean": 13.84615421295166,
+      "final_std": 7.536891614525817,
+      "gain": -1.5384617447853088,
+      "steps_to_threshold": 104.0,
+      "reached_threshold_pct": 100.0
+    },
+    "medium": {
+      "hidden_dim": 256,
+      "n_params": 395776,
+      "baseline": 15.384615957736969,
+      "final_mean": 9.230769574642181,
+      "final_std": 5.756396194094679,
+      "gain": -6.153846383094788,
+      "steps_to_threshold": 75.0,
+      "reached_threshold_pct": 80.0
+    },
+    "large": {
+      "hidden_dim": 512,
+      "n_params": 789248,
+      "baseline": 15.384615957736969,
+      "final_mean": 15.384615659713745,
+      "final_std": 8.42650092654975,
+      "gain": -2.980232238769531e-07,
+      "steps_to_threshold": 110.0,
+      "reached_threshold_pct": 80.0
+    }
+  },
+  "vmae_k400": {
+    "label": "VideoMAE-K400",
+    "dtype": "video",
+    "obj": "reconstruction",
+    "baseline": {
+      "mean": 12.307692766189575,
+      "std": 10.434354208902691
+    },
+    "small": {
+      "hidden_dim": 64,
+      "n_params": 134208,
+      "baseline": 12.307692766189575,
+      "final_mean": 15.384615808725357,
+      "final_std": 12.871692928262362,
+      "gain": 3.076923042535782,
+      "steps_to_threshold": 130.0,
+      "reached_threshold_pct": 80.0
+    },
+    "medium": {
+      "hidden_dim": 256,
+      "n_params": 527616,
+      "baseline": 12.307692766189575,
+      "final_mean": 9.230769574642181,
+      "final_std": 5.756396194094679,
+      "gain": -3.076923191547394,
+      "steps_to_threshold": 48.0,
+      "reached_threshold_pct": 100.0
+    },
+    "large": {
+      "hidden_dim": 512,
+      "n_params": 1052160,
+      "baseline": 12.307692766189575,
+      "final_mean": 7.692307829856873,
+      "final_std": 9.73008523507627,
+      "gain": -4.615384936332703,
+      "steps_to_threshold": 155.0,
+      "reached_threshold_pct": 80.0
+    }
+  },
+  "vmae_ssv2": {
+    "label": "VideoMAE-SSv2",
+    "dtype": "video",
+    "obj": "reconstruction",
+    "baseline": {
+      "mean": 9.230769574642181,
+      "std": 11.305337695540532
+    },
+    "small": {
+      "hidden_dim": 64,
+      "n_params": 100672,
+      "baseline": 9.230769574642181,
+      "final_mean": 7.692307829856873,
+      "final_std": 8.426500926549746,
+      "gain": -1.5384617447853088,
+      "steps_to_threshold": 75.0,
+      "reached_threshold_pct": 80.0
+    },
+    "medium": {
+      "hidden_dim": 256,
+      "n_params": 395776,
+      "baseline": 9.230769574642181,
+      "final_mean": 7.6923079788684845,
+      "final_std": 4.865042735342157,
+      "gain": -1.538461595773697,
+      "steps_to_threshold": 124.0,
+      "reached_threshold_pct": 100.0
+    },
+    "large": {
+      "hidden_dim": 512,
+      "n_params": 789248,
+      "baseline": 9.230769574642181,
+      "final_mean": 12.307692766189575,
+      "final_std": 3.7684458985135105,
+      "gain": 3.076923191547394,
+      "steps_to_threshold": 193.33333333333334,
+      "reached_threshold_pct": 60.0
+    }
+  },
+  "vjepa2": {
+    "label": "V-JEPA2",
+    "dtype": "video",
+    "obj": "temporal_pred",
+    "baseline": {
+      "mean": 12.307692766189575,
+      "std": 10.434354208902691
+    },
+    "small": {
+      "hidden_dim": 64,
+      "n_params": 134208,
+      "baseline": 12.307692766189575,
+      "final_mean": 16.923077553510666,
+      "final_std": 7.536891797027021,
+      "gain": 4.615384787321091,
+      "steps_to_threshold": 165.0,
+      "reached_threshold_pct": 80.0
+    },
+    "medium": {
+      "hidden_dim": 256,
+      "n_params": 527616,
+      "baseline": 12.307692766189575,
+      "final_mean": 12.307692766189575,
+      "final_std": 3.7684458985135105,
+      "gain": 0.0,
+      "steps_to_threshold": 100.0,
+      "reached_threshold_pct": 60.0
+    },
+    "large": {
+      "hidden_dim": 512,
+      "n_params": 1052160,
+      "baseline": 12.307692766189575,
+      "final_mean": 9.23076942563057,
+      "final_std": 8.970695327025838,
+      "gain": -3.0769233405590057,
+      "steps_to_threshold": 170.0,
+      "reached_threshold_pct": 80.0
+    }
+  }
+}
