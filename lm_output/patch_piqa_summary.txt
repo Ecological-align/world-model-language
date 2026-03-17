@@ -1,0 +1,84 @@
+======================================================================
+EXPERIMENT 19: ACTIVATION PATCHING vs TEXT INJECTION — PIQA
+======================================================================
+
+Patch scale: 0.1  Ridge alpha: 1.0
+Conditions tested: ['baseline', 'text_injection', 'patch_mae_L8', 'patch_mae_L16', 'patch_mae_L16_per_concept', 'patch_mae_L24', 'patch_vjepa_L16']
+
+Condition                  N     Acc   Δ Base   ↑ Impr   ↓ Degr   p (McNemar)
+----------------------------------------------------------------------
+  baseline               914   72.1%    +0.0%        0        0    p=1.000 n.s.
+  text_injection         914   67.6%    -4.5%      164      205    p=0.037 *
+  patch_mae_L8           914   70.8%    -1.3%       52       64    p=0.307 n.s.
+  patch_mae_L16          914   74.8%    +2.7%       30        5    p=0.000 ***
+  patch_mae_L24          914   72.6%    +0.5%        8        3    p=0.227 n.s.
+  patch_vjepa_L16        914   74.7%    +2.6%       29        5    p=0.000 ***
+
+──────────────────────────────────────────────────────────────────────
+KEY COMPARISONS
+──────────────────────────────────────────────────────────────────────
+
+  Text injection vs direct patching (MAE L16):
+    Text:   Δ = -4.5%
+    Patch:  Δ = +2.7%
+    → Direct patching outperforms text injection.
+      Interpretation: text interface is the bottleneck,
+      not the representations.
+
+  MAE vs V-JEPA 2 (layer 16, direct patching):
+    MAE:    Δ = +2.7%
+    V-JEPA: Δ = +2.6%
+    → MAE does not clearly outperform V-JEPA 2.
+      LM alignment score does not predict patching benefit.
+
+PATCH LAYER COMPARISON (MAE)
+    Layer  8: Δ = -1.3%
+    Layer 16: Δ = +2.7%
+    Layer 24: Δ = +0.5%
+
+SCALE SWEEP (MAE, L16, first 200 questions)
+    scale=0.0:  acc=72.0%
+    scale=0.1:  acc=72.0%
+    scale=0.1:  acc=73.5%
+    scale=0.2:  acc=73.5%
+    scale=0.5:  acc=74.5%
+    scale=1.0:  acc=74.0%
+
+PER-CONCEPT BREAKDOWN — patch_mae_L16 (n≥3)
+  Concept           N    Base   Patch       Δ
+  ---------------------------------------------
+  sand             18   77.8%   94.4%  +16.7%
+  chair            10   70.0%   80.0%  +10.0%
+  wheel            11   72.7%   81.8%   +9.1%
+  clock            12   91.7%   83.3%   -8.3%
+  wall             42   61.9%   69.0%   +7.1%
+  bowl             71   70.4%   77.5%   +7.0%
+  fire             38   57.9%   63.2%   +5.3%
+  strike           20   90.0%   95.0%   +5.0%
+  pipe             20   75.0%   80.0%   +5.0%
+  hand            107   64.5%   69.2%   +4.7%
+  light            43   69.8%   74.4%   +4.7%
+  glass            48   64.6%   68.8%   +4.2%
+  water           252   69.4%   73.4%   +4.0%
+  hammer           28   82.1%   78.6%   -3.6%
+  container        92   73.9%   77.2%   +3.3%
+  rope             36   63.9%   66.7%   +2.8%
+  hole             60   71.7%   73.3%   +1.7%
+  apple            17   70.6%   70.6%   +0.0%
+  stone            17   76.5%   76.5%   +0.0%
+  door             15   73.3%   73.3%   +0.0%
+  mirror            9   88.9%   88.9%   +0.0%
+  knife            69   75.4%   75.4%   +0.0%
+  charge            7   71.4%   71.4%   +0.0%
+  press            45   62.2%   62.2%   +0.0%
+  shoot             3  100.0%  100.0%   +0.0%
+  run              43   81.4%   81.4%   +0.0%
+  scissors         21   66.7%   66.7%   +0.0%
+  bucket           10   90.0%   90.0%   +0.0%
+  needle           24   79.2%   79.2%   +0.0%
+  ice              72   69.4%   69.4%   +0.0%
+  leaf             17   76.5%   76.5%   +0.0%
+  thread           10   90.0%   90.0%   +0.0%
+  coin              4   25.0%   25.0%   +0.0%
+  shelf             9  100.0%  100.0%   +0.0%
+  net              10   80.0%   80.0%   +0.0%

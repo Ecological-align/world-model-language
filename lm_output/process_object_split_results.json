@@ -1,0 +1,42 @@
+{
+  "mae": {
+    "label": "MAE-Large",
+    "process_n": 12,
+    "object_n": 49,
+    "process_mean": 98.00000035762787,
+    "object_mean": 72.44897997379303,
+    "delta": 25.55102038383484
+  },
+  "dinov2": {
+    "label": "DINOv2",
+    "process_n": 12,
+    "object_n": 49,
+    "process_mean": 98.16666674613953,
+    "object_mean": 79.0612245798111,
+    "delta": 19.10544216632843
+  },
+  "clip": {
+    "label": "CLIP",
+    "process_n": 12,
+    "object_n": 49,
+    "process_mean": 98.33333361148834,
+    "object_mean": 80.85714328289032,
+    "delta": 17.476190328598022
+  },
+  "vmae_k400": {
+    "label": "VideoMAE-K400",
+    "process_n": 12,
+    "object_n": 49,
+    "process_mean": 99.00000023841858,
+    "object_mean": 82.89795970916748,
+    "delta": 16.1020405292511
+  },
+  "vjepa2": {
+    "label": "V-JEPA2",
+    "process_n": 12,
+    "object_n": 49,
+    "process_mean": 97.50000047683716,
+    "object_mean": 79.22449004650116,
+    "delta": 18.275510430336
+  }
+}
