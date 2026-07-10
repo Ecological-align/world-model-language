@@ -106,6 +106,7 @@
       <li><a href="#twobytwo">The 2×2 design: finding the real driver</a></li>
       <li><a href="#why">Why static image reconstruction?</a></li>
       <li><a href="#patching">Activation patching: closing the loop</a></li>
+      <li><a href="#limitations">Limitations</a></li>
       <li><a href="#implications">What this means</a></li>
     </ol>
   </div>
@@ -317,6 +318,25 @@
     <p>The Exp 8 failure was not a verdict on world model representations. It was a verdict on natural language as a transmission channel for physical knowledge. Text descriptions collapse dynamic, relational, continuous structure into static symbolic strings. Direct activation patching bypasses that collapse &#x2014; and the signal is there, significant, and replicable.</p>
     <p style="margin-top:10px;">The correct interface architecture for world model-to-LM integration is a trained projection into the residual stream, not a text description appended to the prompt.</p>
   </div>
+
+  <hr>
+
+  <h2 id="limitations">Limitations</h2>
+  <p>This is an independent, single-author exploratory study, and several design choices bound what the results can claim. In rough order of how much they constrain the conclusion:</p>
+  <div class="warn">
+    <p><strong>Every video model is fed static input.</strong> All video encoders (V-JEPA 2, VideoMAE) are evaluated on a single image duplicated across frames &#x2014; the "zero-velocity condition." This isolates training signal from input modality, but it means any claim about temporal capacity is an inference about what these models learned in training, not an observation of them processing motion. A temporal-prediction model fed degenerate static input may simply behave out of distribution. Every temporal number here is a lower bound, and the temporal axis is the part most in need of a real-video replication.</p>
+  </div>
+  <p>Further caveats, each of which the successor project is built to address:</p>
+  <ul>
+    <li><strong>V-JEPA 2's predictor is switched off.</strong> Extraction runs with <code>skip_predictor=True</code>, so only the encoder contributes. The predictive machinery that makes V-JEPA a world model never runs in these experiments.</li>
+    <li><strong>The PIQA "world-model context" is human-written.</strong> The injected physical descriptions are hand-authored; V-JEPA 2 only selects <em>which</em> to inject via nearest-neighbour lookup. The &minus;4.5% text-injection result is a statement about retrieval-selected prose, not a clean test of translating learned world-model knowledge. The activation-patching result (Exp 19), which bypasses text entirely, is the cleaner probe of the same question.</li>
+    <li><strong>Codebook augmentation is synthetic.</strong> Training uses one averaged embedding per concept plus isotropic Gaussian noise, discarding the real per-image variance collected during extraction. This can inflate within-distribution agreement; held-out-<em>concept</em> generalization is less affected.</li>
+    <li><strong>Language models are 4-bit quantized.</strong> Hidden states are extracted through NF4 quantization, which perturbs representation geometry. A full-precision sanity check has not been run.</li>
+    <li><strong>Absolute agreement is low.</strong> Even the strongest bridge (MAE, ~24%) is far from convergence. Treat the ordering across encoders as the finding, not the absolute magnitudes.</li>
+  </ul>
+  <p>A successor study reframes this as a J-lens&#x2013;style interpretability probe: rather than contrastively <em>training</em> a shared codebook (which risks manufacturing the alignment it measures), it reads out each frozen model's own concept-predictive directions and compares those geometries with RSA/CKA plus causal steering &#x2014; with V-JEPA 2's predictor enabled, on real video, and the temporal/static concept split preregistered.</p>
+
+  <hr>
 
   <h2 id="implications">What this means</h2>
   <p>This is a diagnostic result, not an engineering result — we're measuring alignment structure, not building a production system. But the implications are concrete:</p>
