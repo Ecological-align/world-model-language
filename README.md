@@ -28,13 +28,32 @@ The decrease is monotonic and stable across 6 hyperparameter configurations. **T
 - Reconstruction-only codebooks always collapse to 2 codes (one per modality) — this is structural, not a tuning failure
 - NT-Xent contrastive loss at **λ=0.5** achieves 99% ± 2% cross-modal agreement, robust across 5/5 seeds
 - Generalizes: 17-concept memorization (test 2%) → 49-concept genuine generalization (**test 92%**)
-- Translating world model knowledge to natural language **hurts** PIQA performance (Δ=−6.6%, McNemar p=0.999) — a sense mismatch, not a knowledge gap
+- Injecting physical-concept context selected by V-JEPA 2 nearest-neighbours does **not** improve (and slightly hurts) PIQA performance (Δ=−6.6%, McNemar p=0.999). See Limitations: the injected text is hand-written, so this is a null result about *retrieval-selected prose*, not a clean test of translating world-model knowledge
 - Phrase-level event grounding achieves **89.5% test agreement** with a −1.0% generalization gap (test > train)
 - The four-modality probe is **stable in 5/6 hyperparameter configurations**: LM↔MAE consistently highest (48.8%), VIS↔CLIP consistently lowest (15.6%)
 
 ---
 
+## Known Limitations
+
+This is an independent, single-author exploratory study. I'm documenting the design weaknesses explicitly, both because they bound what the results can claim and because a successor project ([J-lens interpretability study](#successor-work)) is built specifically to fix them. In rough order of how much they constrain the headline claim:
+
+- **The temporal contrast is inferred, not directly measured.** Every video model here is fed the *same static image duplicated across frames* ("zero-velocity condition"). This is deliberate — it holds input constant so that any V-JEPA 2 vs. MAE difference must come from training signal rather than input modality — but it means the temporal claim rests on an inference about *training*, not on the model ever processing temporal variation. A model trained for temporal prediction, fed degenerate static input, may simply behave out-of-distribution. I cannot currently separate "encodes temporal structure the LM lacks" from "produces atypical representations on static input." **This is the single biggest threat to the title.**
+- **V-JEPA 2's predictor is disabled.** Extraction runs with `skip_predictor=True`, so I probe the *encoder* only. The predictive machinery that makes V-JEPA a world model never runs. Claims about training-induced geometry survive; claims about V-JEPA's *predictive* representations do not, because they were never computed.
+- **The PIQA "world-model context" is human-written.** The injected physical descriptions (`CONCEPT_DESCRIPTIONS`) are authored by me; V-JEPA 2 only selects *which* to inject via nearest-neighbour lookup. So Experiment 8 is a null result about retrieval-selected prose, and the Δ=−6.6% is at least as consistent with prompt-format disruption as with any "sense mismatch." I no longer claim it isolates a knowledge-vs-language distinction.
+- **Augmentation is synthetic.** Codebook training uses one averaged embedding per concept plus isotropic Gaussian noise (σ=0.1, 30 copies), discarding the real per-image variance I actually collected. This can inflate within-distribution agreement (the encoder can learn to denoise toward the nearest anchor). Held-out-*concept* generalization is less affected, since those anchors are genuinely unseen.
+- **n = 1 per model category, partially mitigated.** The headline generalizes over "language models" and "world models" from one LM and one WM. The architecture-control experiments (Qwen-7B, Llama-3.1-8B, Qwen-32B, Gemma-2-9B; MAE vs. VideoMAE-K400 vs. VideoMAE-SSv2 at matched ViT-B) push against this, but the core codebook results remain single-model.
+- **Mistral is 4-bit quantized.** Hidden states are extracted through NF4 quantization, which perturbs representation geometry. An fp16-vs-4-bit RSA sanity check has not been run.
+- **Agreement percentages lack a chance baseline in this README.** The 48.8 / 44.4 / 40.6% spread is small; treat the *ordering* as the claim, not the absolute values, pending confidence intervals.
+
+<a name="successor-work"></a>
+**Successor work.** A follow-up study reframes this as a J-lens-style interpretability probe: instead of contrastively *training* a shared codebook (which risks manufacturing the alignment it measures), it probes each frozen model for its own concept-predictive directions and compares those geometries with RSA/CKA plus causal steering — running V-JEPA 2 with the predictor enabled, on real video, with the temporal/static concept split preregistered. The two projects together are meant to read as: v1 with honest limitations → v2 designed to kill them.
+
+---
+
 ## Repository Structure
+
+> The tree below is grouped by function for readability. On disk, scripts live in `extract/`, `codebook_train/`, `analysis/`, and `downstream/` subdirectories (plus a number of root-level scripts); the current write-ups are `blog_post_v6_4.html` and `world_model_paper_v6_4.docx`. See [Reproducing the Key Results](#reproducing-the-key-results) for exact invocation paths.
 
 ```
 codebook/
@@ -77,8 +96,8 @@ codebook/
 │   ├── download_multi_images.py        # Multi-image concept download
 │   └── download_concept_videos.py      # Video download utilities
 │
-├── blog_post.html                      # Full blog post (current version)
-├── world_model_language_gap_paper.docx # Paper (current version)
+├── blog_post_v6_4.html                 # Full blog post (current version)
+├── world_model_paper_v6_4.docx         # Paper (current version)
 │
 └── lm_output/
     ├── *_hiddens*.npy                  # Extracted embeddings (concept-level)
@@ -121,7 +140,7 @@ The original 17 concepts (apple → ladder) were used for Experiments 1–7. Exp
 | 5 | Codebook + contrastive λ sweep | λ=0.5: 99%±2%, robust 5/5 seeds |
 | 6 | Generalization, 17 concepts | Test 2% — memorization |
 | 7 | Generalization, 49 concepts | Test 92% — genuine generalization |
-| 8 | PIQA downstream benchmark | Δ=−6.6%, p=0.999 — sense mismatch |
+| 8 | PIQA downstream benchmark | Δ=−6.6%, p=0.999 — null (see Limitations) |
 | 9 | Phrase-level codebook | Test 89.5%, gap=−1.0% |
 | 10 | λ sweep (phrase level) | Binary collapse is objective-driven |
 | 11 | Trimodal: LM + VIS + CLIP-text | CLIP-text closer to LM than to VIS |
@@ -136,29 +155,31 @@ The original 17 concepts (apple → ladder) were used for Experiments 1–7. Exp
 python -m venv .venv && source .venv/bin/activate  # or .venv\Scripts\activate on Windows
 pip install torch transformers sentence-transformers numpy scipy
 
-# 2. Extract representations (requires model downloads ~15GB)
-python extract_expanded.py          # concept-level, 49 concepts
-python extract_phrase_level.py      # phrase-level, 251 events
-python add_clip_text.py             # CLIP text embeddings for phrases
+# Run from the repository root. Extraction requires model downloads (~15GB).
+
+# 2. Extract representations
+python extract/extract_expanded.py          # concept-level, 49 concepts
+python extract/extract_phrase_level.py      # phrase-level, 251 events
+python extract/add_clip_text.py             # CLIP text embeddings for phrases
 
 # 3. Run RSA analysis
-python rsa_expanded.py
+python analysis/rsa_expanded.py
 
 # 4. Train concept-level codebook
-python train_codebook_contrastive_multiseed.py  # 15 runs, λ sweep
-python generalization_balanced.py               # generalization test
+python train_codebook_contrastive_multiseed.py   # 15 runs, λ sweep (root-level)
+python codebook_train/generalization_balanced.py # generalization test
 
 # 5. Run phrase-level experiments
-python train_phrase_codebook.py     # 50 runs
-python lambda_sweep_phrase.py       # 8-config sweep
+python codebook_train/train_phrase_codebook.py   # 50 runs
+python codebook_train/lambda_sweep_phrase.py     # 8-config sweep
 
 # 6. Run multi-modality probe
-python train_trimodal_codebook.py   # LM + VIS + CLIP-text
-python train_quadmodal_codebook.py  # + MAE
-python quadmodal_stability.py       # stability across hyperparams
+python codebook_train/train_trimodal_codebook.py   # LM + VIS + CLIP-text
+python codebook_train/train_quadmodal_codebook.py  # + MAE
+python codebook_train/quadmodal_stability.py       # stability across hyperparams
 
 # 7. PIQA benchmark
-python piqa_benchmark.py
+python downstream/piqa_benchmark.py
 ```
 
 ---
@@ -167,13 +188,15 @@ python piqa_benchmark.py
 
 | Model | Source | Notes |
 |-------|--------|-------|
-| Mistral 7B Instruct | `mistralai/Mistral-7B-Instruct-v0.2` | Last-token hidden state, layer 16 |
+| Mistral 7B (base) | `mistralai/Mistral-7B-v0.1` | Last-token hidden state, layer 16; **4-bit NF4 quantized** |
 | all-mpnet-base-v2 | `sentence-transformers/all-mpnet-base-v2` | Mean-pooled |
 | CLIP ViT-L/14 | `openai/clip-vit-large-patch14` | Visual projection (images) or text projection (phrases) |
-| V-JEPA 2 ViT-L | Meta AI | CLS token, 8× static frame (no temporal variation — known limitation) |
-| MAE ViT-L | `facebook/vit-mae-large` | CLS token, mask_ratio=0 |
+| V-JEPA 2 ViT-L | `facebook/vjepa2-vitl-fpc64-256` | Encoder `last_hidden_state`, **mean-pooled** over patch tokens; 8 duplicated static frames ("zero-velocity"); **`skip_predictor=True`** (encoder only — see Limitations) |
+| MAE ViT-L | `facebook/vit-mae-large` | Encoder `last_hidden_state`, mean-pooled; `mask_ratio=0` |
 
 **Hardware:** RTX 5090 32GB · CUDA 12.9 · PyTorch 2.10 · transformers 5.3.0
+
+> Note on model IDs: earlier drafts of this README listed `Mistral-7B-Instruct-v0.2` and described the visual models as using the CLS token. The code actually uses the Mistral **base** model (4-bit) and **mean-pools** patch tokens; the table above reflects the code.
 
 ---
 
